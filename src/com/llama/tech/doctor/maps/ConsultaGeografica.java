@@ -4,8 +4,10 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
+import java.nio.file.Files;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -14,18 +16,27 @@ import com.llama.tech.utils.dict.LlamaDict;
 import com.llama.tech.utils.dict.LlamaDict.UnhashableTypeException;
 import com.opencsv.CSVReader;
 
+
 public class ConsultaGeografica 
 {
 	private static final String BASE_URL = "http://api.geonames.org/postalCodeLookupJSON?postalcode=%s&country=%s&username=andfoy";
 	private static final String BASE_WIKIPEDIA_URL = "http://api.geonames.org/wikipediaSearchJSON?q=%s&maxRows=10&username=andfoy";
-	private static final String FILE_PATH = "./data/countryPostCodeInfo.csv";
+	private static final String FILE_PATH = "data/countryPostCodeInfo.csv";
 	private String[] searchFields;
 	private LlamaDict<String, LlamaDict<String, String>> globalInfo;
 	
 	public ConsultaGeografica() throws IOException, UnhashableTypeException
 	{
 		globalInfo = new LlamaDict<String, LlamaDict<String, String>>(20);
+		
+		
+//		File f = new File(getClass().getClassLoader().getResource(FILE_PATH).getFile());
+//		
 		File f = new File(FILE_PATH);
+		if (!f.exists()) {
+		    InputStream link = (getClass().getClassLoader().getResourceAsStream(FILE_PATH));
+		    Files.copy(link, f.getAbsoluteFile().toPath());
+		}
 		
 		FileReader fr = new FileReader(f);
 		CSVReader reader = new CSVReader(fr);
@@ -76,6 +87,7 @@ public class ConsultaGeografica
     
     private static String getJSONFormat(URL urlReq) throws IOException
 	{
+    	System.out.println(urlReq);
 		StringBuilder sb = new StringBuilder();
 		try(BufferedReader in = new BufferedReader(new InputStreamReader(urlReq.openStream())))
 		{

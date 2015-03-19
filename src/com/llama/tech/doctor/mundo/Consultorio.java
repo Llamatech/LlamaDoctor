@@ -1,6 +1,8 @@
 package com.llama.tech.doctor.mundo;
 
+import com.llama.tech.utils.dict.LlamaDict;
 import com.llama.tech.utils.list.LlamaArrayList;
+import com.llama.tech.utils.tree.LlamaAVLTree;
 
 public class Consultorio implements Comparable<Consultorio> {
 
@@ -16,6 +18,9 @@ public class Consultorio implements Comparable<Consultorio> {
 	private double longitud;
 	private String[] seguros;
 	private int añosExp;
+	
+	private LlamaDict<String, HorarioCitaDia> horarios;
+	private LlamaAVLTree<Cita> citas;
 	
 	
 	public Consultorio(String nombre, LlamaCitas.Sexo sexo, String direccion,
@@ -99,8 +104,8 @@ public class Consultorio implements Comparable<Consultorio> {
 
 
 	@Override
-	public int compareTo(Consultorio o) 
-	{
+	public int compareTo(Consultorio o) {
+		// TODO Auto-generated method stub
 		return nombre.compareTo(o.getNombre());
 	}
 	

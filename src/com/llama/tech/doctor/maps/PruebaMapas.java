@@ -35,11 +35,7 @@ import javax.swing.JScrollPane;
 
 import uniandes.cupi2.cupIphone.componentes.IAplicacion;
 import uniandes.cupi2.cupIphone.core.ICore;
-<<<<<<< HEAD
 
-public class PruebaMapas extends JPanel implements ActionListener, Observer{
-=======
->>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
 
 public class PruebaMapas extends JPanel implements ActionListener, Observer{
 
@@ -54,17 +50,6 @@ public class PruebaMapas extends JPanel implements ActionListener, Observer{
 	public final static String POSTCODE = "Codigo Postal";
 
 	private int zoomAnteriores=6;
-<<<<<<< HEAD
-	private JButton btnZoomIn;
-	private JButton btnZoomOut;
-	private JButton btnAgregarUbicacion;
-	private JButton btnRefrescarLugaresRecientes;
-	private JLabel lblMapa;
-	private JLabel lblTitulo;
-	private JButton btnMostrarConsultoriosCercanos;
-=======
-
->>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
 	private int estadoActual;
 	private String tipoBusqueda;
 	private String ubicacionActual;
@@ -337,11 +322,7 @@ public class PruebaMapas extends JPanel implements ActionListener, Observer{
 		char marcador = 'A';
 		int p=0;
 
-<<<<<<< HEAD
-		for(int i =0;i<visitados.size()&&i<N;i++)
-=======
 		for(int i =visitados.size()-1;i>=0&&p<N;i--)
->>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
 		{
 			info[p]=visitados.get(i);
 			infis+=marcador+": "+visitados.get(i)+"\n";
@@ -463,17 +444,11 @@ public class PruebaMapas extends JPanel implements ActionListener, Observer{
 		}
 	}
 
-<<<<<<< HEAD
-//	public static void main(String[] args) {
-//		PruebaMapas pm = new PruebaMapas();
-//		pm.setVisible(true);
-//	}
-=======
+
 	public static void main(String[] args) {
 		PruebaMapas pm = new PruebaMapas(new LlamaCitas());
 		pm.setVisible(true);
 	}
->>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
 
 	@Override
 	public void update(Observable o, Object inf) {
@@ -500,11 +475,7 @@ public class PruebaMapas extends JPanel implements ActionListener, Observer{
 
 	}
 
-<<<<<<< HEAD
-	public class DialogoEscoger extends JDialog implements ActionListener
-=======
 	public class DialogoEscoger extends JInternalFrame implements ActionListener
->>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
 	{
 		private JComboBox<String> escogedor;
 		private JLabel mensaje;
@@ -539,11 +510,7 @@ public class PruebaMapas extends JPanel implements ActionListener, Observer{
 				String info=JOptionPane.showInputDialog("Introduzca el criterio de búsqueda");
 				ubicacionActual = info;
 
-<<<<<<< HEAD
-				visitados.addAlPrincipio(ubicacionActual);
-=======
 				visitados.addAlFinal(ubicacionActual);
->>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
 
 				DialogoMapaUnico jd;
 				try {

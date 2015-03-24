@@ -9,5 +9,6 @@
 	<classpathentry kind="lib" path="lib/llamautils-master.jar"/>
 	<classpathentry kind="lib" path="lib/Cupi2Collections.jar"/>
 	<classpathentry kind="lib" path="lib/cupiphoneSDK.jar"/>
+	<classpathentry kind="lib" path="lib/jcalendar-1.4.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

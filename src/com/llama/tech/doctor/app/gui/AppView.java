@@ -17,7 +17,8 @@ public abstract class AppView extends JPanel implements Comparable<AppView>
 		LOGIN_VIEW,
 		TOS_VIEW,
 		SIGN_UP_VIEW,
-		MAIN_MENU_VIEW
+		MAIN_MENU_VIEW,
+		NAVIGATOR
 	}
 	
 	/**

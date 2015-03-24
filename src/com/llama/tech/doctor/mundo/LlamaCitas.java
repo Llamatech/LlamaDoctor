@@ -66,10 +66,8 @@ public class LlamaCitas extends Observable {
 
 		long empece = System.currentTimeMillis();
 		
-<<<<<<< HEAD
 		
 		Workbook workbook = Workbook.getWorkbook(new File(RUTA_ARCHIVO));
-=======
 		File f = new File(RUTA_ARCHIVO);
 		if (!f.exists()) {
 		    InputStream link = (getClass().getClassLoader().getResourceAsStream(RUTA_ARCHIVO));
@@ -78,8 +76,7 @@ public class LlamaCitas extends Observable {
 		
 		
 //		Workbook workbook = Workbook.getWorkbook(new File(getClass().getClassLoader().getResource(RUTA_ARCHIVO).getFile()));
-		Workbook workbook = Workbook.getWorkbook(f);
->>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
+		workbook = Workbook.getWorkbook(f);
 		Sheet hoja = workbook.getSheet(0);
 		Cell[] nombres = hoja.getColumn(1);
 		Cell[] sexo = hoja.getColumn(28);
@@ -164,7 +161,6 @@ public class LlamaCitas extends Observable {
 
 			lat2=c.getLatitud();
 			lon2=c.getLongitud();
-<<<<<<< HEAD
 			
 			double dlon = (lon2 - lon1)*Math.PI/180;
 			double dlat = (lat2 - lat1)*Math.PI/180 ;
@@ -173,20 +169,7 @@ public class LlamaCitas extends Observable {
 			double a = Math.pow(Math.sin(dlat/2),2) + Math.cos(lat1R) * Math.cos(lat2R) * Math.pow(Math.sin(dlon/2),2);
 			double ca = 2 * Math.atan2( Math.sqrt(a), Math.sqrt(1-a) ) ;
 			cuantaDist = 6371.000 * ca;
-			
-=======
-			
-			double dlon = (lon2 - lon1)*Math.PI/180;
-			double dlat = (lat2 - lat1)*Math.PI/180 ;
-			double lat1R = lat1*Math.PI/180;
-			double lat2R=lat2*Math.PI/180;
-			double a = Math.pow(Math.sin(dlat/2),2) + Math.cos(lat1R) * Math.cos(lat2R) * Math.pow(Math.sin(dlon/2),2);
-			double ca = 2 * Math.atan2( Math.sqrt(a), Math.sqrt(1-a) ) ;
-			cuantaDist = 6371.000 * ca;
-			
->>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
-
-			
+				
 
 			System.out.println(cuantaDist);
 			System.out.println(distancia);

@@ -20,8 +20,10 @@ public class MainView extends JPanel
 	private ListaSimplementeEnlazada<AppView> stack;
 	private ActionBar actionBar;
 	private AppView viewPort;
+	private AppView navigationDrawer;
 	
 	private boolean actionBarInit = false;
+	private boolean navigationDrawerAct = false;
 	
 	private String loggedUser = null;
 	private String password = null;
@@ -56,6 +58,8 @@ public class MainView extends JPanel
 		}
 		
 		stack.addAlFinal(viewPort);
+		navigationDrawer = new NavigationDrawer(this);
+		navigationDrawer.setBounds(0, 48, 167, 234);
 	}
 	
 	public void updateView(ViewType type)
@@ -156,10 +160,31 @@ public class MainView extends JPanel
 				actionBar.setViewTitle(viewPort.getTitle());
 				actionBar.repaint();
 			}
+		}	
+	}
+	
+	public void showDrawer() 
+	{
+		if(!navigationDrawerAct)
+		{
+			navigationDrawerAct = true;
+			add(navigationDrawer);
+			navigationDrawer.repaint();
+		}
+		else
+		{
+			navigationDrawerAct = false;
+			remove(navigationDrawer);
+			repaint();
 		}
 		
+	}
+	
+	public void menuSelection(ViewType viewType) 
+	{
 		
 	}
+	
 
 	public boolean queryUserName(String username) 
 	{
@@ -190,6 +215,8 @@ public class MainView extends JPanel
 		password = userInfo.getValue("password");
 		updateView(AppView.ViewType.MAIN_MENU_VIEW);
 	}
+
+
 	
 
 }

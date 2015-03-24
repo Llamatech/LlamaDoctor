@@ -155,7 +155,7 @@ public class ActionBar extends JPanel implements ActionListener
 		}
 		else if(e.getActionCommand().equals(DRAWER))
 		{
-			//TODO
+			mainView.showDrawer();
 		}
 		
 	}

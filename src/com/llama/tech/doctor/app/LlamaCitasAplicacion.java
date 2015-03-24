@@ -2,7 +2,10 @@ package com.llama.tech.doctor.app;
 
 import javax.swing.JPanel;
 
+<<<<<<< HEAD
 import com.llama.tech.doctor.app.gui.MainView;
+=======
+>>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
 import com.llama.tech.doctor.maps.PruebaMapas;
 import com.llama.tech.doctor.mundo.LlamaCitas;
 
@@ -20,7 +23,11 @@ public class LlamaCitasAplicacion implements IAplicacion {
 	/**
 	 * Panel principal del componente
 	 */
+<<<<<<< HEAD
 	private MainView panel;
+=======
+	private PruebaMapas panel;
+>>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
 	
 	
 	/**
@@ -52,8 +59,13 @@ public class LlamaCitasAplicacion implements IAplicacion {
 
 	@Override
 	public void iniciarEjecucion() {
+<<<<<<< HEAD
 		//mundo = new LlamaCitas(core);
 		panel = new MainView();
+=======
+		mundo = new LlamaCitas(core);
+		panel = new PruebaMapas(mundo);
+>>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
 		
 	}
 

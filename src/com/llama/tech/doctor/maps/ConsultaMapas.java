@@ -20,7 +20,7 @@ public class ConsultaMapas {
 
 		String direccion = "";
 
-		direccion = "http://maps.googleapis.com/maps/api/staticmap?center="+info+"&zoom="+zoom+"&size=400x400&sensor=false&markers=color:red%7C"+info;
+		direccion = "http://maps.googleapis.com/maps/api/staticmap?center="+info+"&zoom="+zoom+"&size=340x400&sensor=false&markers=color:red%7C"+info;
 
 		BufferedImage imagen = ImageIO.read(new URL(direccion));
 		ImageIcon ic = new ImageIcon(imagen);
@@ -30,7 +30,7 @@ public class ConsultaMapas {
 	//Si hay latlon se recibe lat,lon
 	public static ImageIcon darMapaVisitados(String[] location, int zoom) throws MalformedURLException, IOException
 	{
-		String direccion = "http://maps.googleapis.com/maps/api/staticmap?zoom="+zoom+"&size=450x350&maptype=roadmap";
+		String direccion = "http://maps.googleapis.com/maps/api/staticmap?zoom="+zoom+"&size=345x350&maptype=roadmap";
 		char c = 'A';
 
 		for(String s : location)
@@ -43,6 +43,36 @@ public class ConsultaMapas {
 			ss.append(s.split(":")[0]);
 			direccion+=ss.toString();
 			c++;
+		}
+		System.out.println(direccion);
+		BufferedImage imagen = ImageIO.read(new URL(direccion));
+		ImageIcon ic = new ImageIcon(imagen);
+		return ic;
+	}
+
+	public static ImageIcon darMapaVisitadosRestringido(String[] location, int zoom, int N) throws MalformedURLException, IOException
+	{
+		String direccion = "http://maps.googleapis.com/maps/api/staticmap?zoom="+zoom+"&size=345x350&maptype=roadmap";
+		char c = 'A';
+		int i =1;
+
+		for(String s : location)
+		{
+			if(s!=null)
+			{
+				if(i>N)
+					break;
+				StringBuilder ss = new StringBuilder();
+				ss.append("&markers=color:red");
+				ss.append("%7Clabel:");
+				ss.append(c);
+				ss.append("%7C");
+				ss.append(s.split(":")[0]);
+				direccion+=ss.toString();
+				c++;
+				i++;
+			}
+
 		}
 		System.out.println(direccion);
 		BufferedImage imagen = ImageIO.read(new URL(direccion));

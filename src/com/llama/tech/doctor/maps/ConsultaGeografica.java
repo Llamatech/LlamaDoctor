@@ -4,8 +4,10 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
+import java.nio.file.Files;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -26,7 +28,15 @@ public class ConsultaGeografica
 	public ConsultaGeografica() throws IOException, UnhashableTypeException
 	{
 		globalInfo = new LlamaDict<String, LlamaDict<String, String>>(20);
+		
+		
+//		File f = new File(getClass().getClassLoader().getResource(FILE_PATH).getFile());
+//		
 		File f = new File(FILE_PATH);
+		if (!f.exists()) {
+		    InputStream link = (getClass().getClassLoader().getResourceAsStream(FILE_PATH));
+		    Files.copy(link, f.getAbsoluteFile().toPath());
+		}
 		
 		FileReader fr = new FileReader(f);
 		CSVReader reader = new CSVReader(fr);

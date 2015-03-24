@@ -10,11 +10,12 @@ import java.net.MalformedURLException;
 
 import javax.swing.JButton;
 import javax.swing.JDialog;
+import javax.swing.JInternalFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-public class DialogoMapaUnico extends JDialog implements ActionListener {
+public class DialogoMapaUnico extends JInternalFrame implements ActionListener {
 
 	private JButton btnZoomIn;
 	private JButton btnZoomOut;
@@ -26,7 +27,7 @@ public class DialogoMapaUnico extends JDialog implements ActionListener {
 	{
 		this.info=info;
 		setLayout(new BorderLayout());
-		setSize(new Dimension(500,500));
+		setSize(new Dimension(350,400));
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		lblMapa = new JLabel();
 		mostrarMapaLocation();

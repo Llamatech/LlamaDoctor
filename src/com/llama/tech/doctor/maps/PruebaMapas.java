@@ -35,10 +35,15 @@ import javax.swing.JScrollPane;
 
 import uniandes.cupi2.cupIphone.componentes.IAplicacion;
 import uniandes.cupi2.cupIphone.core.ICore;
+<<<<<<< HEAD
+
+public class PruebaMapas extends JPanel implements ActionListener, Observer{
+=======
+>>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
 
 public class PruebaMapas extends JPanel implements ActionListener, Observer{
 
-	LlamaArrayList<String> visitados = new LlamaArrayList<String>(60);
+	LlamaArrayList<String> visitados;
 	String[] anteriores;
 
 	public final static int VISITADOS =1;
@@ -49,6 +54,7 @@ public class PruebaMapas extends JPanel implements ActionListener, Observer{
 	public final static String POSTCODE = "Codigo Postal";
 
 	private int zoomAnteriores=6;
+<<<<<<< HEAD
 	private JButton btnZoomIn;
 	private JButton btnZoomOut;
 	private JButton btnAgregarUbicacion;
@@ -56,10 +62,28 @@ public class PruebaMapas extends JPanel implements ActionListener, Observer{
 	private JLabel lblMapa;
 	private JLabel lblTitulo;
 	private JButton btnMostrarConsultoriosCercanos;
+=======
+
+>>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
 	private int estadoActual;
 	private String tipoBusqueda;
 	private String ubicacionActual;
 
+<<<<<<< HEAD
+=======
+	JLabel lblTiempocarga;
+	JLabel lbltotalconsultorios ;
+	JLabel lblTitulo ;
+	JLabel lblMapa;
+	JScrollPane scrollPane ;
+	JTextArea textArea ;
+	JButton btnZoomIn ;
+	JButton btnRefrescarLugaresRecientes ;
+	JButton btnZoomOut;
+	JButton btnAgregarUbicacion ;
+	JButton btnMostrarConsultoriosCercanos ;
+
+>>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
 	/**
 	 * Modelo
 	 */
@@ -73,19 +97,53 @@ public class PruebaMapas extends JPanel implements ActionListener, Observer{
 
 	public PruebaMapas(LlamaCitas v)
 	{
+<<<<<<< HEAD
 //		setResizable(false);
 		mundo = v;
 //		setTitle("Ver location");
 		setSize(new Dimension(380, 700));
 //		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		getRootPane().setLayout(new FormLayout(new ColumnSpec[] {
+=======
+		//		setResizable(false);
+		mundo = v;
+		//		mundo = new LlamaCitas();
+		visitados = new LlamaArrayList<String>(60);
+		//		setTitle("Ver location");
+		setSize(new Dimension(350, 500));
+		//		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+
+
+		mundo.addObserver(this);
+		setLayout(new FormLayout(new ColumnSpec[] {
+				FormFactory.RELATED_GAP_COLSPEC,
+				ColumnSpec.decode("default:grow"),
+				FormFactory.RELATED_GAP_COLSPEC,
+				FormFactory.DEFAULT_COLSPEC,
+				FormFactory.RELATED_GAP_COLSPEC,
+				FormFactory.DEFAULT_COLSPEC,
+				FormFactory.RELATED_GAP_COLSPEC,
+				FormFactory.DEFAULT_COLSPEC,
+				FormFactory.RELATED_GAP_COLSPEC,
+				FormFactory.DEFAULT_COLSPEC,
+				FormFactory.RELATED_GAP_COLSPEC,
+				FormFactory.DEFAULT_COLSPEC,
+				FormFactory.RELATED_GAP_COLSPEC,
+				FormFactory.DEFAULT_COLSPEC,
+				FormFactory.RELATED_GAP_COLSPEC,
+				FormFactory.DEFAULT_COLSPEC,
+>>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
 				FormFactory.RELATED_GAP_COLSPEC,
 				ColumnSpec.decode("max(45dlu;default):grow"),
 				FormFactory.RELATED_GAP_COLSPEC,
 				ColumnSpec.decode("max(40dlu;default)"),
 				FormFactory.RELATED_GAP_COLSPEC,
+<<<<<<< HEAD
 				ColumnSpec.decode("left:max(18dlu;default)"),
 				FormFactory.RELATED_GAP_COLSPEC,},
+=======
+				FormFactory.DEFAULT_COLSPEC,},
+>>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
 				new RowSpec[] {
 				FormFactory.RELATED_GAP_ROWSPEC,
 				FormFactory.DEFAULT_ROWSPEC,
@@ -96,7 +154,25 @@ public class PruebaMapas extends JPanel implements ActionListener, Observer{
 				FormFactory.RELATED_GAP_ROWSPEC,
 				FormFactory.DEFAULT_ROWSPEC,
 				FormFactory.RELATED_GAP_ROWSPEC,
+<<<<<<< HEAD
 				RowSpec.decode("max(254dlu;default)"),
+=======
+				FormFactory.DEFAULT_ROWSPEC,
+				FormFactory.RELATED_GAP_ROWSPEC,
+				FormFactory.DEFAULT_ROWSPEC,
+				FormFactory.RELATED_GAP_ROWSPEC,
+				FormFactory.DEFAULT_ROWSPEC,
+				FormFactory.RELATED_GAP_ROWSPEC,
+				FormFactory.DEFAULT_ROWSPEC,
+				FormFactory.RELATED_GAP_ROWSPEC,
+				FormFactory.DEFAULT_ROWSPEC,
+				FormFactory.RELATED_GAP_ROWSPEC,
+				FormFactory.DEFAULT_ROWSPEC,
+				FormFactory.RELATED_GAP_ROWSPEC,
+				FormFactory.DEFAULT_ROWSPEC,
+				FormFactory.RELATED_GAP_ROWSPEC,
+				FormFactory.DEFAULT_ROWSPEC,
+>>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
 				FormFactory.RELATED_GAP_ROWSPEC,
 				FormFactory.DEFAULT_ROWSPEC,
 				FormFactory.RELATED_GAP_ROWSPEC,
@@ -104,11 +180,14 @@ public class PruebaMapas extends JPanel implements ActionListener, Observer{
 				FormFactory.RELATED_GAP_ROWSPEC,
 				FormFactory.DEFAULT_ROWSPEC,
 				FormFactory.RELATED_GAP_ROWSPEC,
+				RowSpec.decode("max(14dlu;default)"),
+				FormFactory.RELATED_GAP_ROWSPEC,
 				FormFactory.DEFAULT_ROWSPEC,
 				FormFactory.RELATED_GAP_ROWSPEC,
 				FormFactory.DEFAULT_ROWSPEC,}));
 
 		lblTiempocarga = new JLabel("");
+<<<<<<< HEAD
 		getRootPane().add(lblTiempocarga, "2, 2, 5, 1");
 
 		lbltotalconsultorios = new JLabel("");
@@ -119,11 +198,57 @@ public class PruebaMapas extends JPanel implements ActionListener, Observer{
 
 		lblMapa = new JLabel("");
 		getRootPane().add(lblMapa, "2, 10, 5, 1");
+=======
+		add(lblTiempocarga, "2, 2, 19, 1");
+
+		lbltotalconsultorios = new JLabel("");
+		add(lbltotalconsultorios, "2, 4, 19, 1");
+
+
+		lblTitulo = new JLabel("");
+		add(lblTitulo, "2, 6, 19, 1");
+
+		 lblMapa = new JLabel("");
+		add(lblMapa, "2, 7, 19, 20");
+
+		 scrollPane = new JScrollPane();
+		add(scrollPane, "2, 28, 19, 3, fill, fill");
+
+		 textArea = new JTextArea();
+		textArea.setEditable(false);
+		scrollPane.setViewportView(textArea);
+
+		 btnZoomIn = new JButton("Zoom In");
+		add(btnZoomIn, "2, 32, 5, 1");
+
+		 btnRefrescarLugaresRecientes = new JButton("Lugares Recientes");
+		add(btnRefrescarLugaresRecientes, "8, 32, 13, 1");
+
+		 btnZoomOut = new JButton("Zoom Out");
+		add(btnZoomOut, "2, 34, 5, 1");
+
+		 btnAgregarUbicacion = new JButton("Actualizar Ubicacion\n");
+		add(btnAgregarUbicacion, "8, 34, 13, 1");
+
+		 btnMostrarConsultoriosCercanos = new JButton("Consultorios Cercanos");
+		add(btnMostrarConsultoriosCercanos, "8, 36, 13, 1");
+
+		lblTiempocarga = new JLabel("");
+
+
+		lbltotalconsultorios = new JLabel("");
+
+
+		lblTitulo = new JLabel("");
+
+
+>>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
 
 		btnZoomOut = new JButton("Zoom Out");
 		btnZoomOut.addActionListener(this);
 
 		scrollPane = new JScrollPane();
+<<<<<<< HEAD
 		getRootPane().add(scrollPane, "2, 12, 5, 3, fill, fill");
 
 		textArea = new JTextArea();
@@ -131,28 +256,51 @@ public class PruebaMapas extends JPanel implements ActionListener, Observer{
 		scrollPane.setViewportView(textArea);
 		btnZoomOut.setActionCommand("OUT");
 		getRootPane().add(btnZoomOut, "2, 16");
+=======
+
+		textArea = new JTextArea();
+		textArea.setEditable(false);
+		btnZoomOut.setActionCommand("OUT");
+>>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
 
 		btnZoomIn = new JButton("Zoom In");
 		btnZoomIn.addActionListener(this);
 
+<<<<<<< HEAD
 		btnRefrescarLugaresRecientes = new JButton("Lugares Recientes");
 		btnRefrescarLugaresRecientes.addActionListener(this);
 		btnRefrescarLugaresRecientes.setActionCommand("REFRESCAR");
 		getRootPane().add(btnRefrescarLugaresRecientes, "4, 16");
 		btnZoomIn.setActionCommand("IN");
 		getRootPane().add(btnZoomIn, "2, 18");
+=======
+		btnRefrescarLugaresRecientes.addActionListener(this);
+		btnRefrescarLugaresRecientes.setActionCommand("REFRESCAR");
+>>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
 
-		btnAgregarUbicacion = new JButton("Agregar Ubicacion");
+		btnZoomIn.setActionCommand("IN");
+
+
 		btnAgregarUbicacion.setActionCommand("AGREGAR");
 		btnAgregarUbicacion.addActionListener(this);
 		getRootPane().add(btnAgregarUbicacion, "4, 18");
 
+<<<<<<< HEAD
 		btnMostrarConsultoriosCercanos = new JButton("Consultorios Cercanos");
 		btnMostrarConsultoriosCercanos.setActionCommand("CERCA");
 		btnMostrarConsultoriosCercanos.addActionListener(this);
 		getRootPane().add(btnMostrarConsultoriosCercanos, "4, 20");
 
 		mundo.addObserver(this);
+=======
+
+		btnMostrarConsultoriosCercanos.setActionCommand("CERCA");
+		btnMostrarConsultoriosCercanos.addActionListener(this);
+>>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
+
+		lblTiempocarga.setText("El tiempo de carga fue de: "+ mundo.getTiempoCarga()+ " milisegundos");
+		lbltotalconsultorios.setText("El total de consultorios es de: "+ mundo.getTotalConsultorios());
+
 
 		lblTiempocarga.setText("El tiempo de carga fue de: "+ mundo.getTiempoCarga()+ " milisegundos");
 		lbltotalconsultorios.setText("El total de consultorios es de: "+ mundo.getTotalConsultorios());
@@ -184,15 +332,21 @@ public class PruebaMapas extends JPanel implements ActionListener, Observer{
 		int N = Integer.parseInt(JOptionPane.showInputDialog("Introduzca el número máximo de ubicaciones a visualizar"));
 		estadoActual=VISITADOS;
 		lblTitulo.setText("Lugares recientemente agregados");
-		String[] info = new String[visitados.size()];
+		String[] info = new String[Math.min(visitados.size(),N)];
 		String infis = "";
 		char marcador = 'A';
+		int p=0;
 
+<<<<<<< HEAD
 		for(int i =0;i<visitados.size()&&i<N;i++)
+=======
+		for(int i =visitados.size()-1;i>=0&&p<N;i--)
+>>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
 		{
-			info[i]=visitados.get(i);
+			info[p]=visitados.get(i);
 			infis+=marcador+": "+visitados.get(i)+"\n";
 			marcador++;
+			p++;
 		}
 
 		textArea.setText(infis);
@@ -254,8 +408,10 @@ public class PruebaMapas extends JPanel implements ActionListener, Observer{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		System.out.println("llegue");
 		if(e.getActionCommand().equals("AGREGAR"))
 		{
+			System.out.println("agregarrr");
 			try {
 				mostrarMapaLocation();
 			} catch (IOException e1) {
@@ -307,10 +463,17 @@ public class PruebaMapas extends JPanel implements ActionListener, Observer{
 		}
 	}
 
+<<<<<<< HEAD
 //	public static void main(String[] args) {
 //		PruebaMapas pm = new PruebaMapas();
 //		pm.setVisible(true);
 //	}
+=======
+	public static void main(String[] args) {
+		PruebaMapas pm = new PruebaMapas(new LlamaCitas());
+		pm.setVisible(true);
+	}
+>>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
 
 	@Override
 	public void update(Observable o, Object inf) {
@@ -337,7 +500,11 @@ public class PruebaMapas extends JPanel implements ActionListener, Observer{
 
 	}
 
+<<<<<<< HEAD
 	public class DialogoEscoger extends JDialog implements ActionListener
+=======
+	public class DialogoEscoger extends JInternalFrame implements ActionListener
+>>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
 	{
 		private JComboBox<String> escogedor;
 		private JLabel mensaje;
@@ -372,7 +539,11 @@ public class PruebaMapas extends JPanel implements ActionListener, Observer{
 				String info=JOptionPane.showInputDialog("Introduzca el criterio de búsqueda");
 				ubicacionActual = info;
 
+<<<<<<< HEAD
 				visitados.addAlPrincipio(ubicacionActual);
+=======
+				visitados.addAlFinal(ubicacionActual);
+>>>>>>> e0bf8698b33a4127972e26bd9a0b45611d5a4f60
 
 				DialogoMapaUnico jd;
 				try {

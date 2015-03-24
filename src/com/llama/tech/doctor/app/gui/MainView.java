@@ -182,7 +182,19 @@ public class MainView extends JPanel
 	
 	public void menuSelection(ViewType viewType) 
 	{
-		
+		if(viewPort.getType() == viewType)
+		{
+			showDrawer();
+		}
+		else
+		{
+			if(viewType.equals(AppView.ViewType.MAIN_MENU_VIEW))
+			{
+				showDrawer();
+				stack.clear();
+				updateView(viewType);
+			}
+		}
 	}
 	
 

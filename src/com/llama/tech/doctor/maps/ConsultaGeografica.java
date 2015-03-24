@@ -14,11 +14,12 @@ import com.llama.tech.utils.dict.LlamaDict;
 import com.llama.tech.utils.dict.LlamaDict.UnhashableTypeException;
 import com.opencsv.CSVReader;
 
+
 public class ConsultaGeografica 
 {
 	private static final String BASE_URL = "http://api.geonames.org/postalCodeLookupJSON?postalcode=%s&country=%s&username=andfoy";
 	private static final String BASE_WIKIPEDIA_URL = "http://api.geonames.org/wikipediaSearchJSON?q=%s&maxRows=10&username=andfoy";
-	private static final String FILE_PATH = "./data/countryPostCodeInfo.csv";
+	private static final String FILE_PATH = "data/countryPostCodeInfo.csv";
 	private String[] searchFields;
 	private LlamaDict<String, LlamaDict<String, String>> globalInfo;
 	
@@ -76,6 +77,7 @@ public class ConsultaGeografica
     
     private static String getJSONFormat(URL urlReq) throws IOException
 	{
+    	System.out.println(urlReq);
 		StringBuilder sb = new StringBuilder();
 		try(BufferedReader in = new BufferedReader(new InputStreamReader(urlReq.openStream())))
 		{

@@ -2,6 +2,7 @@ package com.llama.tech.doctor.app.gui;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Point;
 import java.net.URISyntaxException;
 
 import javax.swing.JPanel;
@@ -27,6 +28,7 @@ public class MainView extends JPanel
 	
 	private String loggedUser = null;
 	private String password = null;
+	private LlamaDict<String, String> location = null;
 	
 	public MainView() 
 	{
@@ -128,6 +130,22 @@ public class MainView extends JPanel
 			actionBar.setNavigationButton(false);
 			actionBar.repaint();
 		}
+		else if(type == ViewType.LOCATION_VIEW)
+		{
+			remove(viewPort);
+			viewPort = new LocationView(this, location);
+			viewPort.setSize(new Dimension(328, 441));
+			viewPort.setPreferredSize(new Dimension(328, 441));
+			viewPort.setMinimumSize(new Dimension(328, 441));
+			viewPort.setMaximumSize(new Dimension(328, 441));
+			viewPort.setBounds(0, 48, 328, 440);
+			add(viewPort);
+			viewPort.repaint();
+			actionBar.setViewIcon(viewPort.getIcon());
+			actionBar.setViewTitle(viewPort.getTitle());
+			actionBar.setNavigationButton(false);
+			actionBar.repaint();
+		}
 	}
 
 	public void returnView() 
@@ -188,18 +206,17 @@ public class MainView extends JPanel
 		}
 		else
 		{
-			if(viewType.equals(AppView.ViewType.MAIN_MENU_VIEW))
-			{
-				showDrawer();
-				stack.clear();
-				updateView(viewType);
-			}
+			showDrawer();
+			stack.clear();
+			updateView(viewType);
+			
 		}
 	}
 	
 
 	public boolean queryUserName(String username) 
 	{
+		//Busca si un nombre de usuario existe
 		// TODO Query user name
 		return true;
 	}
@@ -226,6 +243,18 @@ public class MainView extends JPanel
 		loggedUser = userInfo.getValue("usuario");
 		password = userInfo.getValue("password");
 		updateView(AppView.ViewType.MAIN_MENU_VIEW);
+	}
+
+	public void changeLocation() 
+	{
+		//Llaves posibles:
+		//   1. latitud y longitud, si no existen, entonces, 2.
+		//   2. codigoPostal, si no existe, entonces, 3.
+		//   3. ciudad, debe existir si es la última instancia
+		LlamaDict<String, String> locInfo = viewPort.getViewFormInfo();
+		//TODO Change Location
+		
+		
 	}
 
 

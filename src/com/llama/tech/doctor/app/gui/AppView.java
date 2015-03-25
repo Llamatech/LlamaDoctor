@@ -18,6 +18,12 @@ public abstract class AppView extends JPanel implements Comparable<AppView>
 		TOS_VIEW,
 		SIGN_UP_VIEW,
 		MAIN_MENU_VIEW,
+		LOCATION_VIEW,
+		LOCATION_SELECTION_VIEW,
+		APPOINTMENTS_VIEW,
+		OFFICES_VIEW,
+		HISTORY_VIEW,
+		ACCOUNT_VIEW,
 		NAVIGATOR
 	}
 	
@@ -31,6 +37,7 @@ public abstract class AppView extends JPanel implements Comparable<AppView>
 	public static final String IMG_PATH = "res/assets/";
 	public static final String FONT_PATH = "res/font/";
 	public static final Color backgroundColor = new Color(233,233,233);
+	public static final Color opaqueBackground = new Color(0,0,0,128);
 	
 	protected ClassLoader classLoader = this.getClass().getClassLoader();
 	protected ViewType id;
@@ -38,6 +45,7 @@ public abstract class AppView extends JPanel implements Comparable<AppView>
 	protected String viewTitle;
 	protected MainView mainView;
 	protected LlamaDict<String,String> viewInfo;
+	protected Object pushedInfo;
 	
 	
 	public Icon getIcon()
@@ -60,6 +68,10 @@ public abstract class AppView extends JPanel implements Comparable<AppView>
 		return viewInfo;
 	}
 	
+	public void pushInfo(Object o)
+	{
+		pushedInfo = o;
+	}
 	
 	@Override
 	public int compareTo(AppView o)

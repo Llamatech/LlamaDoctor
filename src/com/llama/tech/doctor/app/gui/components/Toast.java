@@ -49,7 +49,7 @@ public class Toast extends JDialog {
 	public static final Color ERROR_RED = new Color(121, 0, 0);
 	public static final Color SUCCESS_GREEN = new Color(22, 127, 57);
 	public static final Color NORMAL_BLACK = new Color(0, 0, 0);
-	private final float MAX_OPACITY = 0.5f;
+	private final float MAX_OPACITY = 0.8f;
 	private final float OPACITY_INCREMENT = 0.05f;
 	private final int FADE_REFRESH_RATE = 20;
 	private final int WINDOW_RADIUS = 15;

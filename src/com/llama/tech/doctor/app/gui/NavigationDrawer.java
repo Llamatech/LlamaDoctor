@@ -107,6 +107,22 @@ public class NavigationDrawer extends AppView implements ActionListener
         {
      	    mainView.menuSelection(ViewType.MAIN_MENU_VIEW);
         }
+        else if(e.getActionCommand().equals(LOCATION))
+        {
+     	    mainView.menuSelection(ViewType.LOCATION_VIEW);
+        }
+        else if(e.getActionCommand().equals(APPOINTMENTS))
+        {
+     	    mainView.menuSelection(ViewType.APPOINTMENTS_VIEW);
+        }
+        else if(e.getActionCommand().equals(OFFICES))
+        {
+     	    mainView.menuSelection(ViewType.OFFICES_VIEW);
+        }
+        else if(e.getActionCommand().equals(ACCOUNT))
+        {
+     	    mainView.menuSelection(ViewType.ACCOUNT_VIEW);
+        }
 		
 	}
 	

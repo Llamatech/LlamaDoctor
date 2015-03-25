@@ -76,54 +76,54 @@ public class AppointmentListView extends AppView implements ActionListener, List
 	    list = new JList<Cita>();
 	    list.setModel(model);
 	    list.addListSelectionListener(this);
-	    list.setBounds(50, 23, 224, 181);
+	    list.setBounds(34, 23, 260, 141);
 	    list.setBackground(backgroundColor);
 	    list.setFont(font);
 	    add(list);
 	    
 	    JLabel lblNombreProfesional = new JLabel("Nombre Profesional:");
 	    lblNombreProfesional.setFont(font);
-	    lblNombreProfesional.setBounds(50, 216, 194, 19);
+	    lblNombreProfesional.setBounds(50, 200, 194, 19);
 	    add(lblNombreProfesional);
 	    
 	    textDoctor = new LlamaTextField();
 	    textDoctor.setEditable(false);
 	    textDoctor.setFont(font);
-	    textDoctor.setBounds(50, 233, 224, 19);
+	    textDoctor.setBounds(50, 217, 224, 19);
 	    add(textDoctor);
 	    textDoctor.setColumns(10);
 	    
 	    JLabel lblFecha = new JLabel("Fecha:");
 	    lblFecha.setFont(font);
-	    lblFecha.setBounds(50, 264, 185, 19);
+	    lblFecha.setBounds(50, 244, 185, 19);
 	    add(lblFecha);
 	    
 	    textDate = new LlamaTextField();
 	    textDate.setEditable(false);
 	    textDate.setFont(font);
-	    textDate.setBounds(50, 280, 224, 19);
+	    textDate.setBounds(50, 264, 224, 19);
 	    add(textDate);
 	    textDate.setColumns(10);
 	    
 	    JLabel lblHora = new JLabel("Hora:");
 	    lblHora.setFont(null);
-	    lblHora.setBounds(50, 311, 185, 19);
+	    lblHora.setBounds(50, 295, 185, 19);
 	    add(lblHora);
 	    
 	    textHour = new LlamaTextField();
 	    textHour.setFont(null);
 	    textHour.setEditable(false);
 	    textHour.setColumns(10);
-	    textHour.setBounds(50, 331, 224, 19);
+	    textHour.setBounds(50, 315, 224, 19);
 	    add(textHour);
 	    
-	    URL icon = classLoader.getResource(IMG_PATH+"ic_action_go_to_today.png");
+	    URL icon = classLoader.getResource(IMG_PATH+"ic_action_back.png");
 	    ImageIcon ic = new ImageIcon(icon);
 	    
 	    JButton btnRegresar = new LlamaButton("Regresar", ic);
 	    btnRegresar.addActionListener(this);
 	    btnRegresar.setActionCommand(RETURN);
-	    btnRegresar.setBounds(50, 362, 117, 25);
+	    btnRegresar.setBounds(50, 346, 142, 25);
 	    add(btnRegresar);
 	    
 	    

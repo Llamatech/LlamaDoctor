@@ -21,7 +21,9 @@ public abstract class AppView extends JPanel implements Comparable<AppView>
 		LOCATION_VIEW,
 		LOCATION_SELECTION_VIEW,
 		APPOINTMENTS_VIEW,
+		APPOINTMENT_LIST_VIEW,
 		OFFICES_VIEW,
+		OFFICE_SEARCH_VIEW,
 		HISTORY_VIEW,
 		ACCOUNT_VIEW,
 		NAVIGATOR
@@ -71,6 +73,11 @@ public abstract class AppView extends JPanel implements Comparable<AppView>
 	public void pushInfo(Object o)
 	{
 		pushedInfo = o;
+	}
+	
+	public void verifyView()
+	{
+		
 	}
 	
 	@Override

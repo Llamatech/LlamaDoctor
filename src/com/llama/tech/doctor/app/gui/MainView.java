@@ -2,16 +2,22 @@ package com.llama.tech.doctor.app.gui;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Image;
 import java.awt.Point;
 import java.net.URISyntaxException;
+import java.time.LocalDateTime;
+import java.util.Observable;
+import java.util.Observer;
 
 import javax.swing.JPanel;
 
 import com.llama.tech.doctor.app.gui.AppView.ViewType;
+import com.llama.tech.doctor.mundo.Cita;
 import com.llama.tech.utils.dict.LlamaDict;
 import com.llama.tech.utils.list.ListaSimplementeEnlazada;
+import com.llama.tech.utils.list.LlamaArrayList;
 
-public class MainView extends JPanel
+public class MainView extends JPanel implements Observer
 {
 	/**
 	 * 
@@ -29,6 +35,7 @@ public class MainView extends JPanel
 	private String loggedUser = null;
 	private String password = null;
 	private LlamaDict<String, String> location = null;
+	private LocalDateTime localTime = LocalDateTime.now();
 	
 	public MainView() 
 	{
@@ -68,7 +75,14 @@ public class MainView extends JPanel
 	{
 		if(viewPort.getType() != ViewType.TOS_VIEW && viewPort.getType() != ViewType.SIGN_UP_VIEW)
 		{
-			stack.addAlPrincipio(viewPort);
+			if(stack.size() > 0)
+			{
+				stack.addAlPrincipio(viewPort);
+			}
+			else
+			{
+				stack.addAlFinal(viewPort);
+			}
 		}
 		if(type == ViewType.TOS_VIEW)
 		{
@@ -145,8 +159,61 @@ public class MainView extends JPanel
 			actionBar.setViewTitle(viewPort.getTitle());
 			actionBar.setNavigationButton(false);
 			actionBar.repaint();
+			viewPort.verifyView();
+		}
+		else if(type == ViewType.LOCATION_SELECTION_VIEW)
+		{
+			remove(viewPort);
+			viewPort = new LocationSelectionView(this);
+			viewPort.setSize(new Dimension(328, 441));
+			viewPort.setPreferredSize(new Dimension(328, 441));
+			viewPort.setMinimumSize(new Dimension(328, 441));
+			viewPort.setMaximumSize(new Dimension(328, 441));
+			viewPort.setBounds(0, 48, 328, 440);
+			add(viewPort);
+			viewPort.repaint();
+			actionBar.setViewIcon(viewPort.getIcon());
+			actionBar.setViewTitle(viewPort.getTitle());
+			actionBar.setNavigationButton(false);
+			actionBar.repaint();
+		}
+		else if(type == ViewType.APPOINTMENTS_VIEW)
+		{
+			remove(viewPort);
+			viewPort = new AppointmentsView(this, location, localTime);
+			viewPort.setSize(new Dimension(328, 441));
+			viewPort.setPreferredSize(new Dimension(328, 441));
+			viewPort.setMinimumSize(new Dimension(328, 441));
+			viewPort.setMaximumSize(new Dimension(328, 441));
+			viewPort.setBounds(0, 48, 328, 440);
+			add(viewPort);
+			viewPort.repaint();
+			actionBar.setViewIcon(viewPort.getIcon());
+			actionBar.setViewTitle(viewPort.getTitle());
+			actionBar.setNavigationButton(false);
+			actionBar.repaint();
+			viewPort.verifyView();
+		}
+		else if(type == ViewType.APPOINTMENT_LIST_VIEW)
+		{
+			remove(viewPort);
+			LlamaArrayList<Cita> list = getAppointments();
+			viewPort = new AppointmentListView(this, list);
+			viewPort.setSize(new Dimension(328, 441));
+			viewPort.setPreferredSize(new Dimension(328, 441));
+			viewPort.setMinimumSize(new Dimension(328, 441));
+			viewPort.setMaximumSize(new Dimension(328, 441));
+			viewPort.setBounds(0, 48, 328, 440);
+			add(viewPort);
+			viewPort.repaint();
+			actionBar.setViewIcon(viewPort.getIcon());
+			actionBar.setViewTitle(viewPort.getTitle());
+			actionBar.setNavigationButton(false);
+			actionBar.repaint();
+			//viewPort.verifyView();
 		}
 	}
+
 
 	public void returnView() 
 	{
@@ -252,8 +319,42 @@ public class MainView extends JPanel
 		//   2. codigoPostal, si no existe, entonces, 3.
 		//   3. ciudad, debe existir si es la última instancia
 		LlamaDict<String, String> locInfo = viewPort.getViewFormInfo();
+		String latitude = locInfo.getValue("latitud");
+		String longitude = locInfo.getValue("longitud");
+		if(latitude != null && longitude != null)
+		{
+			location = locInfo;
+		}
+		else
+		{
+			//TODO Query coordinates by ZIP and City
+			location = locInfo; // → Las llaves con latitud y longitud
+		}
 		//TODO Change Location
+        
+		returnView();
+		updateLocationMap();
 		
+	}
+
+	private void updateLocationMap() 
+	{
+		//TODO Get Map
+		Image im = null;
+		viewPort.pushInfo(im);
+		viewPort.repaint();
+	}
+	
+	private LlamaArrayList<Cita> getAppointments() 
+	{
+		//TODO Get Appointments
+		return new LlamaArrayList<Cita>(2);
+	}
+
+	@Override
+	public void update(Observable o, Object arg) 
+	{
+		// TODO Auto-generated method stub
 		
 	}
 

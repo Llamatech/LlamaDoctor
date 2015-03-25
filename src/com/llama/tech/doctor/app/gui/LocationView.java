@@ -29,8 +29,11 @@ public class LocationView extends AppView implements ActionListener
 	private LlamaDict<String, String> location;
 	private JTextField textField;
 	private JTextField textField_1;
-	private JButton btnNewButton;
-	private JButton btnRegregsar;
+	private JButton btnModificarUbicacion;
+	private JButton btnRegresar;
+	
+	private static final String MODIFY = "Modify";
+	private static final String BACK = "Bach";
 	
 	public LocationView(MainView main, LlamaDict<String, String> location)
 	{
@@ -59,21 +62,21 @@ public class LocationView extends AppView implements ActionListener
 		}
 		
 		mapPanel = new LlamaMapComponent(this);
-		mapPanel.setBounds(29, 30, 270, 213);
+		mapPanel.setBounds(29, 12, 270, 213);
 		add(mapPanel);
 		
 		JLabel lblNewLabel = new JLabel("Ciudad:");
 		lblNewLabel.setFont(font);
-		lblNewLabel.setBounds(49, 279, 70, 15);
+		lblNewLabel.setBounds(49, 246, 70, 15);
 		add(lblNewLabel);
 		
 		JLabel lblCdigoPostal = new JLabel("Código postal:");
 		lblCdigoPostal.setFont(font);
-		lblCdigoPostal.setBounds(49, 306, 107, 15);
+		lblCdigoPostal.setBounds(49, 273, 107, 15);
 		add(lblCdigoPostal);
 		
 		textField = new LlamaTextField();
-		textField.setBounds(174, 277, 114, 19);
+		textField.setBounds(174, 244, 114, 19);
 		textField.setEditable(false);
 		textField.setFont(font);
 		add(textField);
@@ -81,7 +84,7 @@ public class LocationView extends AppView implements ActionListener
 		
 		textField_1 = new LlamaTextField();
 		textField_1.setEditable(false);
-		textField_1.setBounds(174, 304, 114, 19);
+		textField_1.setBounds(174, 271, 114, 19);
 		textField_1.setFont(font);
 		add(textField_1);
 		textField_1.setColumns(10);
@@ -89,16 +92,39 @@ public class LocationView extends AppView implements ActionListener
 		URL icon = classLoader.getResource(IMG_PATH+"ic_action_forward.png");
 		ImageIcon ic = new ImageIcon(icon);
 		
-		btnNewButton = new LlamaButton("¡Un momento, ya no estoy aquí!");
-		btnNewButton.setBounds(29, 352, 270, 25);
-		add(btnNewButton);
+		btnModificarUbicacion = new LlamaButton("¡Un momento, ya no estoy aquí!");
+		btnModificarUbicacion.setBounds(18, 317, 270, 25);
+		btnModificarUbicacion.addActionListener(this);
+		btnModificarUbicacion.setActionCommand(MODIFY);
+		add(btnModificarUbicacion);
 		
 		icon = classLoader.getResource(IMG_PATH+"ic_action_back.png");
 		ic = new ImageIcon(icon);
 		
-		btnRegregsar = new LlamaButton("Regresar", ic);
-		btnRegregsar.setBounds(29, 389, 117, 25);
-		add(btnRegregsar);
+		btnRegresar = new LlamaButton("Regresar", ic);
+		btnRegresar.setBounds(18, 354, 270, 25);
+		btnRegresar.addActionListener(this);
+		btnRegresar.setActionCommand(BACK);
+		add(btnRegresar);
+	
+	}
+	
+	@Override
+	public void verifyView()
+	{
+		
+		InputStream resource = classLoader.getResourceAsStream(FONT_PATH
+				+ "Roboto-Regular.ttf");
+		Font font = null;
+		try 
+		{
+			font = Font.createFont(Font.TRUETYPE_FONT, resource);
+			font = font.deriveFont(13F);
+		} 
+		catch (IOException | FontFormatException e) 
+		{
+			e.printStackTrace();
+		}
 		
 		JFrame parent = null;
 		Container c = this.getParent();
@@ -109,14 +135,11 @@ public class LocationView extends AppView implements ActionListener
 		if (c != null) 
 		{
 			parent = ((JFrame) c);
+			if(location == null)
+			{
+				Toast.makeText(parent, "   Debe seleccionar una ubicación válida para usar la aplicación   ", font).display();
+			}
 		}
-		
-		if(location == null)
-		{
-			Toast.makeText(parent, "   Debe definir su ubicación para poder usar la aplicación   ", font).display();
-			mainView.updateView(ViewType.LOCATION_SELECTION_VIEW);
-		}
-		
 	}
 	
 	@Override
@@ -130,7 +153,14 @@ public class LocationView extends AppView implements ActionListener
 	@Override
 	public void actionPerformed(ActionEvent e) 
 	{
-		// TODO Auto-generated method stub
+		if(e.getActionCommand().equals(BACK))
+		{
+			mainView.returnView();
+		}
+		else if(e.getActionCommand().equals(MODIFY))
+		{
+			mainView.updateView(ViewType.LOCATION_SELECTION_VIEW);
+		}
 		
 	}
 }

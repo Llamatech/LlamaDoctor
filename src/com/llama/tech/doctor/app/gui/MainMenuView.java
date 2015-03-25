@@ -13,6 +13,7 @@ import javax.swing.SwingConstants;
 import javax.swing.JButton;
 import javax.swing.border.EtchedBorder;
 
+import com.llama.tech.doctor.app.gui.AppView.ViewType;
 import com.llama.tech.doctor.app.gui.components.LlamaButton;
 
 import java.awt.event.ActionListener;
@@ -118,8 +119,28 @@ public class MainMenuView extends AppView implements ActionListener
 	}
 
 	@Override
-	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
+	public void actionPerformed(ActionEvent e) 
+	{
+        if(e.getActionCommand().equals(LOCATION))
+        {
+     	    mainView.updateView(ViewType.LOCATION_VIEW);
+        }
+        else if(e.getActionCommand().equals(APPOINTMENTS))
+        {
+     	    mainView.updateView(ViewType.APPOINTMENTS_VIEW);
+        }
+        else if(e.getActionCommand().equals(OFFICES))
+        {
+     	    mainView.updateView(ViewType.OFFICES_VIEW);
+        }
+        else if(e.getActionCommand().equals(LOCATION_HISTORY))
+        {
+     	    mainView.updateView(ViewType.HISTORY_VIEW);
+        }
+        else if(e.getActionCommand().equals(ACCOUNT))
+        {
+     	    mainView.updateView(ViewType.ACCOUNT_VIEW);
+        }
 		
 	}
 }

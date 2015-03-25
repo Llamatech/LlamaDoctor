@@ -29,17 +29,18 @@ public class LlamaMapComponent extends JPanel
 		setLayout(null);
 		setBackground(new Color(233,233,233));
 		
-		URL icon = classLoader.getResource(IMG_PATH+"ic_action_overflow.png");
+		URL icon = classLoader.getResource(IMG_PATH+"ic_menu_zoom.png");
 	    ImageIcon ic = new ImageIcon(icon);
 		
-		btnZoomIn = new LlamaButton("");
+		btnZoomIn = new LlamaButton("", ic);
 		btnZoomIn.setBounds(196, 176, 25, 25);
 		btnZoomIn.setActionCommand(ZOOM_IN);
 		btnZoomIn.addActionListener(listener);
 		add(btnZoomIn);
 		
-		
-		btnZoomOut = new LlamaButton("");
+		icon = classLoader.getResource(IMG_PATH+"ic_menu_zoom_out.png");
+	    ic = new ImageIcon(icon);
+		btnZoomOut = new LlamaButton("", ic);
 		btnZoomOut.setBounds(233, 176, 25, 25);
 		btnZoomOut.setActionCommand(ZOOM_OUT);
 		btnZoomOut.addActionListener(listener);

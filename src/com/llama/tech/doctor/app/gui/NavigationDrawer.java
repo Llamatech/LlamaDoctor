@@ -64,7 +64,7 @@ public class NavigationDrawer extends AppView implements ActionListener
 		icon = classLoader.getResource(IMG_PATH+"ic_action_go_to_today.png");
 	    ic = new ImageIcon(icon);
 		
-		btnAppointments = new LlamaButton("Citas");
+		btnAppointments = new LlamaButton("Citas", ic);
 		btnAppointments.setBounds(25, 90, 117, 25);
 		btnAppointments.addActionListener(this);
 		btnAppointments.setActionCommand(APPOINTMENTS);
@@ -118,6 +118,10 @@ public class NavigationDrawer extends AppView implements ActionListener
         else if(e.getActionCommand().equals(OFFICES))
         {
      	    mainView.menuSelection(ViewType.OFFICES_VIEW);
+        }
+        else if(e.getActionCommand().equals(HISTORY))
+        {
+     	    mainView.menuSelection(ViewType.HISTORY_VIEW);
         }
         else if(e.getActionCommand().equals(ACCOUNT))
         {

@@ -25,8 +25,7 @@
 		</copy>
 	</target>
 	<target name="main-jar" depends="compile">
-		<jar jarfile="${jar.base}" manifest="${manifest.base}" basedir="${dir.bin}" />
-	<!--  	<fileset dir="." includes="data/**" /> -->
+		<jar jarfile="${jar.base}" manifest="${manifest.base}" basedir="." />
 	</target>
 	<target name = "javadoc"> 
 	<javadoc encoding="UTF-8" charset="UTF-8" docencoding="UTF-8" sourcepath="${dir.src}" destdir="${dir.docs}/javadoc" />    

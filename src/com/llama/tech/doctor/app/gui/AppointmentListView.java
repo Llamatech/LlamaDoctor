@@ -64,11 +64,10 @@ public class AppointmentListView extends AppView implements ActionListener, List
 	    setLayout(null);
 	    
 	    DefaultListModel<Cita> model = new DefaultListModel<Cita>();
-	    int i = 0;
+	    
 	    for(Cita c : appointmentList)
 	    {
-	    	model.add(i, c);
-	    	i++;
+	    	model.addElement(c);
 	    }
 	    
 	    appointmentQuantity = model.size();

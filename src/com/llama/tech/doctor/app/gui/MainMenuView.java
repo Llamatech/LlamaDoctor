@@ -45,14 +45,17 @@ public class MainMenuView extends AppView implements ActionListener
 		setLayout(null);
 		setBackground(backgroundColor);
 		
+		URL icon = classLoader.getResource(IMG_PATH+"imagen.png");
+	    ImageIcon ic = new ImageIcon(icon);
+		
 		JLabel lblNewLabel = new JLabel("Fibo");
 		lblNewLabel.setBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null));
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setBounds(81, 29, 145, 145);
 		add(lblNewLabel);
 		
-		URL icon = classLoader.getResource(IMG_PATH+"ic_action_place.png");
-	    ImageIcon ic = new ImageIcon(icon);
+		icon = classLoader.getResource(IMG_PATH+"ic_action_place.png");
+	    ic = new ImageIcon(icon);
 		
 		btnLocation = new LlamaButton("Ubicación");
 		btnLocation.setBounds(81, 186, 145, 25);

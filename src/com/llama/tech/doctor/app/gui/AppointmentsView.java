@@ -9,6 +9,7 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import javax.swing.ImageIcon;
@@ -27,19 +28,19 @@ import javax.swing.JTextField;
 
 public class AppointmentsView extends AppView implements ActionListener
 {
-	private LlamaDict<String, String> location;
-	private LocalDateTime sysHour = null; 
+	private String location;
+	private LocalDate sysHour = null; 
 	private JTextField textField;
 	
 	private static final String NEW_APPOINTMENT = "Appointment";
 	private static final String APPOINTMENT_LIST = "List";
 	private static final String RETURN_VIEW = "Return";
 	
-	public AppointmentsView(MainView main, LlamaDict<String, String> location, LocalDateTime localTime)
+	public AppointmentsView(MainView main, String location2, LocalDate localDate)
 	{
 		mainView = main;
-		this.location = location;
-		sysHour = localTime;
+		this.location = location2;
+		sysHour = localDate;
 		viewTitle = "Citas";
 		
 		URL iconURI = classLoader.getResource(IMG_PATH+"ic_action_go_to_today.png");
@@ -96,7 +97,7 @@ public class AppointmentsView extends AppView implements ActionListener
 		textField = new LlamaTextField();
 		textField.setEditable(false);
 		textField.setFont(font);
-		textField.setText(localTime.toString());
+		textField.setText(localDate.toString());
 		textField.setBounds(57, 283, 164, 19);
 		add(textField);
 		textField.setColumns(10);
@@ -160,7 +161,7 @@ public class AppointmentsView extends AppView implements ActionListener
 		}
 		else if(e.getActionCommand().equals(APPOINTMENT_LIST))
 		{
-			mainView.updateView(ViewType.APPOINTMENT_LIST_VIEW);
+			mainView.updateView(ViewType.APPOINTMENTS_DATE_SELECTION_VIEW);
 		}
 		else if(e.getActionCommand().equals(RETURN_VIEW))
 		{

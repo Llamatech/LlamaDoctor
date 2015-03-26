@@ -37,6 +37,7 @@ public class AgendarCita extends AppView implements ActionListener{
 	{
 		mainView=main;
 		viewTitle="Agendar cita";
+		consultorio = cons;
 		URL iconURI = classLoader.getResource(IMG_PATH+"ic_action_group.png");
 		viewIcon = new ImageIcon(iconURI); 
 		setBackground(backgroundColor);
@@ -98,14 +99,18 @@ public class AgendarCita extends AppView implements ActionListener{
 			}
 			else
 			{
+				System.out.println(dateChooser.getDate().toString());
 				LocalDate date = LocalDate.of(dateChooser.getDate().getYear(), dateChooser.getDate().getMonth(), dateChooser.getDate().getDate());
 				DefaultListModel<LocalTime> model = new DefaultListModel<LocalTime>();
 				int i = 0;
+				System.out.println(date.getDayOfWeek());
+				System.out.println(consultorio.darHorarioDia(date.getDayOfWeek()));
 				for(LocalTime c : consultorio.darHorarioDia(date.getDayOfWeek()).generarCitasDisponibles())
 				{
 					model.addElement( c);
 					i++;
 				}
+				list.setModel(model);
 			}
 		}
 		else if(e.getActionCommand().equals("AGENDAR"))

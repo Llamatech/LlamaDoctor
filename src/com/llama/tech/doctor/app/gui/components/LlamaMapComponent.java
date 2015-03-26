@@ -33,7 +33,7 @@ public class LlamaMapComponent extends JPanel
 	    ImageIcon ic = new ImageIcon(icon);
 		
 		btnZoomIn = new LlamaButton("", ic);
-		btnZoomIn.setBounds(196, 176, 25, 25);
+		btnZoomIn.setBounds(12, 12, 25, 25);
 		btnZoomIn.setActionCommand(ZOOM_IN);
 		btnZoomIn.addActionListener(listener);
 		add(btnZoomIn);
@@ -41,7 +41,7 @@ public class LlamaMapComponent extends JPanel
 		icon = classLoader.getResource(IMG_PATH+"ic_menu_zoom_out.png");
 	    ic = new ImageIcon(icon);
 		btnZoomOut = new LlamaButton("", ic);
-		btnZoomOut.setBounds(233, 176, 25, 25);
+		btnZoomOut.setBounds(49, 12, 25, 25);
 		btnZoomOut.setActionCommand(ZOOM_OUT);
 		btnZoomOut.addActionListener(listener);
 		add(btnZoomOut);

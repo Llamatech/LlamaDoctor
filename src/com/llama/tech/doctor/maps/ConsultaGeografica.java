@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.Serializable;
 import java.net.URL;
 import java.nio.file.Files;
 
@@ -17,7 +18,7 @@ import com.llama.tech.utils.dict.LlamaDict.UnhashableTypeException;
 import com.opencsv.CSVReader;
 
 
-public class ConsultaGeografica 
+public class ConsultaGeografica implements Serializable
 {
 	private static final String BASE_URL = "http://api.geonames.org/postalCodeLookupJSON?postalcode=%s&country=%s&username=andfoy";
 	private static final String BASE_WIKIPEDIA_URL = "http://api.geonames.org/wikipediaSearchJSON?q=%s&maxRows=10&username=andfoy";

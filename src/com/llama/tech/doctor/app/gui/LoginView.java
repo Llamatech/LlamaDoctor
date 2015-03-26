@@ -12,8 +12,10 @@ import java.awt.event.MouseEvent;
 import java.awt.font.TextAttribute;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URL;
 import java.util.Map;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -28,6 +30,7 @@ import javax.swing.event.DocumentListener;
 import com.llama.tech.doctor.app.gui.components.LlamaButton;
 import com.llama.tech.doctor.app.gui.components.LlamaTextField;
 import com.llama.tech.doctor.app.gui.components.Toast;
+import com.llama.tech.doctor.mundo.UsuarioException;
 import com.llama.tech.utils.dict.LlamaDict;
 import com.llama.tech.utils.dict.LlamaDict.UnhashableTypeException;
 
@@ -123,8 +126,12 @@ public class LoginView extends AppView implements ActionListener
 			//System.out.println(font);
 			//viewTitle.setFont(new Font("DIN Alternate Medium", Font.PLAIN, 17));
 		
-		JLabel lblNewLabel = new JLabel("Fibo");
-		lblNewLabel.setBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null));
+		URL icon = classLoader.getResource(IMG_PATH+"imagen.png");
+		ImageIcon ic = new ImageIcon(icon); 
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(ic);
+		//lblNewLabel.setBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null));
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setBounds(75, 0, 170, 170);
 		add(lblNewLabel);
@@ -335,7 +342,14 @@ public class LoginView extends AppView implements ActionListener
 										// TODO Auto-generated catch block
 										e1.printStackTrace();
 									}
-									mainView.login();
+									try
+									{
+										mainView.login();
+									}
+									catch(Exception eu)
+									{
+										Toast.makeText(parent, "   La contraseña ingresada es incorrecta   ", font).display();
+									}
 								}
 								else
 								{

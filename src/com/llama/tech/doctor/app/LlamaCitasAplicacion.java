@@ -3,7 +3,7 @@ package com.llama.tech.doctor.app;
 import javax.swing.JPanel;
 
 import com.llama.tech.doctor.app.gui.MainView;
-import com.llama.tech.doctor.maps.PruebaMapas;
+import com.llama.tech.doctor.mundo.ConsultaException;
 import com.llama.tech.doctor.mundo.LlamaCitas;
 
 import uniandes.cupi2.cupIphone.componentes.IAplicacion;
@@ -20,9 +20,7 @@ public class LlamaCitasAplicacion implements IAplicacion {
 	/**
 	 * Panel principal del componente
 	 */
-	
 	private MainView panel;
-	//private PruebaMapas panel;
 	
 	
 	/**
@@ -53,17 +51,16 @@ public class LlamaCitasAplicacion implements IAplicacion {
 	}
 
 	@Override
-	public void iniciarEjecucion() 
-	{
-		//mundo = new LlamaCitas(core);
-		panel = new MainView();
+	public void iniciarEjecucion() {
+		mundo = new LlamaCitas(core);
+		panel = new MainView(mundo);
 		
 	}
 
 	@Override
-	public void terminarEjecucion() {
-		
-		
+	public void terminarEjecucion() 
+	{
+        mundo.serialize();
 	}
 	
 	public static IAplicacion darInstancia()

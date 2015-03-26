@@ -1,6 +1,7 @@
 com.llama.tech.doctor.app
 com.llama.tech.doctor.app.gui
 com.llama.tech.doctor.app.gui.components
+com.llama.tech.doctor.comparadores
 com.llama.tech.doctor.maps
 com.llama.tech.doctor.mundo
 org.json

@@ -21,21 +21,23 @@ import com.llama.tech.doctor.app.gui.components.LlamaButton;
 import com.llama.tech.doctor.app.gui.components.LlamaMapComponent;
 import com.llama.tech.doctor.app.gui.components.LlamaTextField;
 import com.llama.tech.doctor.app.gui.components.Toast;
+import com.llama.tech.doctor.maps.ConsultaMapas;
 import com.llama.tech.utils.dict.LlamaDict;
 
 public class LocationView extends AppView implements ActionListener
 {
 	private LlamaMapComponent mapPanel;
-	private LlamaDict<String, String> location;
+	private String location;
 	private JTextField textField;
 	private JTextField textField_1;
 	private JButton btnModificarUbicacion;
 	private JButton btnRegresar;
+	private int zoom = 12;
 	
 	private static final String MODIFY = "Modify";
 	private static final String BACK = "Bach";
 	
-	public LocationView(MainView main, LlamaDict<String, String> location)
+	public LocationView(MainView main, String location)
 	{
 		mainView = main;
 		viewTitle = "Ubicación";
@@ -62,32 +64,32 @@ public class LocationView extends AppView implements ActionListener
 		}
 		
 		mapPanel = new LlamaMapComponent(this);
-		mapPanel.setBounds(29, 12, 270, 213);
+		mapPanel.setBounds(29, 12, 270, 298);
 		add(mapPanel);
 		
-		JLabel lblNewLabel = new JLabel("Ciudad:");
-		lblNewLabel.setFont(font);
-		lblNewLabel.setBounds(49, 246, 70, 15);
-		add(lblNewLabel);
-		
-		JLabel lblCdigoPostal = new JLabel("Código postal:");
-		lblCdigoPostal.setFont(font);
-		lblCdigoPostal.setBounds(49, 273, 107, 15);
-		add(lblCdigoPostal);
-		
-		textField = new LlamaTextField();
-		textField.setBounds(174, 244, 114, 19);
-		textField.setEditable(false);
-		textField.setFont(font);
-		add(textField);
-		textField.setColumns(10);
-		
-		textField_1 = new LlamaTextField();
-		textField_1.setEditable(false);
-		textField_1.setBounds(174, 271, 114, 19);
-		textField_1.setFont(font);
-		add(textField_1);
-		textField_1.setColumns(10);
+//		JLabel lblNewLabel = new JLabel("Ciudad:");
+//		lblNewLabel.setFont(font);
+//		lblNewLabel.setBounds(49, 246, 70, 15);
+//		add(lblNewLabel);
+//		
+//		JLabel lblCdigoPostal = new JLabel("Código postal:");
+//		lblCdigoPostal.setFont(font);
+//		lblCdigoPostal.setBounds(49, 273, 107, 15);
+//		add(lblCdigoPostal);
+//		
+//		textField = new LlamaTextField();
+//		textField.setBounds(174, 244, 114, 19);
+//		textField.setEditable(false);
+//		textField.setFont(font);
+//		add(textField);
+//		textField.setColumns(10);
+//		
+//		textField_1 = new LlamaTextField();
+//		textField_1.setEditable(false);
+//		textField_1.setBounds(174, 271, 114, 19);
+//		textField_1.setFont(font);
+//		add(textField_1);
+//		textField_1.setColumns(10);
 		
 		URL icon = classLoader.getResource(IMG_PATH+"ic_action_forward.png");
 		ImageIcon ic = new ImageIcon(icon);
@@ -115,6 +117,9 @@ public class LocationView extends AppView implements ActionListener
 		
 		InputStream resource = classLoader.getResourceAsStream(FONT_PATH
 				+ "Roboto-Regular.ttf");
+		
+		location = mainView.getGeoLocation();
+		
 		Font font = null;
 		try 
 		{
@@ -139,16 +144,21 @@ public class LocationView extends AppView implements ActionListener
 			{
 				Toast.makeText(parent, "   Debe seleccionar una ubicación válida para usar la aplicación   ", font).display();
 			}
+			else
+			{
+				try {
+					System.out.println(location);
+					Image map = ConsultaMapas.darMapaConsultorio(location, zoom).getImage();
+					mapPanel.setMap(map);
+					repaint();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
 		}
 	}
 	
-	@Override
-	public void pushInfo(Object o) 
-	{
-		Image map = ((Image) o);
-		mapPanel.setMap(map);
-		mapPanel.repaint();
-	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) 
@@ -161,6 +171,46 @@ public class LocationView extends AppView implements ActionListener
 		{
 			mainView.updateView(ViewType.LOCATION_SELECTION_VIEW);
 		}
+        else if(e.getActionCommand().equals(LlamaMapComponent.ZOOM_IN))
+		{
+        	System.out.println("Zoom In");
+			zoom_in();
+		}
+		else if(e.getActionCommand().equals(LlamaMapComponent.ZOOM_OUT))
+		{
+			System.out.println("Zoom Out");
+			zoom_out();
+		}
 		
+	}
+
+
+	private void zoom_out() 
+	{
+		zoom -= 1;
+		paint_map();
+		repaint();
+	}
+
+
+	private void paint_map() 
+	{
+		Image map = null;
+		try {
+			System.out.println(location);
+			map = ConsultaMapas.darMapaConsultorio(location, zoom).getImage();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		mapPanel.setMap(map);
+		repaint();
+		
+	}
+
+	private void zoom_in() 
+	{
+		zoom += 1;
+		paint_map();
 	}
 }

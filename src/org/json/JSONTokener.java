@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.io.Serializable;
 import java.io.StringReader;
 
 /*
@@ -38,7 +39,7 @@ SOFTWARE.
  * @author JSON.org
  * @version 2014-05-03
  */
-public class JSONTokener {
+public class JSONTokener implements Serializable{
 
     private long    character;
     private boolean eof;

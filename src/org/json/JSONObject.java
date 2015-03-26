@@ -24,6 +24,7 @@ package org.json;
  */
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.io.StringWriter;
 import java.io.Writer;
 import java.lang.reflect.Field;
@@ -92,7 +93,7 @@ import java.util.Set;
  * @author JSON.org
  * @version 2014-05-03
  */
-public class JSONObject {
+public class JSONObject implements Serializable{
     /**
      * JSONObject.NULL is equivalent to the value that JavaScript calls null,
      * whilst Java's null is equivalent to the value that JavaScript calls

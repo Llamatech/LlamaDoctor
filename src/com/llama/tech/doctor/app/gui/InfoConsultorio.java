@@ -115,6 +115,7 @@ public class InfoConsultorio extends AppView implements ActionListener{
 		add(lblCitasAgendadasEn);
 		
 		LlamaArrayList<Cita> cit = cons.citasEnFecha(fecha);
+		System.out.println(cit.size());
 		StringBuilder citas = new StringBuilder();
 		
 		for(int i =0;i< cit.size();i++)

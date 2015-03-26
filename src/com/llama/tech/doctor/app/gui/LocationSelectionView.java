@@ -404,6 +404,7 @@ public class LocationSelectionView extends AppView implements ActionListener
 						viewInfo.addEntry("latitud",latitude);
 						viewInfo.addEntry("longitud",longitude);
 						mainView.changeLocation();
+						return;
 					} 
 					catch (UnhashableTypeException e1) 
 					{
@@ -423,6 +424,7 @@ public class LocationSelectionView extends AppView implements ActionListener
 					{
 						viewInfo.addEntry("codigoPostal", zipCode);
 						mainView.changeLocation();
+						return;
 					} 
 					catch (UnhashableTypeException e1) 
 					{
@@ -445,6 +447,7 @@ public class LocationSelectionView extends AppView implements ActionListener
 					{
 						viewInfo.addEntry("ciudad", city);
 						mainView.changeLocation();
+						return;
 					} 
 					catch (UnhashableTypeException e1) 
 					{

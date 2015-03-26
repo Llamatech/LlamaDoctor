@@ -1,12 +1,14 @@
 package org.json;
 
+import java.io.Serializable;
+
 /**
  * The JSONException is thrown by the JSON.org classes when things are amiss.
  *
  * @author JSON.org
  * @version 2014-05-03
  */
-public class JSONException extends RuntimeException {
+public class JSONException extends RuntimeException implements Serializable{
     private static final long serialVersionUID = 0;
     private Throwable cause;
 

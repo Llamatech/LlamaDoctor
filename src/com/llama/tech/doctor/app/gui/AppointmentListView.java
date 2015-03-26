@@ -41,7 +41,7 @@ public class AppointmentListView extends AppView implements ActionListener, List
 	public AppointmentListView(MainView main, LlamaArrayList<Cita> appointmentList)
 	{
 		mainView = main;
-		viewTitle = "Citas";
+		viewTitle = "Agenda";
 		URL iconURI = classLoader.getResource(IMG_PATH+"ic_action_go_to_today.png");
 	    viewIcon = new ImageIcon(iconURI); 
 	    

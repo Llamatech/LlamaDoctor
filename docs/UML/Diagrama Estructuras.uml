@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_P6h-wMxOEeStpL9NUOZJXg" name="model">
+  <packagedElement xmi:type="uml:Model" xmi:id="__0EKIMxQEeStpL9NUOZJXg" name="pakis">
+    <packagedElement xmi:type="uml:Package" xmi:id="_BJ4tkMxREeStpL9NUOZJXg" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_BJ5UoMxREeStpL9NUOZJXg" name="llama">
+        <packagedElement xmi:type="uml:Package" xmi:id="_BK298MxREeStpL9NUOZJXg" name="tech">
+          <packagedElement xmi:type="uml:Package" xmi:id="_BK298cxREeStpL9NUOZJXg" name="utils">
+            <packagedElement xmi:type="uml:Package" xmi:id="_BK3lAMxREeStpL9NUOZJXg" name="tree">
+              <packagedElement xmi:type="uml:Class" xmi:id="_BVQQEMxREeStpL9NUOZJXg" name="AVLNode">
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_2fzyQMzZEeS7m8uSwe9ImQ" name="RedefinableTemplateSignature1" parameter="_3SvEAMzZEeS7m8uSwe9ImQ">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_3SvEAMzZEeS7m8uSwe9ImQ" parameteredElement="_JuZHAMzaEeS7m8uSwe9ImQ">
+                    <ownedParameteredElement xmi:type="uml:Class" xmi:id="_JuZHAMzaEeS7m8uSwe9ImQ" name="T" templateParameter="_3SvEAMzZEeS7m8uSwe9ImQ"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_BhFsoMxREeStpL9NUOZJXg" name="data" visibility="private" type="_BeFb8MxREeStpL9NUOZJXg" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_Bh9PUMxREeStpL9NUOZJXg" name="visited" type="_Bh8oQMxREeStpL9NUOZJXg" isUnique="false">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BjNMgMxREeStpL9NUOZJXg"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BjYLoMxREeStpL9NUOZJXg" value="*"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_BjZZwMxREeStpL9NUOZJXg" name="balanceFactor" visibility="private" type="_BjYysMxREeStpL9NUOZJXg" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_qIVnEMxcEeStpL9NUOZJXg" name="aVLNode" type="_BVQQEMxREeStpL9NUOZJXg" association="_qIWOIMxcEeStpL9NUOZJXg">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qIVnEcxcEeStpL9NUOZJXg" value="1"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qIVnEsxcEeStpL9NUOZJXg" value="1"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_sYx_sMxcEeStpL9NUOZJXg" name="aVLNode" type="_BVQQEMxREeStpL9NUOZJXg" association="_sYx_s8xcEeStpL9NUOZJXg">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sYx_scxcEeStpL9NUOZJXg" value="1"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sYx_ssxcEeStpL9NUOZJXg" value="1"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_yuBqgMxcEeStpL9NUOZJXg" name="aVLNode" type="_BVQQEMxREeStpL9NUOZJXg" association="_yuCRkMxcEeStpL9NUOZJXg">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yuBqgcxcEeStpL9NUOZJXg" value="1"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yuBqgsxcEeStpL9NUOZJXg" value="1"/>
+                </ownedAttribute>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_Bd09QMxREeStpL9NUOZJXg" name="AVLNode implements Comparable" client="_BVQQEMxREeStpL9NUOZJXg" supplier="_BWIZ0MxREeStpL9NUOZJXg" contract="_BWIZ0MxREeStpL9NUOZJXg"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_BmgYIMxREeStpL9NUOZJXg" name="getValue" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_BmslYMxREeStpL9NUOZJXg">
+                    <body>
+	 * Retorna el valor del nodo.
+	 * @return el valor del nodo.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_BsqDcMxREeStpL9NUOZJXg" type="_BeFb8MxREeStpL9NUOZJXg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_BsrRkMxREeStpL9NUOZJXg" name="getParent" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_BsrRkcxREeStpL9NUOZJXg">
+                    <body>
+	 * Retorna el padre del nodo actual.
+	 * @return el nodo padre. null, si el nodo es raíz.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Bsr4oMxREeStpL9NUOZJXg" type="_BVQQEMxREeStpL9NUOZJXg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_Bsr4ocxREeStpL9NUOZJXg" name="getBalanceFactor" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_BssfsMxREeStpL9NUOZJXg">
+                    <body>
+	 * Retorna la altura del subárbol que tiene por raíz, el nodo actual. 
+	 * @return la altura del subárbol.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_BssfscxREeStpL9NUOZJXg" type="_BjYysMxREeStpL9NUOZJXg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_BstGwMxREeStpL9NUOZJXg" name="contains" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_Bstt0MxREeStpL9NUOZJXg">
+                    <body>
+	 * Establece si un elemento corresponde al nodo presente, o se encuentra en el subárbol correspondiente.
+	 * @param item El elemento a buscar. item != null.
+	 * @return true, si el elemento existe. false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Bstt0cxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_BsuU4MxREeStpL9NUOZJXg" name="item" type="_BeFb8MxREeStpL9NUOZJXg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_Bsu78MxREeStpL9NUOZJXg" name="get" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_Bsu78cxREeStpL9NUOZJXg">
+                    <body>
+	 * Busca un elemento en el subárbol que lleva por raíz, el nodo actual.
+	 * @param item El elemento a buscar.
+	 * @return el elemento a buscar, null si no fue hallado.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Bsu78sxREeStpL9NUOZJXg" type="_BeFb8MxREeStpL9NUOZJXg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_BsvjAMxREeStpL9NUOZJXg" name="item" type="_BeFb8MxREeStpL9NUOZJXg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_BsvjAcxREeStpL9NUOZJXg" name="balanced" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_BswKEMxREeStpL9NUOZJXg">
+                    <body>
+	 * Describe si el árbol/subárbol que tiene por raíz el nodo actual, se encuentra balanceado. 
+	 * @return true, si el subárbol se encuentra balanceado. false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_BswKEcxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_BswxIMxREeStpL9NUOZJXg" name="balanceTree" visibility="private">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_BsxYMMxREeStpL9NUOZJXg">
+                    <body>
+	 * Método que balancea un subárbol, en caso de que este se encuentre desbalanceado.
+	 * @return true, si el árbol fue balanceado. false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_BsxYMcxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_Bsx_QMxREeStpL9NUOZJXg" name="rightRotation" visibility="private">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_Bsx_QcxREeStpL9NUOZJXg">
+                    <body>
+	 * Ejecuta una rotación a la derecha.
+	 * @return la nueva raíz tras la rotación.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_BsymUMxREeStpL9NUOZJXg" type="_BVQQEMxREeStpL9NUOZJXg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_BszNYMxREeStpL9NUOZJXg" name="leftRotation" visibility="private">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_BszNYcxREeStpL9NUOZJXg">
+                    <body>
+	 * Ejecuta una rotación a la izquierda.
+	 * @return la nueva raíz tras la rotación.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Bsz0cMxREeStpL9NUOZJXg" type="_BVQQEMxREeStpL9NUOZJXg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_Bsz0ccxREeStpL9NUOZJXg" name="hybridLeftRotation" visibility="private">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_Bs0bgMxREeStpL9NUOZJXg">
+                    <body>
+	 * Realiza una rotación mixta, en caso que el árbol se encuentre desbalanceado debido 
+	 * a el subárbol izquierdo del hijo derecho del nodo actual.
+	 </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_Bs0bgcxREeStpL9NUOZJXg" name="hybridRightRotation" visibility="private">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_Bs1CkMxREeStpL9NUOZJXg">
+                    <body>
+	 * Realiza una rotación mixta, en caso que el árbol se encuentre desbalanceado debido 
+	 * a el subárbol derecho del hijo izquierdo del nodo actual.
+	 </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_Bs1CkcxREeStpL9NUOZJXg" name="isRoot" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_Bs1poMxREeStpL9NUOZJXg">
+                    <body>
+	 * Describe si el nodo actual corresponde a la raíz de un árbol.
+	 * @return true, si el nodo es raíz. false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Bs1pocxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_Bs2QsMxREeStpL9NUOZJXg" name="add" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_Bs2QscxREeStpL9NUOZJXg">
+                    <body>
+	 * Agrega un elemento al subárbol.
+	 * @param item el elemento a agregar.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Bs23wMxREeStpL9NUOZJXg" name="item" type="_BeFb8MxREeStpL9NUOZJXg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_Bs3e0MxREeStpL9NUOZJXg" name="removeNode" visibility="private">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_Bs3e0cxREeStpL9NUOZJXg">
+                    <body>
+	 * Elimina un elemento de un subárbol.
+	 * @param item el elemento a ser eliminado.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Bs3e0sxREeStpL9NUOZJXg" name="item" type="_BeFb8MxREeStpL9NUOZJXg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_Bs4F4MxREeStpL9NUOZJXg" name="remove" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_Bs4F4cxREeStpL9NUOZJXg">
+                    <body>
+	 * Elimina el elemento de la raíz del árbol.
+	 * @param item el elemento a ser eliminado.
+	 * @return la nueva raíz del árbol.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Bs4s8MxREeStpL9NUOZJXg" type="_BVQQEMxREeStpL9NUOZJXg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Bs5UAMxREeStpL9NUOZJXg" name="item" type="_BeFb8MxREeStpL9NUOZJXg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_Bs5UAcxREeStpL9NUOZJXg" name="resetVisits" visibility="private">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_Bs57EMxREeStpL9NUOZJXg">
+                    <body>
+	 * Reinicia el orden de recorrido de un nodo (Preorden).
+	 </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_BtIkkMxREeStpL9NUOZJXg" name="partialPathCompletion" visibility="private">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_BtiNMMxREeStpL9NUOZJXg">
+                    <body>
+	 * Establece si el nodo y el subárbol correspondiente fueron visitados.
+	 * @return true, si el subárbol y el nodo fueron visitados. false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_By1j8MxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_By2LAMxREeStpL9NUOZJXg" name="markVisited" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_B47k4MxREeStpL9NUOZJXg">
+                    <body>
+	 * Realiza el recorrido en preorden del árbol, no requiere de una lista auxiliar.
+	 * @return el nodo visitado actualmente.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_B48L8MxREeStpL9NUOZJXg" type="_BVQQEMxREeStpL9NUOZJXg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_B49aEMxREeStpL9NUOZJXg" name="calculateHeight" visibility="private">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_B49aEcxREeStpL9NUOZJXg">
+                    <body>
+	 * Calcula la altura del subárbol. Además establece si el subárbol debe ser balanceado.
+	 * @return la altura del subárbol.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_B4-BIMxREeStpL9NUOZJXg" type="_BjYysMxREeStpL9NUOZJXg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_B4-oMMxREeStpL9NUOZJXg" name="toString" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_B5AdYMxREeStpL9NUOZJXg" type="_B4_2UcxREeStpL9NUOZJXg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_B5MqoMxREeStpL9NUOZJXg" name="toConsole" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_B5NRsMxREeStpL9NUOZJXg" type="_BVQQEMxREeStpL9NUOZJXg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_B5N4wMxREeStpL9NUOZJXg" name="tree" type="_BVQQEMxREeStpL9NUOZJXg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_B5N4wcxREeStpL9NUOZJXg" name="compareTo" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_B5Of0MxREeStpL9NUOZJXg" type="_BjYysMxREeStpL9NUOZJXg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_B5Of0cxREeStpL9NUOZJXg" name="o" type="_BVQQEMxREeStpL9NUOZJXg"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_BWIZ0MxREeStpL9NUOZJXg" name="Comparable"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_BeFb8MxREeStpL9NUOZJXg" name="T"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_B_b1gMxREeStpL9NUOZJXg" name="LlamaAVLTree">
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_VCnR4MxZEeStpL9NUOZJXg" name="RedefinableTemplateSignature1" parameter="_oQJBQMxaEeStpL9NUOZJXg">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_oQJBQMxaEeStpL9NUOZJXg" parameteredElement="_veLVQMxaEeStpL9NUOZJXg">
+                    <ownedParameteredElement xmi:type="uml:Class" xmi:id="_veLVQMxaEeStpL9NUOZJXg" name="T" templateParameter="_oQJBQMxaEeStpL9NUOZJXg"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_B_v-kMxREeStpL9NUOZJXg" name="size" visibility="private" type="_BjYysMxREeStpL9NUOZJXg" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_15UMsMxaEeStpL9NUOZJXg" name="aVLNode" type="_BVQQEMxREeStpL9NUOZJXg" association="_15YeIMxaEeStpL9NUOZJXg">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_15UMscxaEeStpL9NUOZJXg" value="1"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_15UMssxaEeStpL9NUOZJXg" value="1"/>
+                </ownedAttribute>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_B_dDocxREeStpL9NUOZJXg" name="LlamaAVLTree implements Tree" client="_B_b1gMxREeStpL9NUOZJXg" supplier="_B_dDoMxREeStpL9NUOZJXg" contract="_B_dDoMxREeStpL9NUOZJXg"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_G9V9IMxVEeStpL9NUOZJXg" client="_B_b1gMxREeStpL9NUOZJXg" supplier="_B_dDoMxREeStpL9NUOZJXg" contract="_B_dDoMxREeStpL9NUOZJXg"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_B_wloMxREeStpL9NUOZJXg" name="iterator" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_B_ya0MxREeStpL9NUOZJXg" type="_B_xzwMxREeStpL9NUOZJXg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_B_zB4MxREeStpL9NUOZJXg" name="getHeight" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_B_zB4cxREeStpL9NUOZJXg" type="_BjYysMxREeStpL9NUOZJXg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_B_zo8MxREeStpL9NUOZJXg" name="toString" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_B_zo8cxREeStpL9NUOZJXg" type="_B4_2UcxREeStpL9NUOZJXg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_B_0QAMxREeStpL9NUOZJXg" name="add" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_B_0QAcxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_B_03EMxREeStpL9NUOZJXg" name="item" type="_BeFb8MxREeStpL9NUOZJXg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_B_1eIMxREeStpL9NUOZJXg" name="remove" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_B_2FMMxREeStpL9NUOZJXg" type="_BeFb8MxREeStpL9NUOZJXg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_B_2FMcxREeStpL9NUOZJXg" name="item" type="_BeFb8MxREeStpL9NUOZJXg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_B_2sQMxREeStpL9NUOZJXg" name="contains" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_B_2sQcxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_B_3TUMxREeStpL9NUOZJXg" name="item" type="_BeFb8MxREeStpL9NUOZJXg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CABEUcxREeStpL9NUOZJXg" name="copyList" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CABrYMxREeStpL9NUOZJXg" name="list" type="_CABEUMxREeStpL9NUOZJXg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CACScMxREeStpL9NUOZJXg" name="copyArray" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CACSccxREeStpL9NUOZJXg" name="list" type="_BeFb8MxREeStpL9NUOZJXg">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CAPGwMxREeStpL9NUOZJXg"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CAPt0MxREeStpL9NUOZJXg" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CAQU4MxREeStpL9NUOZJXg" name="get" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CAQU4cxREeStpL9NUOZJXg" type="_BeFb8MxREeStpL9NUOZJXg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CAQ78MxREeStpL9NUOZJXg" name="item" type="_BeFb8MxREeStpL9NUOZJXg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CAQ78cxREeStpL9NUOZJXg" name="isEmpty" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CAZe0MxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CAaF4MxREeStpL9NUOZJXg" name="arrayCopy" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CAas8MxREeStpL9NUOZJXg" name="list" type="_BeFb8MxREeStpL9NUOZJXg">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CAas8cxREeStpL9NUOZJXg"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CAbUAMxREeStpL9NUOZJXg" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CAbUAcxREeStpL9NUOZJXg" name="size" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CAb7EMxREeStpL9NUOZJXg" type="_BjYysMxREeStpL9NUOZJXg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CAb7EcxREeStpL9NUOZJXg" name="toArray" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CAciIMxREeStpL9NUOZJXg" type="_BeFb8MxREeStpL9NUOZJXg" direction="return">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CAdJMMxREeStpL9NUOZJXg"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CAdJMcxREeStpL9NUOZJXg" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CA7DQMxREeStpL9NUOZJXg" name="containsAll" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CA7DQcxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CBUr4MxREeStpL9NUOZJXg" name="c" type="_CABEUMxREeStpL9NUOZJXg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CBVS8MxREeStpL9NUOZJXg" name="removeAll" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CBVS8cxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CBV6AMxREeStpL9NUOZJXg" name="c" type="_BeFb8MxREeStpL9NUOZJXg">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CBV6AcxREeStpL9NUOZJXg"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CBWhEMxREeStpL9NUOZJXg" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CBWhEcxREeStpL9NUOZJXg" name="removeAll" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CBXIIMxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CBXIIcxREeStpL9NUOZJXg" name="c" type="_CABEUMxREeStpL9NUOZJXg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CBXvMMxREeStpL9NUOZJXg" name="clear" visibility="public"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CBXvMcxREeStpL9NUOZJXg" name="isBalanced" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CBYWQMxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CBYWQcxREeStpL9NUOZJXg" name="toConsole" visibility="public"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CLOOwMxREeStpL9NUOZJXg" name="add"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CRcykMxREeStpL9NUOZJXg" name="add">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CTQwcMxREeStpL9NUOZJXg">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CTRXgMxREeStpL9NUOZJXg" value="1"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CTR-kMxREeStpL9NUOZJXg" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CUb1IMxREeStpL9NUOZJXg" name="add">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CUccMMxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CUdDQMxREeStpL9NUOZJXg" value="1"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CUdDQcxREeStpL9NUOZJXg" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CUwlQMxREeStpL9NUOZJXg" name="add">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CUxzYMxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CUyacMxREeStpL9NUOZJXg" value="1"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CUyaccxREeStpL9NUOZJXg" value="1"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CUyacsxREeStpL9NUOZJXg">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CUzBgMxREeStpL9NUOZJXg" value="1"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CUzBgcxREeStpL9NUOZJXg" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CVXpQMxREeStpL9NUOZJXg" name="add">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CVZecMxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CVxR4MxREeStpL9NUOZJXg" value="1"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CVx48MxREeStpL9NUOZJXg" value="1"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CV3YgMxREeStpL9NUOZJXg" name="item">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CV3_kMxREeStpL9NUOZJXg" value="1"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CV4moMxREeStpL9NUOZJXg" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_CCDrsMxREeStpL9NUOZJXg" name="LlamaTreeIterator">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_CC2V4MxREeStpL9NUOZJXg" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" type="_CCuaEMxREeStpL9NUOZJXg" isUnique="false">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_CC8cgMxREeStpL9NUOZJXg">
+                      <body>
+		 * 
+		 </body>
+                    </ownedComment>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_CDG0kMxREeStpL9NUOZJXg" name="item" visibility="private" type="_BeFb8MxREeStpL9NUOZJXg" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_CDHboMxREeStpL9NUOZJXg" name="next" visibility="private" type="_BeFb8MxREeStpL9NUOZJXg" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_CDVeEMxREeStpL9NUOZJXg" name="root" visibility="private" type="_BVQQEMxREeStpL9NUOZJXg" isUnique="false"/>
+                  <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_CCE50cxREeStpL9NUOZJXg" name="LlamaTreeIterator implements LlamaIterator" client="_CCDrsMxREeStpL9NUOZJXg" supplier="_CCE50MxREeStpL9NUOZJXg" contract="_CCE50MxREeStpL9NUOZJXg"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_CDWsMMxREeStpL9NUOZJXg" name="hasNext" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_CDWsMcxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_CDXTQMxREeStpL9NUOZJXg" name="hasPrevious" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_CDXTQcxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_CDX6UMxREeStpL9NUOZJXg" name="next" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_CDhEQMxREeStpL9NUOZJXg" type="_BeFb8MxREeStpL9NUOZJXg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_CDhrUMxREeStpL9NUOZJXg" name="previous" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_CDhrUcxREeStpL9NUOZJXg" type="_BeFb8MxREeStpL9NUOZJXg" direction="return"/>
+                  </ownedOperation>
+                </nestedClassifier>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_B_dDoMxREeStpL9NUOZJXg" name="Tree">
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_dyx_oMxcEeStpL9NUOZJXg" name="RedefinableTemplateSignature1" parameter="_gl3yUMxcEeStpL9NUOZJXg">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_gl3yUMxcEeStpL9NUOZJXg" parameteredElement="_ijMaoMxcEeStpL9NUOZJXg">
+                    <ownedParameteredElement xmi:type="uml:Class" xmi:id="_ijMaoMxcEeStpL9NUOZJXg" name="T" templateParameter="_gl3yUMxcEeStpL9NUOZJXg"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+                <generalization xmi:type="uml:Generalization" xmi:id="_CFNtYMxREeStpL9NUOZJXg" general="_CEEd4MxREeStpL9NUOZJXg"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CFOUcMxREeStpL9NUOZJXg" name="add" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_CFO7gMxREeStpL9NUOZJXg">
+                    <body>
+	 * Agrega un elemento al árbol. Si el elemento se encuentra en el árbol, no será agregado.
+	 * @param item El elemento a ser agregado. item != null.
+	 * @return true si el elemento fue agregado, false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CRcLgMxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CUv-MMxREeStpL9NUOZJXg" name="item" type="_BeFb8MxREeStpL9NUOZJXg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CWlxQMxREeStpL9NUOZJXg" name="get" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_CWlxQcxREeStpL9NUOZJXg">
+                    <body>
+	 * Retorna un elemento que se encuentra en el árbol.
+	 * @param item El objeto a buscar. item != null.
+	 * @return El elemento a buscar. null, si el elemento no fue encontrado.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CWzMoMxREeStpL9NUOZJXg" type="_BeFb8MxREeStpL9NUOZJXg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CXLnIMxREeStpL9NUOZJXg" name="item" type="_BeFb8MxREeStpL9NUOZJXg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CXhlYMxREeStpL9NUOZJXg" name="remove" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_CXhlYcxREeStpL9NUOZJXg">
+                    <body>
+	 * Elimina un elemento del árbol.
+	 * @param item El elemento a ser eliminado. item != null.
+	 * @return El elemento eliminado. null, si no se encuentra en el árbol.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CX3joMxREeStpL9NUOZJXg" type="_BeFb8MxREeStpL9NUOZJXg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CYSaYMxREeStpL9NUOZJXg" name="item" type="_BeFb8MxREeStpL9NUOZJXg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CY5eYMxREeStpL9NUOZJXg" name="size" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_CY5eYcxREeStpL9NUOZJXg">
+                    <body>
+	 * Retorna el número de elementos agregados al árbol.
+	 * @return El número de elementos actuales.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CZFroMxREeStpL9NUOZJXg" type="_BjYysMxREeStpL9NUOZJXg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CZIH4MxREeStpL9NUOZJXg" name="getHeight" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_CZIH4cxREeStpL9NUOZJXg">
+                    <body>
+	 * Retorna la altura actual del árbol.
+	 * @return la altura actual del árbol.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CZJ9EMxREeStpL9NUOZJXg" type="_BjYysMxREeStpL9NUOZJXg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CZjlsMxREeStpL9NUOZJXg" name="contains" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_CZkMwMxREeStpL9NUOZJXg">
+                    <body>
+	 * Establece si un elemento se encuentra en el árbol.
+	 * @param item El elemento a ser localizado. item != null.
+	 * @return true, si el elemento se encuentra en el árbol, false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CaINcMxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ca4bYMxREeStpL9NUOZJXg" name="item" type="_BeFb8MxREeStpL9NUOZJXg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CbPnwMxREeStpL9NUOZJXg" name="copyList" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_CbPnwcxREeStpL9NUOZJXg">
+                    <body>
+	 * Agrega los elementos de una lista al árbol.
+	 * @param list La lista a copiar. list != null.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Cb7kQMxREeStpL9NUOZJXg" name="list" type="_CABEUMxREeStpL9NUOZJXg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_Cb-nkMxREeStpL9NUOZJXg" name="copyArray" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_Cb-nkcxREeStpL9NUOZJXg">
+                    <body>
+	 * Agrega los elementos de un arreglo al árbol.
+	 * @param list El arreglo a copiar. list != null.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Cc-GEMxREeStpL9NUOZJXg" name="list" type="_BeFb8MxREeStpL9NUOZJXg">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CdH3EMxREeStpL9NUOZJXg"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CdJFMMxREeStpL9NUOZJXg" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CdKTUMxREeStpL9NUOZJXg" name="arrayCopy" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_CdKTUcxREeStpL9NUOZJXg">
+                    <body>
+	 * Agrega los elementos de un arreglo al árbol.
+	 * @param list El arreglo a copiar. list != null.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CdqpoMxREeStpL9NUOZJXg" name="list" type="_BeFb8MxREeStpL9NUOZJXg">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CeqvMMxREeStpL9NUOZJXg"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CfB7kMxREeStpL9NUOZJXg" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CfNhwMxREeStpL9NUOZJXg" name="isEmpty" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_CfNhwcxREeStpL9NUOZJXg">
+                    <body>
+	 * Establece si el árbol se encuentra vacío.
+	 * @return true, si el árbol no tiene elementos. false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CfVdkMxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CgMZMMxREeStpL9NUOZJXg" name="toArray" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_CgNAQMxREeStpL9NUOZJXg">
+                    <body>
+	 * Retorna los elementos actuales del árbol en un arreglo ordenado. 
+	 * @return el arreglo con los elementos del árbol.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_ChR-UMxREeStpL9NUOZJXg" type="_BeFb8MxREeStpL9NUOZJXg" direction="return">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ChjrIMxREeStpL9NUOZJXg"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ChkSMMxREeStpL9NUOZJXg" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_Ch1_AMxREeStpL9NUOZJXg" name="containsAll" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_Ch1_AcxREeStpL9NUOZJXg">
+                    <body>
+	 * Determina si los elementos presentes en una lista, se encuentran en el árbol.
+	 * @param c La lista a ser verificada.
+	 * @return true, si todos los elementos de la lista fueron hallados. false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ch30MMxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ch5pYMxREeStpL9NUOZJXg" name="c" type="_CABEUMxREeStpL9NUOZJXg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CiJhAMxREeStpL9NUOZJXg" name="clear" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_CiKIEMxREeStpL9NUOZJXg">
+                    <body>
+	 * Elimina todos los elementos del árbol.
+	 </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CiYKgMxREeStpL9NUOZJXg" name="removeAll" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_CiYKgcxREeStpL9NUOZJXg">
+                    <body>
+	 * Elimina del árbol, los elementos presentes en un arreglo.
+	 * @param c El arreglo que contiene los elementos a ser eliminados del árbol.
+	 * @return true si todos los elementos del arreglo fueron eliminados del árbol. false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CiyaMMxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_CjlEYMxREeStpL9NUOZJXg" name="c" type="_BeFb8MxREeStpL9NUOZJXg">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cju1YMxREeStpL9NUOZJXg"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CjwDgMxREeStpL9NUOZJXg" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_Cjx4sMxREeStpL9NUOZJXg" name="removeAll" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_Cjx4scxREeStpL9NUOZJXg">
+                    <body>
+	 * Elimina del árbol, los elementos presentes en una lista.
+	 * @param c La lista que contiene los elementos a ser eliminados del árbol.
+	 * @return true si todos los elementos de la lista fueron eliminados del árbol. false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Cjzt4MxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_ClTisMxREeStpL9NUOZJXg" name="c" type="_CABEUMxREeStpL9NUOZJXg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CldTsMxREeStpL9NUOZJXg" name="isBalanced" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_Cld6wMxREeStpL9NUOZJXg">
+                    <body>
+	 * Retorna si el árbol se encuentra balanceado.
+	 * @return true, si se encuentra balanceado. false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_ClfI4MxREeStpL9NUOZJXg" type="_Bh8oQMxREeStpL9NUOZJXg" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_CEEd4MxREeStpL9NUOZJXg" name="Iterable"/>
+              <packagedElement xmi:type="uml:Association" xmi:id="_15YeIMxaEeStpL9NUOZJXg" name="root" memberEnd="_15YeIcxaEeStpL9NUOZJXg _15UMsMxaEeStpL9NUOZJXg">
+                <ownedEnd xmi:type="uml:Property" xmi:id="_15YeIcxaEeStpL9NUOZJXg" name="llamaAVLTree" type="_B_b1gMxREeStpL9NUOZJXg" association="_15YeIMxaEeStpL9NUOZJXg">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_15YeIsxaEeStpL9NUOZJXg" value="1"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_15YeI8xaEeStpL9NUOZJXg" value="1"/>
+                </ownedEnd>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_qIWOIMxcEeStpL9NUOZJXg" name="right" memberEnd="_qIWOIcxcEeStpL9NUOZJXg _qIVnEMxcEeStpL9NUOZJXg">
+                <ownedEnd xmi:type="uml:Property" xmi:id="_qIWOIcxcEeStpL9NUOZJXg" name="aVLNode" type="_BVQQEMxREeStpL9NUOZJXg" association="_qIWOIMxcEeStpL9NUOZJXg">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qIWOIsxcEeStpL9NUOZJXg" value="1"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qIWOI8xcEeStpL9NUOZJXg" value="1"/>
+                </ownedEnd>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_sYx_s8xcEeStpL9NUOZJXg" name="left" memberEnd="_sYx_tMxcEeStpL9NUOZJXg _sYx_sMxcEeStpL9NUOZJXg">
+                <ownedEnd xmi:type="uml:Property" xmi:id="_sYx_tMxcEeStpL9NUOZJXg" name="aVLNode" type="_BVQQEMxREeStpL9NUOZJXg" association="_sYx_s8xcEeStpL9NUOZJXg">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sYx_tcxcEeStpL9NUOZJXg" value="1"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sYx_tsxcEeStpL9NUOZJXg" value="1"/>
+                </ownedEnd>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_yuCRkMxcEeStpL9NUOZJXg" name="parent" memberEnd="_yuCRkcxcEeStpL9NUOZJXg _yuBqgMxcEeStpL9NUOZJXg">
+                <ownedEnd xmi:type="uml:Property" xmi:id="_yuCRkcxcEeStpL9NUOZJXg" name="aVLNode" type="_BVQQEMxREeStpL9NUOZJXg" association="_yuCRkMxcEeStpL9NUOZJXg">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yuCRksxcEeStpL9NUOZJXg" value="1"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yuCRk8xcEeStpL9NUOZJXg" value="1"/>
+                </ownedEnd>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_CAAdQMxREeStpL9NUOZJXg" name="list">
+              <packagedElement xmi:type="uml:Class" xmi:id="_CABEUMxREeStpL9NUOZJXg" name="Lista"/>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_CCE50MxREeStpL9NUOZJXg" name="LlamaIterator"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Model" xmi:id="_Bhi_oMxREeStpL9NUOZJXg" name="datatype">
+    <packagedElement xmi:type="uml:Package" xmi:id="_Bhi_ocxREeStpL9NUOZJXg" name="datatype">
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Bh8oQMxREeStpL9NUOZJXg" name="Boolean"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_BjYysMxREeStpL9NUOZJXg" name="Integer"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_CCuaEMxREeStpL9NUOZJXg" name="Long"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Model" xmi:id="_B4_PQMxREeStpL9NUOZJXg" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_B4_PQcxREeStpL9NUOZJXg" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_B4_2UMxREeStpL9NUOZJXg" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_B4_2UcxREeStpL9NUOZJXg" name="String"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_B_xMsMxREeStpL9NUOZJXg" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_B_xzwMxREeStpL9NUOZJXg" name="Iterator"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Q_elkNKZEeS0z8UjvCvtfw" name="model">
+  <packagedElement xmi:type="uml:Model" xmi:id="_RrnS0NKZEeS0z8UjvCvtfw" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_RrnS0dKZEeS0z8UjvCvtfw" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_RrnS0tKZEeS0z8UjvCvtfw" name="time">
+        <packagedElement xmi:type="uml:Class" xmi:id="_Rrn54NKZEeS0z8UjvCvtfw" name="LocalDateTime"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Rrog8NKZEeS0z8UjvCvtfw" name="LocalDate"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Rr8qAdKZEeS0z8UjvCvtfw" name="DayOfWeek"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_RsAUYNKZEeS0z8UjvCvtfw" name="LocalTime"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Rrq9MNKZEeS0z8UjvCvtfw" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_Rrq9MdKZEeS0z8UjvCvtfw" name="Exception"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_RruAgNKZEeS0z8UjvCvtfw" name="String"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Model" xmi:id="_RrpIAdKZEeS0z8UjvCvtfw" name="datatype">
+    <packagedElement xmi:type="uml:Package" xmi:id="_RrpIAtKZEeS0z8UjvCvtfw" name="datatype">
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_RrpIA9KZEeS0z8UjvCvtfw" name="Integer"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Rr7b4NKZEeS0z8UjvCvtfw" name="Boolean"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

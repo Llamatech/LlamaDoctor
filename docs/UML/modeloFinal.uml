@@ -1,0 +1,2139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ugUJQM3jEeSxrJ3subALUA" name="model">
+  <packagedElement xmi:type="uml:Model" xmi:id="_6v3PUM3jEeSxrJ3subALUA" name="pakis">
+    <packagedElement xmi:type="uml:Package" xmi:id="_6v5rkM3jEeSxrJ3subALUA" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_6v65sM3jEeSxrJ3subALUA" name="llama">
+        <packagedElement xmi:type="uml:Package" xmi:id="_6v7gwM3jEeSxrJ3subALUA" name="tech">
+          <packagedElement xmi:type="uml:Package" xmi:id="_6v7gwc3jEeSxrJ3subALUA" name="doctor">
+            <packagedElement xmi:type="uml:Package" xmi:id="_6v8H0M3jEeSxrJ3subALUA" name="mundo">
+              <packagedElement xmi:type="uml:Class" xmi:id="_6wEqsM3jEeSxrJ3subALUA" name="Cita">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_6wrHoM3jEeSxrJ3subALUA" name="horaInicio" visibility="private" type="_6wqgkM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_6wrusM3jEeSxrJ3subALUA" name="horaFin" visibility="private" type="_6wqgkM3jEeSxrJ3subALUA" isUnique="false"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_6wm2MM3jEeSxrJ3subALUA" name="Cita implements Comparable" client="_6wEqsM3jEeSxrJ3subALUA" supplier="_6wGf4M3jEeSxrJ3subALUA" contract="_6wGf4M3jEeSxrJ3subALUA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_6ws80M3jEeSxrJ3subALUA" name="compareTo" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_6wwAIM3jEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_6wx1UM3jEeSxrJ3subALUA" name="o" type="_6wEqsM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_6wGf4M3jEeSxrJ3subALUA" name="Comparable"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_6w0RkM3jEeSxrJ3subALUA" name="Consultorio">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_6w2t0M3jEeSxrJ3subALUA" name="nombre" visibility="private" type="_6w2Gwc3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_6w4jAM3jEeSxrJ3subALUA" name="sexo" visibility="private" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_6w5KEM3jEeSxrJ3subALUA" name="direccion" visibility="private" type="_6w2Gwc3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_6w5xIM3jEeSxrJ3subALUA" name="localidad" visibility="private" type="_6w2Gwc3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_6w5xIc3jEeSxrJ3subALUA" name="region" visibility="private" type="_6w2Gwc3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_6w6YMM3jEeSxrJ3subALUA" name="postCode" visibility="private" type="_6wuyAM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_6w6_QM3jEeSxrJ3subALUA" name="telefono" visibility="private" type="_6w2Gwc3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_6w80cc3jEeSxrJ3subALUA" name="latitud" visibility="private" type="_6w80cM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_6w9bgM3jEeSxrJ3subALUA" name="longitud" visibility="private" type="_6w80cM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_6w-CkM3jEeSxrJ3subALUA" name="seguros" visibility="private" type="_6w2Gwc3jEeSxrJ3subALUA" isUnique="false">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6w_QsM3jEeSxrJ3subALUA"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6xAe0M3jEeSxrJ3subALUA" value="*"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_6xAe0c3jEeSxrJ3subALUA" name="añosExp" visibility="private" type="_6wuyAM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_r2lmkM3mEeSxrJ3subALUA" name="dictionary" type="__o2-kM3jEeSxrJ3subALUA" association="_r2lmk83mEeSxrJ3subALUA">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r2lmkc3mEeSxrJ3subALUA" value="1"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r2lmks3mEeSxrJ3subALUA" value="1"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_4e-DYM3mEeSxrJ3subALUA" name="tree" type="_AZntIM3kEeSxrJ3subALUA" association="_4e-qcM3mEeSxrJ3subALUA">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4e-DYc3mEeSxrJ3subALUA"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4e-DYs3mEeSxrJ3subALUA" value="*"/>
+                </ownedAttribute>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_6w1fsM3jEeSxrJ3subALUA" name="Consultorio implements Comparable" client="_6w0RkM3jEeSxrJ3subALUA" supplier="_6wGf4M3jEeSxrJ3subALUA" contract="_6wGf4M3jEeSxrJ3subALUA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_6xGlcM3jEeSxrJ3subALUA" name="getNombre" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_6xHMgM3jEeSxrJ3subALUA" type="_6w2Gwc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_6xHMgc3jEeSxrJ3subALUA" name="getSexo" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_6xHzkM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_6xHzkc3jEeSxrJ3subALUA" name="getDireccion" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_6xHzks3jEeSxrJ3subALUA" type="_6w2Gwc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_6xIaoM3jEeSxrJ3subALUA" name="getLocalidad" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_6xJowM3jEeSxrJ3subALUA" type="_6w2Gwc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_6xJowc3jEeSxrJ3subALUA" name="getRegion" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_6xMFAM3jEeSxrJ3subALUA" type="_6w2Gwc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_6xNTIM3jEeSxrJ3subALUA" name="getPostCode" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_6xOhQM3jEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_6xPIUM3jEeSxrJ3subALUA" name="getTelefono" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_6xPIUc3jEeSxrJ3subALUA" type="_6w2Gwc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_6xPvYM3jEeSxrJ3subALUA" name="getCitas" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_6xQWcM3jEeSxrJ3subALUA" type="_6w2Gwc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_6xQWcc3jEeSxrJ3subALUA" name="getLatitud" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_6xQ9gM3jEeSxrJ3subALUA" type="_6w80cM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_6xQ9gc3jEeSxrJ3subALUA" name="getLongitud" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_6xRkkM3jEeSxrJ3subALUA" type="_6w80cM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_6xSLoM3jEeSxrJ3subALUA" name="getSeguros" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_6xSLoc3jEeSxrJ3subALUA" type="_6w2Gwc3jEeSxrJ3subALUA" direction="return">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6xSysM3jEeSxrJ3subALUA"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6xTZwM3jEeSxrJ3subALUA" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_6xTZwc3jEeSxrJ3subALUA" name="getAñosExp" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_6xUA0M3jEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_6xUA0c3jEeSxrJ3subALUA" name="compareTo" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_6xUn4M3jEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_6xUn4c3jEeSxrJ3subALUA" name="o" type="_6w0RkM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_6w378M3jEeSxrJ3subALUA" name="LlamaCitas"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_6xV2AM3jEeSxrJ3subALUA" name="HorarioCitaDia">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_6xXEIc3jEeSxrJ3subALUA" name="horaInicio" visibility="private" type="_6xXEIM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_6xYSQM3jEeSxrJ3subALUA" name="horaFin" visibility="private" type="_6xXEIM3jEeSxrJ3subALUA" isUnique="false"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_6xWdEM3jEeSxrJ3subALUA" name="HorarioCitaDia implements Comparable" client="_6xV2AM3jEeSxrJ3subALUA" supplier="_6wGf4M3jEeSxrJ3subALUA" contract="_6wGf4M3jEeSxrJ3subALUA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_6xY5UM3jEeSxrJ3subALUA" name="compareTo" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_6xY5Uc3jEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_6xZgYM3jEeSxrJ3subALUA" name="o" type="_6xV2AM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_r2lmk83mEeSxrJ3subALUA" name="horariosDeAtencion" memberEnd="_r2lmlM3mEeSxrJ3subALUA _r2lmkM3mEeSxrJ3subALUA">
+                <ownedEnd xmi:type="uml:Property" xmi:id="_r2lmlM3mEeSxrJ3subALUA" name="consultorio" type="_6w0RkM3jEeSxrJ3subALUA" association="_r2lmk83mEeSxrJ3subALUA">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r2lmlc3mEeSxrJ3subALUA" value="1"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r2lmls3mEeSxrJ3subALUA" value="1"/>
+                </ownedEnd>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_4e-qcM3mEeSxrJ3subALUA" name="citas" memberEnd="_4e-qcc3mEeSxrJ3subALUA _4e-DYM3mEeSxrJ3subALUA">
+                <ownedEnd xmi:type="uml:Property" xmi:id="_4e-qcc3mEeSxrJ3subALUA" name="consultorio" type="_6w0RkM3jEeSxrJ3subALUA" association="_4e-qcM3mEeSxrJ3subALUA">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4e-qcs3mEeSxrJ3subALUA" value="1"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4e-qc83mEeSxrJ3subALUA" value="1"/>
+                </ownedEnd>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Usage" xmi:id="_7VkAkM3nEeSxrJ3subALUA" client="_6w0RkM3jEeSxrJ3subALUA" supplier="_6xV2AM3jEeSxrJ3subALUA"/>
+              <packagedElement xmi:type="uml:Usage" xmi:id="_9a-N4M3nEeSxrJ3subALUA" client="_6w0RkM3jEeSxrJ3subALUA" supplier="_6wEqsM3jEeSxrJ3subALUA"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_6xBF4M3jEeSxrJ3subALUA" name="utils">
+            <packagedElement xmi:type="uml:Package" xmi:id="_6xBs8M3jEeSxrJ3subALUA" name="dict">
+              <packagedElement xmi:type="uml:Class" xmi:id="_6xBs8c3jEeSxrJ3subALUA" name="LlamaDict"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_6xEwQM3jEeSxrJ3subALUA" name="tree">
+              <packagedElement xmi:type="uml:Class" xmi:id="_6xFXUM3jEeSxrJ3subALUA" name="LlamaAVLTree"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_6w80cM3jEeSxrJ3subALUA" name="Double"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Model" xmi:id="_6wpScM3jEeSxrJ3subALUA" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_6wp5gM3jEeSxrJ3subALUA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_6wp5gc3jEeSxrJ3subALUA" name="time">
+        <packagedElement xmi:type="uml:Class" xmi:id="_6wqgkM3jEeSxrJ3subALUA" name="LocalDateTime"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_6xXEIM3jEeSxrJ3subALUA" name="LocalTime"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_6w2GwM3jEeSxrJ3subALUA" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_6w2Gwc3jEeSxrJ3subALUA" name="String"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="__pl-Yc3jEeSxrJ3subALUA" name="Exception"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_zUXcMc3lEeSxrJ3subALUA" name="Object"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="__oi1gc3jEeSxrJ3subALUA" name="io">
+        <packagedElement xmi:type="uml:Interface" xmi:id="__ojckM3jEeSxrJ3subALUA" name="Serializable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="__ppBsc3jEeSxrJ3subALUA" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="__ppowM3jEeSxrJ3subALUA" name="Iterator"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_zUHkkc3lEeSxrJ3subALUA" name="Observer"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_zUXcMM3lEeSxrJ3subALUA" name="Observable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_zT_Bsc3lEeSxrJ3subALUA" name="awt">
+        <packagedElement xmi:type="uml:Package" xmi:id="_zT_Bss3lEeSxrJ3subALUA" name="event">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_zT_Bs83lEeSxrJ3subALUA" name="ActionListener"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_zUCsEM3lEeSxrJ3subALUA" name="ActionEvent"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Model" xmi:id="_6wuK8M3jEeSxrJ3subALUA" name="datatype">
+    <packagedElement xmi:type="uml:Package" xmi:id="_6wuK8c3jEeSxrJ3subALUA" name="datatype">
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_6wuyAM3jEeSxrJ3subALUA" name="Integer"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="__olRwM3jEeSxrJ3subALUA" name="Long"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="__p45Uc3jEeSxrJ3subALUA" name="Boolean"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Model" xmi:id="__n6jYM3jEeSxrJ3subALUA" name="estr">
+    <packagedElement xmi:type="uml:Package" xmi:id="__ogZQM3jEeSxrJ3subALUA" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="__ohAUM3jEeSxrJ3subALUA" name="llama">
+        <packagedElement xmi:type="uml:Package" xmi:id="__ohnYM3jEeSxrJ3subALUA" name="tech">
+          <packagedElement xmi:type="uml:Package" xmi:id="__ohnYc3jEeSxrJ3subALUA" name="utils">
+            <packagedElement xmi:type="uml:Package" xmi:id="__oiOcM3jEeSxrJ3subALUA" name="dict">
+              <packagedElement xmi:type="uml:Class" xmi:id="__oi1gM3jEeSxrJ3subALUA" name="DictEntry">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__olRwc3jEeSxrJ3subALUA" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" type="__olRwM3jEeSxrJ3subALUA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="__ol40M3jEeSxrJ3subALUA">
+                    <body>
+	 * 
+	 </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__onG8M3jEeSxrJ3subALUA" name="next" visibility="private" type="__oi1gM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__ooVEM3jEeSxrJ3subALUA" name="key" visibility="private" type="__onuAM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__oo8IM3jEeSxrJ3subALUA" name="value" visibility="private" type="__ooVEc3jEeSxrJ3subALUA" isUnique="false"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="__ojckc3jEeSxrJ3subALUA" name="DictEntry implements Serializable" client="__oi1gM3jEeSxrJ3subALUA" supplier="__ojckM3jEeSxrJ3subALUA" contract="__ojckM3jEeSxrJ3subALUA"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="__okqsM3jEeSxrJ3subALUA" name="DictEntry implements Comparable" client="__oi1gM3jEeSxrJ3subALUA" supplier="__okDoM3jEeSxrJ3subALUA" contract="__okDoM3jEeSxrJ3subALUA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__opjMM3jEeSxrJ3subALUA" name="getValue" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__oqxUM3jEeSxrJ3subALUA" type="__ooVEc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__orYYM3jEeSxrJ3subALUA" name="key" type="__onuAM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__osmgM3jEeSxrJ3subALUA" name="addEntry" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__osmgc3jEeSxrJ3subALUA" name="key" type="__onuAM3jEeSxrJ3subALUA"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__osmgs3jEeSxrJ3subALUA" name="value" type="__ooVEc3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__otNkM3jEeSxrJ3subALUA" name="setValue" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__otNkc3jEeSxrJ3subALUA" type="__ooVEc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__ot0oM3jEeSxrJ3subALUA" name="key" type="__onuAM3jEeSxrJ3subALUA"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__oubsM3jEeSxrJ3subALUA" name="value" type="__ooVEc3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__ovCwc3jEeSxrJ3subALUA" name="addKeys" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__ovp0M3jEeSxrJ3subALUA" name="l" type="__-0AcM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__ovp0c3jEeSxrJ3subALUA" name="addValues" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__owQ4M3jEeSxrJ3subALUA" name="l" type="__-0AcM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__ow38M3jEeSxrJ3subALUA" name="getNext" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__ow38c3jEeSxrJ3subALUA" type="__oi1gM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__ow38s3jEeSxrJ3subALUA" name="setNext" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__oxfAM3jEeSxrJ3subALUA" name="nexxt" type="__oi1gM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__oxfAc3jEeSxrJ3subALUA" name="getMyKey" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__oyGEM3jEeSxrJ3subALUA" type="__onuAM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__oyGEc3jEeSxrJ3subALUA" name="getMyValue" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__oyGEs3jEeSxrJ3subALUA" type="__ooVEc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__o0iUM3jEeSxrJ3subALUA" name="repr" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__o1JYM3jEeSxrJ3subALUA" name="sb" type="__oytIM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__o1wcM3jEeSxrJ3subALUA" name="compareTo" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__o1wcc3jEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__o1wcs3jEeSxrJ3subALUA" name="o" type="__oi1gM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="__okDoM3jEeSxrJ3subALUA" name="Comparable"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="__onuAM3jEeSxrJ3subALUA" name="K"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="__ooVEc3jEeSxrJ3subALUA" name="V"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="__oytIM3jEeSxrJ3subALUA" name="StringBuilder"/>
+              <packagedElement xmi:type="uml:Interface" xmi:id="__o2-kM3jEeSxrJ3subALUA" name="Dictionary">
+                <generalization xmi:type="uml:Generalization" xmi:id="__o3loM3jEeSxrJ3subALUA" general="__ojckM3jEeSxrJ3subALUA"/>
+                <generalization xmi:type="uml:Generalization" xmi:id="__o4zwM3jEeSxrJ3subALUA" general="__o4MsM3jEeSxrJ3subALUA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__o4zwc3jEeSxrJ3subALUA" name="getValue" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="__o5a0M3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * Retorna el valor que corresponde a la llave dada por parámetro. &#xD;
+	 * Busca en el hash el valor correspondiente a la llave&#xD;
+	 * @param key llave del valor que se desea&#xD;
+	 * @return valor correspondiente a la llave o null si no lo encuentra&#xD;
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pFoEM3jEeSxrJ3subALUA" type="__ooVEc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pG2MM3jEeSxrJ3subALUA" name="key" type="__onuAM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__pHdQM3jEeSxrJ3subALUA" name="removeEntry" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="__pHdQc3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	  * Remueve un valor de la tbala de hash dada su llave&#xD;
+	  * @param key llave que corresponde al valor que se desea eliminar&#xD;
+	  * @return valor eliminado, null si no se encontró&#xD;
+	  </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pIEUM3jEeSxrJ3subALUA" type="__ooVEc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pIrYM3jEeSxrJ3subALUA" name="key" type="__onuAM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__pJScM3jEeSxrJ3subALUA" name="addEntry" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="__pJScc3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	  * Agrega una nueva entrada al diccionario&#xD;
+	  * @param key Llave del elemento a agregar&#xD;
+	  * @param value valor a agregar en la tabla&#xD;
+	  * @throws UnhashableTypeException Si se agregan un valor o llaves inválidos&#xD;
+	  </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pJ5gM3jEeSxrJ3subALUA" name="key" type="__onuAM3jEeSxrJ3subALUA"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pKgkM3jEeSxrJ3subALUA" name="value" type="__ooVEc3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__pLHoM3jEeSxrJ3subALUA" name="setEntry" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="__pLHoc3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	  * Reemplaza la entrada de la tabla correspondiente a la llave&#xD;
+	  * dada por parametro por un nuevo valor&#xD;
+	  * @param key llave que da la posicion&#xD;
+	  * @param value valor que desea remplazar al antguo valor&#xD;
+	  * @return valor reemplazado&#xD;
+	  * @throws UnhashableTypeException si el valor dado por parámetro es inválido&#xD;
+	  </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pLusM3jEeSxrJ3subALUA" type="__ooVEc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pLusc3jEeSxrJ3subALUA" name="key" type="__onuAM3jEeSxrJ3subALUA"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pMVwM3jEeSxrJ3subALUA" name="value" type="__ooVEc3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__pM80M3jEeSxrJ3subALUA" name="getKeys" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="__pM80c3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	  * Retorna un iterador sobre las llaves de la tabla&#xD;
+	  * @return iterador de las llaves&#xD;
+	  </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pNj4c3jEeSxrJ3subALUA" type="_ANEe4M3kEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__pOK8M3jEeSxrJ3subALUA" name="getValues" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="__pOK8c3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	  * Retorna un iterador sobre los valores de la tabla&#xD;
+	  * @return iterador de valores&#xD;
+	  </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pOyAM3jEeSxrJ3subALUA" type="_ANEe4M3kEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__pOyAc3jEeSxrJ3subALUA" name="toString" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="__pPZEM3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	  * Retorna los valores del área principal en un string concatenado&#xD;
+	  * @return String con valores del área principal.&#xD;
+	  </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pPZEc3jEeSxrJ3subALUA" type="_6w2Gwc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__pQAIM3jEeSxrJ3subALUA" name="size" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="__pQAIc3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	  * Retorna el total de entradas agregadas&#xD;
+	  * @return total de entradas &#xD;
+	  </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pQnMM3jEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="__o4MsM3jEeSxrJ3subALUA" name="Iterable"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="__pZKEM3jEeSxrJ3subALUA" name="LlamaDict">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__pa_Qc3jEeSxrJ3subALUA" name="size" visibility="private" type="_6wuyAM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__pcNYM3jEeSxrJ3subALUA" name="capacity" visibility="private" type="_6w80cM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__pc0cM3jEeSxrJ3subALUA" name="mainAreaSize" visibility="private" type="_6wuyAM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__pc0cc3jEeSxrJ3subALUA" name="mainArea" visibility="private" type="__-0AcM3jEeSxrJ3subALUA" isUnique="false"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="__pZxIM3jEeSxrJ3subALUA" name="LlamaDict implements Dictionary" client="__pZKEM3jEeSxrJ3subALUA" supplier="__o2-kM3jEeSxrJ3subALUA" contract="__o2-kM3jEeSxrJ3subALUA"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="__paYMM3jEeSxrJ3subALUA" name="LlamaDict implements Serializable" client="__pZKEM3jEeSxrJ3subALUA" supplier="__ojckM3jEeSxrJ3subALUA" contract="__ojckM3jEeSxrJ3subALUA"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="__pa_QM3jEeSxrJ3subALUA" name="LlamaDict implements Comparable" client="__pZKEM3jEeSxrJ3subALUA" supplier="__okDoM3jEeSxrJ3subALUA" contract="__okDoM3jEeSxrJ3subALUA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__pdbgM3jEeSxrJ3subALUA" name="addEntry" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__peCkM3jEeSxrJ3subALUA" name="key" type="__onuAM3jEeSxrJ3subALUA"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__peCkc3jEeSxrJ3subALUA" name="value" type="__ooVEc3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__pepoM3jEeSxrJ3subALUA" name="setEntry" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pfQsM3jEeSxrJ3subALUA" type="__ooVEc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pfQsc3jEeSxrJ3subALUA" name="key" type="__onuAM3jEeSxrJ3subALUA"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pf3wM3jEeSxrJ3subALUA" name="value" type="__ooVEc3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__pf3wc3jEeSxrJ3subALUA" name="removeEntry" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pge0M3jEeSxrJ3subALUA" type="__ooVEc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pge0c3jEeSxrJ3subALUA" name="key" type="__onuAM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__phF4M3jEeSxrJ3subALUA" name="getKeys" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__phF4c3jEeSxrJ3subALUA" type="_ANEe4M3kEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__phs8M3jEeSxrJ3subALUA" name="getValues" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__phs8c3jEeSxrJ3subALUA" type="_ANEe4M3kEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__piUAM3jEeSxrJ3subALUA" name="toString" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__piUAc3jEeSxrJ3subALUA" type="_6w2Gwc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__pi7EM3jEeSxrJ3subALUA" name="getValue" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pi7Ec3jEeSxrJ3subALUA" type="__ooVEc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pjiIM3jEeSxrJ3subALUA" name="key" type="__onuAM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__pkJMc3jEeSxrJ3subALUA" name="dalloc" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pkwQM3jEeSxrJ3subALUA" name="op" type="__pkJMM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__pkwQc3jEeSxrJ3subALUA" name="size" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__plXUM3jEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__pnMgM3jEeSxrJ3subALUA" name="compareTo" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__pnzkM3jEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__poaoM3jEeSxrJ3subALUA" name="o" type="__pZKEM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__ppBsM3jEeSxrJ3subALUA" name="iterator" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__ppowc3jEeSxrJ3subALUA" type="__ppowM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="__pl-YM3jEeSxrJ3subALUA" name="UnhashableTypeException">
+                  <generalization xmi:type="uml:Generalization" xmi:id="__pmlcM3jEeSxrJ3subALUA" general="__pl-Yc3jEeSxrJ3subALUA"/>
+                </nestedClassifier>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="__pkJMM3jEeSxrJ3subALUA" name="DictAlloc"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="__oubsc3jEeSxrJ3subALUA" name="list">
+              <packagedElement xmi:type="uml:Interface" xmi:id="__-0AcM3jEeSxrJ3subALUA" name="Lista">
+                <generalization xmi:type="uml:Generalization" xmi:id="__-3DwM3jEeSxrJ3subALUA" general="__ojckM3jEeSxrJ3subALUA"/>
+                <generalization xmi:type="uml:Generalization" xmi:id="__-448M3jEeSxrJ3subALUA" general="__-4R4M3jEeSxrJ3subALUA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__-5gAM3jEeSxrJ3subALUA" name="addAlFinal" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="__-6HEM3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * Agrega un elemento al final de la lista&#xD;
+	 * @param elemento El elemento a agregar&#xD;
+	 * @return true si se agregó false de lo contrario&#xD;
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__-6uIM3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__-7VMM3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__-8jUM3jEeSxrJ3subALUA" name="addAlPrincipio" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="__-8jUc3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * Agrega un elemento al principio de la lista&#xD;
+	 * @param elemento El elemento a agregar&#xD;
+	 * @return true si se agregó false de lo contrario&#xD;
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__-9KYM3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__-9xcM3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__-9xcc3jEeSxrJ3subALUA" name="add" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="__--YgM3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * Agrega un elemento en una posici�n dada de la lista.&#xD;
+	 * &#xD;
+	 * @param pos La posici�n en la que se agregar� el elemento&#xD;
+	 * @param elemento El elemento a agregar.&#xD;
+	 * @return true si se agregó false de lo contrario&#xD;
+	 * @throws IndexOutOfBoundsException Si la posici�n no existe&#xD;
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__--Ygc3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__--_kM3jEeSxrJ3subALUA" name="pos" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__--_kc3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__-_moM3jEeSxrJ3subALUA" name="add" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="___ANsM3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * Agrega un elemento después de un elemento dado&#xD;
+	 * @param elementoI elemento tras del cual agregar el nuevo elemento&#xD;
+	 * @param elementoAgrgar elementoa agregar&#xD;
+	 * @return true si se agregó false de lo contrario&#xD;
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___ANsc3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___A0wM3jEeSxrJ3subALUA" name="elementoI" type="__p4SQM3jEeSxrJ3subALUA"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___Bb0M3jEeSxrJ3subALUA" name="elementoAgregar" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___Bb0c3jEeSxrJ3subALUA" name="clear" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="___Bb0s3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * Quita todos los elementos de la lista&#xD;
+	 </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___CC4M3jEeSxrJ3subALUA" name="contains" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="___CC4c3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * Determina si el objeto dado est� contenido en el arreglo&#xD;
+	 * @param elemento El elemento a buscar&#xD;
+	 * @return Un boolean indicando si el elemento est� en la lista o no&#xD;
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___Cp8M3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___DRAM3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___DRAc3jEeSxrJ3subALUA" name="buscar" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="___D4EM3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * Devuelve el objeto buscado si el objeto dado est� contenido en el arreglo&#xD;
+	 * @param elemento El elemento a buscar&#xD;
+	 * @return El objeto buscado o null si no se encuentra&#xD;
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___D4Ec3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___EfIM3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___EfIc3jEeSxrJ3subALUA" name="get" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="___FGMM3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * Busca el elemento almacenado en una posici�n de la lista &#xD;
+	 * @param pos La posici�n del elemento a buscar&#xD;
+	 * @return El elemento en la posici�n buscada.&#xD;
+	 * @throws IndexOutOfBoundsException Si la posici�n no existe&#xD;
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___FGMc3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___FtQM3jEeSxrJ3subALUA" name="pos" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___GUUM3jEeSxrJ3subALUA" name="getLast" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="___GUUc3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * Retorna el �ltimo elemento de la lista.&#xD;
+	 * @return El �ltimo elemento de la lista.&#xD;
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___GUUs3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___G7YM3jEeSxrJ3subALUA" name="getFirst" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="___G7Yc3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * Retorna el primer elemento de la lista&#xD;
+	 * @return El primer elemento de la lista&#xD;
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___HicM3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___IJgM3jEeSxrJ3subALUA" name="indexOf" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="___IJgc3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * Retorna la primera posici�n en la lista donde aparece un elemento dado.&#xD;
+	 * @param elemento El elemento a buscar su posici�n.&#xD;
+	 * @return La primera posici�n del elemento dado. Si el elemento no se encuentra en la lista retorna -1&#xD;
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___IwkM3jEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___JXoM3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___JXoc3jEeSxrJ3subALUA" name="lastIndexOf" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="___J-sM3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * Retorna la �ltima posici�n en la lista donde aparece un elemento dado&#xD;
+	 * @param elemento El elemento a buscar su posici�n&#xD;
+	 * @return La �ltima posici�n del elemento dado. Si el elemento no se encuentra en la lista retorna -1&#xD;
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___J-sc3jEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___KlwM3jEeSxrJ3subALUA" name="element" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___Klwc3jEeSxrJ3subALUA" name="isEmpty" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="___LM0M3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * Determina si la lista est� vac�a o no&#xD;
+	 * @return Un boolean indicando si la lista est� vac�a&#xD;
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___LM0c3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___Lz4M3jEeSxrJ3subALUA" name="iterator" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="___Lz4c3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * Metodo que genera un iterador para recorrer la lista&#xD;
+	 * @return Un iterador sobre la lista&#xD;
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___Ma8M3jEeSxrJ3subALUA" type="__ppowM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___Ma8c3jEeSxrJ3subALUA" name="reverseIterator" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___NCAM3jEeSxrJ3subALUA" type="__ppowM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___NCAc3jEeSxrJ3subALUA" name="iterator" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="___NpEM3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * Metodo que genera un iterador para recorrer la lista. El iterador empieza en la posici�n pos&#xD;
+	 * @param pos La posici�n en la que empieza el iterador&#xD;
+	 * @return Un iterador sobre la lista.&#xD;
+	 * @throws IndexOutOfBoundsException Si la posici�n no existe&#xD;
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___NpEc3jEeSxrJ3subALUA" type="__ppowM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___O3MM3jEeSxrJ3subALUA" name="pos" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___O3Mc3jEeSxrJ3subALUA" name="remove" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="___PeQM3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * M�todo que elimina un elemento de la lista.&#xD;
+	 * @param pos La posici�n del elemento a eliminar&#xD;
+	 * @return El objeto eliminado.&#xD;
+	 * @throws IndexOutOfBoundsException Si la posici�n no existe&#xD;
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___PeQc3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___QFUM3jEeSxrJ3subALUA" name="pos" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___QsYM3jEeSxrJ3subALUA" name="removeFirst" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="___QsYc3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * M�todo que elimina el primer elemento de la lista.&#xD;
+	 * @return El objeto eliminado.&#xD;
+	 * @throws IndexOutOfBoundsException Si la posici�n no existe&#xD;
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___QsYs3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___RTcM3jEeSxrJ3subALUA" name="removeLast" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="___RTcc3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * M�todo que elimina el ultimo elemento de la lista.&#xD;
+	 * @return El objeto eliminado.&#xD;
+	 * @throws IndexOutOfBoundsException Si la posici�n no existe&#xD;
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___RTcs3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___R6gM3jEeSxrJ3subALUA" name="remove" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="___R6gc3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * M�todo que elimina un objeto de la lista&#xD;
+	 * @param elemento El objeto a eliminar&#xD;
+	 * @return El objeto eliminado.&#xD;
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___R6gs3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___ShkM3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___Shkc3jEeSxrJ3subALUA" name="set" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="___Shks3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * M�todo que reemplaza el elemento de una posici�n por otro.&#xD;
+	 * @param pos La posici�n del elemento a reemplazar.&#xD;
+	 * @param elemento El elemento que va a reemplazar al anterior.&#xD;
+	 * @return El objeto que estaba en la posici�n pos antes.&#xD;
+	 * @throws IndexOutOfBoundsException Si la posici�n no existe&#xD;
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___TIoM3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___TIoc3jEeSxrJ3subALUA" name="pos" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___TvsM3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___Tvsc3jEeSxrJ3subALUA" name="size" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="___Tvss3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * M�todo que determina el tama�o de la lista&#xD;
+	 * @return El tama�o de la lista (el n�mero de elementos que contiene)&#xD;
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___UWwM3jEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_ANEe4M3kEeSxrJ3subALUA" name="LlamaIterator">
+                <generalization xmi:type="uml:Generalization" xmi:id="_ANGUEM3kEeSxrJ3subALUA" general="__ojckM3jEeSxrJ3subALUA"/>
+                <generalization xmi:type="uml:Generalization" xmi:id="_ANG7IM3kEeSxrJ3subALUA" general="__ppowM3jEeSxrJ3subALUA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_ANHiMM3kEeSxrJ3subALUA" name="hasNext" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_ANHiMc3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_ANIJQM3kEeSxrJ3subALUA" name="hasPrevious" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_ANIJQc3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_ANIwUM3kEeSxrJ3subALUA" name="next" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_ANIwUc3kEeSxrJ3subALUA" type="__qUXIM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_ANIwUs3kEeSxrJ3subALUA" name="previous" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_ANJXYM3kEeSxrJ3subALUA" type="__qUXIM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="__p0A0M3jEeSxrJ3subALUA" name="ListaDoblementeEnlazada">
+                <generalization xmi:type="uml:Generalization" xmi:id="__p0n4M3jEeSxrJ3subALUA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__p12AM3jEeSxrJ3subALUA" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" type="__olRwM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__p3EIM3jEeSxrJ3subALUA" name="primero" visibility="private" type="__p2dEM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__p3EIc3jEeSxrJ3subALUA" name="ultimo" visibility="private" type="__p2dEM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__p3rMM3jEeSxrJ3subALUA" name="length" visibility="private" type="_6wuyAM3jEeSxrJ3subALUA" isUnique="false"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="__p1O8M3jEeSxrJ3subALUA" name="ListaDoblementeEnlazada implements Serializable" client="__p0A0M3jEeSxrJ3subALUA" supplier="__ojckM3jEeSxrJ3subALUA" contract="__ojckM3jEeSxrJ3subALUA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__p45UM3jEeSxrJ3subALUA" name="addAlFinal" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__p5gYM3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__p5gYc3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__p6HcM3jEeSxrJ3subALUA" name="add" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__p6ugM3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__p7VkM3jEeSxrJ3subALUA" name="pos" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__p7Vkc3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__p78oM3jEeSxrJ3subALUA" name="add" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__p78oc3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__p8jsM3jEeSxrJ3subALUA" name="elementoI" type="__p4SQM3jEeSxrJ3subALUA"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__p8jsc3jEeSxrJ3subALUA" name="elementoAgregar" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__p9KwM3jEeSxrJ3subALUA" name="clear" visibility="public"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__p9Kwc3jEeSxrJ3subALUA" name="contains" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__p9x0M3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__p9x0c3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__p-Y4M3jEeSxrJ3subALUA" name="get" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__p-Y4c3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__p-Y4s3jEeSxrJ3subALUA" name="pos" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__p-_8M3jEeSxrJ3subALUA" name="getLast" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__p-_8c3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__p_nAM3jEeSxrJ3subALUA" name="getFirst" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__p_nAc3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__p_nAs3jEeSxrJ3subALUA" name="indexOf" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qAOEM3jEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qAOEc3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qAOEs3jEeSxrJ3subALUA" name="lastIndexOf" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qA1IM3jEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qA1Ic3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qBcMM3jEeSxrJ3subALUA" name="isEmpty" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qBcMc3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qCDQM3jEeSxrJ3subALUA" name="iterator" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qCqUM3jEeSxrJ3subALUA" type="_ANEe4M3kEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qCqUc3jEeSxrJ3subALUA" name="iterator" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qDRYM3jEeSxrJ3subALUA" type="_ANEe4M3kEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qD4cM3jEeSxrJ3subALUA" name="pos" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qEfgM3jEeSxrJ3subALUA" name="reverseIterator" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qEfgc3jEeSxrJ3subALUA" type="_ANEe4M3kEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qFGkM3jEeSxrJ3subALUA" name="remove" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qFGkc3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qFGks3jEeSxrJ3subALUA" name="pos" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qFtoM3jEeSxrJ3subALUA" name="remove" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qFtoc3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qGUsM3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qGUsc3jEeSxrJ3subALUA" name="set" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qG7wM3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qG7wc3jEeSxrJ3subALUA" name="pos" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qHi0M3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qHi0c3jEeSxrJ3subALUA" name="size" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qIJ4M3jEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qIw8M3jEeSxrJ3subALUA" name="verificarInvariante" visibility="private"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qIw8c3jEeSxrJ3subALUA" name="elementosBienEncadenados" visibility="private">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="__qIw8s3jEeSxrJ3subALUA">
+                    <body>&#xD;
+	 * Verifica si los elementos se encuentren bien encadenados en ambos sentidos.&#xD;
+	 * @return True si para todo elemento su siguiente lo relaciona como anterior y viceversa. False de lo contrario.&#xD;
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qJYAM3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qJYAc3jEeSxrJ3subALUA" name="addAlPrincipio" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qJ_EM3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qJ_Ec3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qKmIM3jEeSxrJ3subALUA" name="buscar" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qKmIc3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qLNMM3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qL0QM3jEeSxrJ3subALUA" name="joinList" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qL0Qc3jEeSxrJ3subALUA" name="l" type="__p0A0M3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qMbUM3jEeSxrJ3subALUA" name="removeFirst" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qMbUc3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qNCYM3jEeSxrJ3subALUA" name="removeLast" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qNCYc3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qNpcM3jEeSxrJ3subALUA" name="toString" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qOQgM3jEeSxrJ3subALUA" type="_6w2Gwc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="__p2dEM3jEeSxrJ3subALUA" name="ElementoDoblementeEnlazado">
+                <ownedComment xmi:type="uml:Comment" xmi:id="___y34M3jEeSxrJ3subALUA">
+                  <body>&#xD;
+ * Elemento de una lista doblemente encadenada&#xD;
+ * @param &lt;ClaseGenerica> El tipo de valor que va a almacenar este elemento&#xD;
+ </body>
+                </ownedComment>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="___0GAM3jEeSxrJ3subALUA" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" type="__olRwM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="___0tEM3jEeSxrJ3subALUA" name="valor" visibility="private" type="__p4SQM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="___1UIM3jEeSxrJ3subALUA" name="siguiente" visibility="private" type="__p2dEM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="___17MM3jEeSxrJ3subALUA" name="anterior" visibility="private" type="__p2dEM3jEeSxrJ3subALUA" isUnique="false"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="___ze8M3jEeSxrJ3subALUA" name="ElementoDoblementeEnlazado implements Serializable" client="__p2dEM3jEeSxrJ3subALUA" supplier="__ojckM3jEeSxrJ3subALUA" contract="__ojckM3jEeSxrJ3subALUA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___17Mc3jEeSxrJ3subALUA" name="getValor" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___17Ms3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___2iQM3jEeSxrJ3subALUA" name="setValor" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___2iQc3jEeSxrJ3subALUA" name="valor" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___2iQs3jEeSxrJ3subALUA" name="getSiguiente" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___3JUM3jEeSxrJ3subALUA" type="__p2dEM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___3JUc3jEeSxrJ3subALUA" name="getAnterior" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___3wYM3jEeSxrJ3subALUA" type="__p2dEM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___3wYc3jEeSxrJ3subALUA" name="setSiguiente" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___4XcM3jEeSxrJ3subALUA" name="valor" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___4Xcc3jEeSxrJ3subALUA" name="setAnterior" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___4-gM3jEeSxrJ3subALUA" name="valor" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___4-gc3jEeSxrJ3subALUA" name="setAnterior" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___5lkM3jEeSxrJ3subALUA" name="node" type="__p2dEM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___5lkc3jEeSxrJ3subALUA" name="setSiguiente" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___6MoM3jEeSxrJ3subALUA" name="node" type="__p2dEM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___6Moc3jEeSxrJ3subALUA" name="reinicializarAnterior" visibility="public"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___6zsM3jEeSxrJ3subALUA" name="reinicializarSiguiente" visibility="public"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___6zsc3jEeSxrJ3subALUA" name="toString" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___6zss3jEeSxrJ3subALUA" type="_6w2Gwc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="__p4SQM3jEeSxrJ3subALUA" name="ClaseGenerica"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="__qSh8M3jEeSxrJ3subALUA" name="LlamaArrayList">
+                <generalization xmi:type="uml:Generalization" xmi:id="__qTJAM3jEeSxrJ3subALUA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__qUXIc3jEeSxrJ3subALUA" name="lista" visibility="private" type="__qUXIM3jEeSxrJ3subALUA" isUnique="false">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__qU-MM3jEeSxrJ3subALUA"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__qVlQM3jEeSxrJ3subALUA" value="*"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__qVlQc3jEeSxrJ3subALUA" name="posActual" type="_6wuyAM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__qWMUM3jEeSxrJ3subALUA" name="startNumber" type="_6wuyAM3jEeSxrJ3subALUA" isUnique="false"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="__qTwEM3jEeSxrJ3subALUA" name="LlamaArrayList implements Serializable" client="__qSh8M3jEeSxrJ3subALUA" supplier="__ojckM3jEeSxrJ3subALUA" contract="__ojckM3jEeSxrJ3subALUA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qWzYM3jEeSxrJ3subALUA" name="addAlFinal" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qXacM3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qXacc3jEeSxrJ3subALUA" name="elemento" type="__qUXIM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qYBgM3jEeSxrJ3subALUA" name="addAlPrincipio" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qYBgc3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qYokM3jEeSxrJ3subALUA" name="elemento" type="__qUXIM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qZPoM3jEeSxrJ3subALUA" name="add" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qZPoc3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qZ2sM3jEeSxrJ3subALUA" name="pos" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qadwM3jEeSxrJ3subALUA" name="elemento" type="__qUXIM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qbE0M3jEeSxrJ3subALUA" name="add" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qbE0c3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qcS8M3jEeSxrJ3subALUA" name="elementoI" type="__qUXIM3jEeSxrJ3subALUA"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qcS8c3jEeSxrJ3subALUA" name="elementoAgregar" type="__qUXIM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qc6AM3jEeSxrJ3subALUA" name="clear" visibility="public"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qdhEM3jEeSxrJ3subALUA" name="contains" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qdhEc3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qeIIM3jEeSxrJ3subALUA" name="elemento" type="__qUXIM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qevMM3jEeSxrJ3subALUA" name="buscar" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qevMc3jEeSxrJ3subALUA" type="__qUXIM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qfWQM3jEeSxrJ3subALUA" name="elemento" type="__qUXIM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qfWQc3jEeSxrJ3subALUA" name="get" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qf9UM3jEeSxrJ3subALUA" type="__qUXIM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qgkYM3jEeSxrJ3subALUA" name="pos" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qgkYc3jEeSxrJ3subALUA" name="getLast" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qhLcM3jEeSxrJ3subALUA" type="__qUXIM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qhLcc3jEeSxrJ3subALUA" name="getFirst" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qhygM3jEeSxrJ3subALUA" type="__qUXIM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qhygc3jEeSxrJ3subALUA" name="indexOf" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qiZkM3jEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qiZkc3jEeSxrJ3subALUA" name="elemento" type="__qUXIM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qjAoM3jEeSxrJ3subALUA" name="lastIndexOf" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qjAoc3jEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qjAos3jEeSxrJ3subALUA" name="elemento" type="__qUXIM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qjnsM3jEeSxrJ3subALUA" name="isEmpty" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qjnsc3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qkOwM3jEeSxrJ3subALUA" name="iterator" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qkOwc3jEeSxrJ3subALUA" type="_ANEe4M3kEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qkOws3jEeSxrJ3subALUA" name="iterator" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qk10M3jEeSxrJ3subALUA" type="_ANEe4M3kEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qk10c3jEeSxrJ3subALUA" name="pos" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qpuUM3jEeSxrJ3subALUA" name="remove" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qpuUc3jEeSxrJ3subALUA" type="__qUXIM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qpuUs3jEeSxrJ3subALUA" name="pos" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qqVYM3jEeSxrJ3subALUA" name="removeFirst" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qqVYc3jEeSxrJ3subALUA" type="__qUXIM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qq8cM3jEeSxrJ3subALUA" name="removeLast" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qq8cc3jEeSxrJ3subALUA" type="__qUXIM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qrjgM3jEeSxrJ3subALUA" name="remove" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qrjgc3jEeSxrJ3subALUA" type="__qUXIM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qsKkM3jEeSxrJ3subALUA" name="elemento" type="__qUXIM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qsxoM3jEeSxrJ3subALUA" name="set" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qsxoc3jEeSxrJ3subALUA" type="__qUXIM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qtYsM3jEeSxrJ3subALUA" name="pos" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qtYsc3jEeSxrJ3subALUA" name="elemento" type="__qUXIM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qt_wM3jEeSxrJ3subALUA" name="size" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qt_wc3jEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qum0M3jEeSxrJ3subALUA" name="agrandar" visibility="private">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="__qum0c3jEeSxrJ3subALUA">
+                    <body>
+	 * Este método agranda el arreglo cuando sea necesario
+	 </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qum0s3jEeSxrJ3subALUA" name="reverseIterator" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qum083jEeSxrJ3subALUA" type="_ANEe4M3kEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="__qlc4M3jEeSxrJ3subALUA" name="MyIterator">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="__qlc4c3jEeSxrJ3subALUA">
+                    <body>
+	 * Esta clase modela el iterador del ArrayList
+	 * @param &lt;T> el parámetro que representa la clase generica
+	 </body>
+                  </ownedComment>
+                  <generalization xmi:type="uml:Generalization" xmi:id="__qmD8M3jEeSxrJ3subALUA"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="__qmrAM3jEeSxrJ3subALUA" name="x" type="_6wuyAM3jEeSxrJ3subALUA" isUnique="false"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="__qmrAc3jEeSxrJ3subALUA" name="hasNext" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="__qnSEM3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="__qnSEc3jEeSxrJ3subALUA" name="next" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="__qn5IM3jEeSxrJ3subALUA" type="__qUXIM3jEeSxrJ3subALUA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="__qn5Ic3jEeSxrJ3subALUA" name="hasPrevious" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="__qogMM3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="__qpHQM3jEeSxrJ3subALUA" name="previous" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="__qpHQc3jEeSxrJ3subALUA" type="__qUXIM3jEeSxrJ3subALUA" direction="return"/>
+                  </ownedOperation>
+                </nestedClassifier>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="__qUXIM3jEeSxrJ3subALUA" name="T"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="__qxDEM3jEeSxrJ3subALUA" name="IteradorListaDoblementeEnlazada">
+                <ownedComment xmi:type="uml:Comment" xmi:id="__qxqIM3jEeSxrJ3subALUA">
+                  <body>&#xD;
+ * Esta clase permite recorrer una lista enlazada de manera directa (hacia adelante)&#xD;
+ * @param &lt;ClaseGenerica> el tipo de elemento que permite obtener el iterador&#xD;
+ </body>
+                </ownedComment>
+                <generalization xmi:type="uml:Generalization" xmi:id="__qxqIc3jEeSxrJ3subALUA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="__qy4QM3jEeSxrJ3subALUA" name="elementoActual" visibility="private" type="__p2dEM3jEeSxrJ3subALUA" isUnique="false"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="__qyRMM3jEeSxrJ3subALUA" name="IteradorListaDoblementeEnlazada implements Serializable" client="__qxDEM3jEeSxrJ3subALUA" supplier="__ojckM3jEeSxrJ3subALUA" contract="__ojckM3jEeSxrJ3subALUA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__qzfUM3jEeSxrJ3subALUA" name="hasNext" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__qzfUc3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__q0GYM3jEeSxrJ3subALUA" name="hasPrevious" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__q0GYc3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__q0tcM3jEeSxrJ3subALUA" name="next" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__q0tcc3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="__q1UgM3jEeSxrJ3subALUA" name="previous" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="__q1Ugc3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="__-4R4M3jEeSxrJ3subALUA" name="Iterable"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="___adYM3jEeSxrJ3subALUA" name="ListaSimplementeEnlazada">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="___cSkM3jEeSxrJ3subALUA" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" type="__olRwM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="___dgsM3jEeSxrJ3subALUA" name="primero" visibility="private" type="___c5oM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="___dgsc3jEeSxrJ3subALUA" name="anterior" visibility="private" type="___c5oM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="___eHwM3jEeSxrJ3subALUA" name="ultimo" visibility="private" type="___c5oM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="___eu0M3jEeSxrJ3subALUA" name="length" visibility="private" type="_6wuyAM3jEeSxrJ3subALUA" isUnique="false"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="___bEcM3jEeSxrJ3subALUA" name="ListaSimplementeEnlazada implements Lista" client="___adYM3jEeSxrJ3subALUA" supplier="__-0AcM3jEeSxrJ3subALUA" contract="__-0AcM3jEeSxrJ3subALUA"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="___brgM3jEeSxrJ3subALUA" name="ListaSimplementeEnlazada implements Serializable" client="___adYM3jEeSxrJ3subALUA" supplier="__ojckM3jEeSxrJ3subALUA" contract="__ojckM3jEeSxrJ3subALUA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___fV4M3jEeSxrJ3subALUA" name="addAlFinal" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___fV4c3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___f88M3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___gkAM3jEeSxrJ3subALUA" name="add" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___hLEM3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___hLEc3jEeSxrJ3subALUA" name="pos" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___hyIM3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___hyIc3jEeSxrJ3subALUA" name="clear" visibility="public"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___iZMM3jEeSxrJ3subALUA" name="contains" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___iZMc3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___jAQM3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___jAQc3jEeSxrJ3subALUA" name="get" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___jnUM3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___jnUc3jEeSxrJ3subALUA" name="pos" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___kOYM3jEeSxrJ3subALUA" name="getLast" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___kOYc3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___k1cM3jEeSxrJ3subALUA" name="indexOf" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___k1cc3jEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___k1cs3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___lcgM3jEeSxrJ3subALUA" name="lastIndexOf" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___lcgc3jEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___mDkM3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___mDkc3jEeSxrJ3subALUA" name="isEmpty" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___mDks3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___mqoM3jEeSxrJ3subALUA" name="iterator" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___mqoc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___nRsM3jEeSxrJ3subALUA" name="iterator" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___nRsc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___n4wM3jEeSxrJ3subALUA" name="pos" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___n4wc3jEeSxrJ3subALUA" name="remove" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___of0M3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___of0c3jEeSxrJ3subALUA" name="pos" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___pG4M3jEeSxrJ3subALUA" name="remove" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___pG4c3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___pt8M3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___pt8c3jEeSxrJ3subALUA" name="set" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___qVAM3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___qVAc3jEeSxrJ3subALUA" name="pos" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___q8EM3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___q8Ec3jEeSxrJ3subALUA" name="size" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___q8Es3jEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___rjIM3jEeSxrJ3subALUA" name="darPrimero" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___rjIc3jEeSxrJ3subALUA" type="___c5oM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___rjIs3jEeSxrJ3subALUA" name="addAlPrincipio" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___sKMM3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___sKMc3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___sxQM3jEeSxrJ3subALUA" name="add" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___sxQc3jEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___tYUM3jEeSxrJ3subALUA" name="elementoI" type="__p4SQM3jEeSxrJ3subALUA"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___t_YM3jEeSxrJ3subALUA" name="elementoAgregar" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___t_Yc3jEeSxrJ3subALUA" name="buscar" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___umcM3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___umcc3jEeSxrJ3subALUA" name="elemento" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___vNgM3jEeSxrJ3subALUA" name="removeFirst" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___vNgc3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___v0kM3jEeSxrJ3subALUA" name="removeLast" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___v0kc3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___wboM3jEeSxrJ3subALUA" name="getFirst" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___wboc3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="___xCsM3jEeSxrJ3subALUA" name="reverseIterator" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="___xCsc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="___c5oM3jEeSxrJ3subALUA" name="ElementoSimplementeEnlazado">
+                <ownedComment xmi:type="uml:Comment" xmi:id="___9P8M3jEeSxrJ3subALUA">
+                  <body>&#xD;
+ * Elemento de una lista simplemente encadenada&#xD;
+ * @param &lt;ClaseGenerica> El tipo de valor que va a almacenar este elemento&#xD;
+ </body>
+                </ownedComment>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="___93AM3jEeSxrJ3subALUA" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" type="__olRwM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="___-eEM3jEeSxrJ3subALUA" name="valor" visibility="private" type="__p4SQM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="___-eEc3jEeSxrJ3subALUA" name="siguiente" visibility="private" type="___c5oM3jEeSxrJ3subALUA" isUnique="false"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="___9P8c3jEeSxrJ3subALUA" name="ElementoSimplementeEnlazado implements Serializable" client="___c5oM3jEeSxrJ3subALUA" supplier="__ojckM3jEeSxrJ3subALUA" contract="__ojckM3jEeSxrJ3subALUA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="____FIM3jEeSxrJ3subALUA" name="getValor" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="____sMM3jEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="____sMc3jEeSxrJ3subALUA" name="setValor" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AAATQM3kEeSxrJ3subALUA" name="valor" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AAATQc3kEeSxrJ3subALUA" name="getSiguiente" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AAATQs3kEeSxrJ3subALUA" type="___c5oM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AAA6UM3kEeSxrJ3subALUA" name="setSiguiente" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AAA6Uc3kEeSxrJ3subALUA" name="valor" type="__p4SQM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AABhYM3kEeSxrJ3subALUA" name="setSiguiente" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AABhYc3kEeSxrJ3subALUA" name="node" type="___c5oM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AACIcM3kEeSxrJ3subALUA" name="reinicializarSiguiente" visibility="public"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AAD9oM3kEeSxrJ3subALUA" name="IteradorListaSimplementeEnlazada">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_AAEksM3kEeSxrJ3subALUA">
+                  <body>&#xD;
+ * Esta clase permite recorrer una lista simplemente enlazada&#xD;
+ * @param &lt;ClaseGenerica>  el tipo de elemento que permite obtener el iterador&#xD;
+ </body>
+                </ownedComment>
+                <generalization xmi:type="uml:Generalization" xmi:id="_AAEksc3kEeSxrJ3subALUA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_AAFLwM3kEeSxrJ3subALUA" name="elementoActual" visibility="private" type="___c5oM3jEeSxrJ3subALUA" isUnique="false"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_AAEkss3kEeSxrJ3subALUA" name="IteradorListaSimplementeEnlazada implements Serializable" client="_AAD9oM3kEeSxrJ3subALUA" supplier="__ojckM3jEeSxrJ3subALUA" contract="__ojckM3jEeSxrJ3subALUA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AAFLwc3kEeSxrJ3subALUA" name="hasNext" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AAFy0M3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AAFy0c3kEeSxrJ3subALUA" name="next" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AAFy0s3kEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AAGZ4M3kEeSxrJ3subALUA" name="hasPrevious" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AAGZ4c3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AAHA8M3kEeSxrJ3subALUA" name="previous" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AAHA8c3kEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AAI2IM3kEeSxrJ3subALUA" name="IteradorReversoListaDoblementeEnlazada">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_AAJdMM3kEeSxrJ3subALUA">
+                  <body>&#xD;
+ * Esta clase permite recorrer una lista doblemente enlazada de manera reversa (hacia atr�s)&#xD;
+ * @param &lt;ClaseGenerica> el tipo de elemento que permite obtener el iterador&#xD;
+ </body>
+                </ownedComment>
+                <generalization xmi:type="uml:Generalization" xmi:id="_AAJdMc3kEeSxrJ3subALUA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_AAKEQc3kEeSxrJ3subALUA" name="elementoActual" visibility="private" type="__p2dEM3jEeSxrJ3subALUA" isUnique="false"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_AAKEQM3kEeSxrJ3subALUA" name="IteradorReversoListaDoblementeEnlazada implements Serializable" client="_AAI2IM3kEeSxrJ3subALUA" supplier="__ojckM3jEeSxrJ3subALUA" contract="__ojckM3jEeSxrJ3subALUA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AAKrUM3kEeSxrJ3subALUA" name="hasNext" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AALSYM3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AALSYc3kEeSxrJ3subALUA" name="next" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AAL5cM3kEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AAL5cc3kEeSxrJ3subALUA" name="hasPrevious" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AAL5cs3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AAMggM3kEeSxrJ3subALUA" name="previous" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AAMggc3kEeSxrJ3subALUA" type="__p4SQM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_ANYn8M3kEeSxrJ3subALUA" name="test">
+              <packagedElement xmi:type="uml:Package" xmi:id="_ANZPAM3kEeSxrJ3subALUA" name="dict">
+                <packagedElement xmi:type="uml:Class" xmi:id="_ANZ2EM3kEeSxrJ3subALUA" name="DictionaryTest">
+                  <generalization xmi:type="uml:Generalization" xmi:id="_ANadIs3kEeSxrJ3subALUA" general="_ANadIc3kEeSxrJ3subALUA"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_ANbEMM3kEeSxrJ3subALUA" name="dict" visibility="private" type="__o2-kM3jEeSxrJ3subALUA" isUnique="false"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANbrQM3kEeSxrJ3subALUA" name="setUpEscenario1" visibility="public"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANbrQc3kEeSxrJ3subALUA" name="setUpEscenario2" visibility="public"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANcSUM3kEeSxrJ3subALUA" name="setUpEscenario3" visibility="public"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANcSUc3kEeSxrJ3subALUA" name="testGetValue" visibility="public"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANcSUs3kEeSxrJ3subALUA" name="testRemoveEntry" visibility="public"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANc5YM3kEeSxrJ3subALUA" name="testAddEntry" visibility="public"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANc5Yc3kEeSxrJ3subALUA" name="testSetEntry" visibility="public"/>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_ANiY8M3kEeSxrJ3subALUA" name="list">
+                <packagedElement xmi:type="uml:Class" xmi:id="_ANiY8c3kEeSxrJ3subALUA" name="ListaTest" isAbstract="true">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_ANjAAM3kEeSxrJ3subALUA">
+                    <body>
+ * Esta es la clase usada para verificar que los metodos de las listas  funcionen correctamente
+ </body>
+                  </ownedComment>
+                  <generalization xmi:type="uml:Generalization" xmi:id="_ANjAAc3kEeSxrJ3subALUA" general="_ANadIc3kEeSxrJ3subALUA"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_ANjnEM3kEeSxrJ3subALUA" name="lista" visibility="private" type="__-0AcM3jEeSxrJ3subALUA" isUnique="false">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANjnEc3kEeSxrJ3subALUA">
+                      <body>
+	 * Es la clase donde se har�n las pruebas
+	 </body>
+                    </ownedComment>
+                  </ownedAttribute>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANkOIM3kEeSxrJ3subALUA" name="crearNuevaLista" visibility="public" isAbstract="true">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANkOIc3kEeSxrJ3subALUA">
+                      <body>
+	 * Crea la lista
+	 </body>
+                    </ownedComment>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ANkOIs3kEeSxrJ3subALUA" type="__-0AcM3jEeSxrJ3subALUA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANk1MM3kEeSxrJ3subALUA" name="setUpEscenario1" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANk1Mc3kEeSxrJ3subALUA">
+                      <body>
+	 * Crea el escenario con una lista vacía
+	 </body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANk1Ms3kEeSxrJ3subALUA" name="setUpEscenario2" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANlcQM3kEeSxrJ3subALUA">
+                      <body>
+	 * Crea el escenario con una lista con más de un elemento
+	 </body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANlcQc3kEeSxrJ3subALUA" name="setUpEscenario3" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANlcQs3kEeSxrJ3subALUA">
+                      <body>
+	 * Crea el escenario con una lista con un elemento
+	 </body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANmDUM3kEeSxrJ3subALUA" name="testAddAlPrincipio" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANmDUc3kEeSxrJ3subALUA">
+                      <body>
+	 * Prueba de adición de elementos al principio de la lista
+	 * &lt;b> M�todos a probar: &lt;/b> &lt;br>
+	 * addAlPrincipio. &lt;br>
+	 * &lt;b> Objetivo: &lt;/b> Probar que el m�todo addAlPrincipio() agrega correctamente elementos a la lista. &lt;br>
+	 * &lt;b> Resultados esperados: &lt;/b> &lt;br>
+	 * El elemento debería agregarse correctamente en la primera posición en todos los casos y retorna true
+	 </body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANmDUs3kEeSxrJ3subALUA" name="testAddAlFinal" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANmqYM3kEeSxrJ3subALUA">
+                      <body>
+	 * Prueba de adición de elementos al final de la lista
+	 * &lt;b> M�todos a probar: &lt;/b> &lt;br>
+	 * addAlFinal. &lt;br>
+	 * &lt;b> Objetivo: &lt;/b> Probar que el m�todo addAlFinal() agrega correctamente elementos a la lista. &lt;br>
+	 * &lt;b> Resultados esperados: &lt;/b> &lt;br>
+	 * El elemento debería agregarse correctamente en la ultima posición en todos los casos, y retorna true 
+	 </body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANmqYc3kEeSxrJ3subALUA" name="testAddDespuesDe" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANmqYs3kEeSxrJ3subALUA">
+                      <body>
+	 * Prueba de adición de elementos al despues de un elemento dado
+	 * &lt;b> M�todos a probar: &lt;/b> &lt;br>
+	 * add. &lt;br>
+	 * &lt;b> Objetivo: &lt;/b> Probar que el m�todo add(elementoI, elementoAgregar) agrega correctamente elementos a la lista. &lt;br>
+	 * &lt;b> Resultados esperados: &lt;/b> &lt;br>
+	 * El elemento debería agregarse correctamente despues del elemento dado y retorna true, en caso de que no exista, retorna false.
+	 </body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANnRcM3kEeSxrJ3subALUA" name="testAddPosicion" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANnRcc3kEeSxrJ3subALUA">
+                      <body>
+	 * Prueba de adición de elementos según una posición dada
+	 * &lt;b> M�todos a probar: &lt;/b> &lt;br>
+	 * add. &lt;br>
+	 * &lt;b> Objetivo: &lt;/b> Probar que el m�todo addAlFinal(pos, elemento) agrega correctamente elementos a la lista. &lt;br>
+	 * &lt;b> Resultados esperados: &lt;/b> &lt;br>
+	 * El elemento debería agregarse correctamente en la posición dadasi esta no se sale de los límites y retornar true.
+	 * En caso contrario, dbeería lanzar una excepción
+	 </body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANnRcs3kEeSxrJ3subALUA" name="testClear" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANn4gM3kEeSxrJ3subALUA">
+                      <body>
+	 * Prueba de borrar todos los elementos de una lista
+	 * &lt;b> M�todos a probar: &lt;/b> &lt;br>
+	 * clear. &lt;br>
+	 * &lt;b> Objetivo: &lt;/b> Probar que el m�todo clear() borra correctamente la lista. &lt;br>
+	 * &lt;b> Resultados esperados: &lt;/b> &lt;br>
+	 * La lista no tiene elementos.
+	 </body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANn4gc3kEeSxrJ3subALUA" name="testContains" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANn4gs3kEeSxrJ3subALUA">
+                      <body>
+	 * Prueba de encontrar si hay o no un elemento en la lista
+	 * &lt;b> M�todos a probar: &lt;/b> &lt;br>
+	 * contains. &lt;br>
+	 * &lt;b> Objetivo: &lt;/b> Probar que el m�todo contains() contesta correctamente a si hay o no un elemento en la lista&lt;br>
+	 * &lt;b> Resultados esperados: &lt;/b> &lt;br>
+	 * El metodo devuelve true si el metodo esta false de lo contrario
+	 </body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANofkM3kEeSxrJ3subALUA" name="testGet" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANofkc3kEeSxrJ3subALUA">
+                      <body>
+	 * Prueba de conseguir un elemento en una posición dada
+	 * &lt;b> M�todos a probar: &lt;/b> &lt;br>
+	 * get. &lt;br>
+	 * &lt;b> Objetivo: &lt;/b> Probar que el m�todo get(pos) devuelve el elemento correcto. &lt;br>
+	 * &lt;b> Resultados esperados: &lt;/b> &lt;br>
+	 * El metodo debe devolver el elemento correcto si la posición esta dentro de los límites.
+	 * De lo contrario, se lanza una excepcion.
+	 </body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANofks3kEeSxrJ3subALUA" name="testGetFirst" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANpGoM3kEeSxrJ3subALUA">
+                      <body>
+	 * Prueba de conseguir el primer elemento de la lista
+	 * &lt;b> M�todos a probar: &lt;/b> &lt;br>
+	 * getFirst. &lt;br>
+	 * &lt;b> Objetivo: &lt;/b> Probar que el m�todo getFirst() consigue correctamente el primer elemento  &lt;br>
+	 * &lt;b> Resultados esperados: &lt;/b> &lt;br>
+	 * El metodo devuelve el primer elemento si este existe.
+	 * De lo contrario, retorna null
+	 </body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANpGoc3kEeSxrJ3subALUA" name="testGetLast" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANpGos3kEeSxrJ3subALUA">
+                      <body>
+	 * Prueba de conseguir el ultimo elemento de la lista
+	 * &lt;b> M�todos a probar: &lt;/b> &lt;br>
+	 * getLast. &lt;br>
+	 * &lt;b> Objetivo: &lt;/b> Probar que el m�todo getLast() consigue correctamente el ultimo elemento de la lista  &lt;br>
+	 * &lt;b> Resultados esperados: &lt;/b> &lt;br>
+	 * Si hay ultimo elemento, se devuelve.
+	 * De lo contrario, se lanza excepcion
+	 </body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANptsM3kEeSxrJ3subALUA" name="testRemoveFirst" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANptsc3kEeSxrJ3subALUA">
+                      <body>
+	 * Prueba de eliminar el primer elemento de la lista
+	 * &lt;b> M�todos a probar: &lt;/b> &lt;br>
+	 * removeFirst. &lt;br>
+	 * &lt;b> Objetivo: &lt;/b> Probar que el m�todo removeFirst() remueve correctamente el primer elemento de la lista  &lt;br>
+	 * &lt;b> Resultados esperados: &lt;/b> &lt;br>
+	 * Se remueve el primer elemento. Si este no existe, se lanza excepción.
+	 </body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANptss3kEeSxrJ3subALUA" name="testLastIndexOf" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANqUwM3kEeSxrJ3subALUA">
+                      <body>
+	 * Prueba de conseguir el ultimo indice de un elemento dado
+	 * &lt;b> M�todos a probar: &lt;/b> &lt;br>
+	 * lastIndexOf. &lt;br>
+	 * &lt;b> Objetivo: &lt;/b> Probar que el m�todo lastIndexOf() da el último índice de un elemento dado  &lt;br>
+	 * &lt;b> Resultados esperados: &lt;/b> &lt;br>
+	 * Se retorna el último indice de un elemento dado.
+	 * Si no se encuentra el elemento en la lista, se retorna -1
+	 </body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANqUwc3kEeSxrJ3subALUA" name="testIsEmpty" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANqUws3kEeSxrJ3subALUA">
+                      <body>
+	 * Prueba de saber si la lista esta vacía
+	 * &lt;b> M�todos a probar: &lt;/b> &lt;br>
+	 * isEmpty. &lt;br>
+	 * &lt;b> Objetivo: &lt;/b> Probar que el m�todo isEmpty() contesta correctamente si una lista esta vacía o no  &lt;br>
+	 * &lt;b> Resultados esperados: &lt;/b> &lt;br>
+	 * El metodo devuelve true si la lista esta vacía, false de lo contrario
+	 </body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANq70M3kEeSxrJ3subALUA" name="testRemoveLast" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANq70c3kEeSxrJ3subALUA">
+                      <body>
+	 * Prueba de eliminar el ultimo elemento
+	 * &lt;b> M�todos a probar: &lt;/b> &lt;br>
+	 * removeLast. &lt;br>
+	 * &lt;b> Objetivo: &lt;/b> Probar que el m�todo removeLast() elimina el ultimo elemento  &lt;br>
+	 * &lt;b> Resultados esperados: &lt;/b> &lt;br>
+	 * Si la lista no esta vacía, elimina el elemento. De estarlo, lanza excepción.
+	 </body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANq70s3kEeSxrJ3subALUA" name="testRemove" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANri4M3kEeSxrJ3subALUA">
+                      <body>
+	 * Prueba de eliminar un elemento dado
+	 * &lt;b> M�todos a probar: &lt;/b> &lt;br>
+	 * remove. &lt;br>
+	 * &lt;b> Objetivo: &lt;/b> Probar que el m�todo remove(elemento) elimina correctamente el elemento dado  &lt;br>
+	 * &lt;b> Resultados esperados: &lt;/b> &lt;br>
+	 * Si el elemento existe, se elimina y se retorna.
+	 * De lo contrario, se retorna null.
+	 </body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANri4c3kEeSxrJ3subALUA" name="testRemovePos" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANri4s3kEeSxrJ3subALUA">
+                      <body>
+	 * Prueba de remover un elemento por su posicion
+	 * &lt;b> M�todos a probar: &lt;/b> &lt;br>
+	 * remove. &lt;br>
+	 * &lt;b> Objetivo: &lt;/b> Probar que el m�todo remove(pos) remueve correctamente el elemento en la posición dada &lt;br>
+	 * &lt;b> Resultados esperados: &lt;/b> &lt;br>
+	 * Si la posición esta dentro del límite, se elimina y retorna el elemento
+	 * De lo contrario, se lanza excepción
+	 </body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANsJ8M3kEeSxrJ3subALUA" name="testSet" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANsJ8c3kEeSxrJ3subALUA">
+                      <body>
+	 * Prueba de reemplazar un elemento en una posicion
+	 * &lt;b> M�todos a probar: &lt;/b> &lt;br>
+	 * set. &lt;br>
+	 * &lt;b> Objetivo: &lt;/b> Probar que el m�todo set() reemplaza correctamente un elemento en la posicion dada por el elemento dado  &lt;br>
+	 * &lt;b> Resultados esperados: &lt;/b> &lt;br>
+	 * Si la posicion esta dentro del limite, reemplaza el elemento y retorna el elemento reemplazado
+	 * De lo contrario, lanza una excepcion
+	 </body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANsJ8s3kEeSxrJ3subALUA" name="testSize" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANsJ883kEeSxrJ3subALUA">
+                      <body>
+	 * Prueba de retornar el tamaño de la lista
+	 * &lt;b> M�todos a probar: &lt;/b> &lt;br>
+     * size. &lt;br>
+     * &lt;b> Objetivo: &lt;/b> Probar que el m�todo size() devuelve correctamente el tamño de la lista  &lt;br>
+     * &lt;b> Resultados esperados: &lt;/b> &lt;br>
+     * El metodo devuelve el tamaño correcto
+	 </body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANsxAM3kEeSxrJ3subALUA" name="testBuscar" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANsxAc3kEeSxrJ3subALUA">
+                      <body>
+	 * Prueba de buscar un elemento dado
+	 * &lt;b> M�todos a probar: &lt;/b> &lt;br>
+     * buscar. &lt;br>
+     * &lt;b> Objetivo: &lt;/b> Probar que el m�todo buscar() retorna correctamente el elemento buscado  &lt;br>
+     * &lt;b> Resultados esperados: &lt;/b> &lt;br>
+     * Si el elemento está en la lista, se retorna
+     * De lo contrario, se retorna null
+	 </body>
+                    </ownedComment>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANsxAs3kEeSxrJ3subALUA" name="testIndexOf" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANsxA83kEeSxrJ3subALUA">
+                      <body>
+	 * Prueba de conocer la posiciñon de un elemento
+	 * &lt;b> M�todos a probar: &lt;/b> &lt;br>
+     * indexOf. &lt;br>
+     * &lt;b> Objetivo: &lt;/b> Probar que el m�todo indexOf() retorna correctamente el indice de un elemento  &lt;br>
+     * &lt;b> Resultados esperados: &lt;/b> &lt;br>
+     * Si el elemento esta en la lista se retorna su posicion
+     * De lo contrario, se retorna -1.
+	 </body>
+                    </ownedComment>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_ANumMM3kEeSxrJ3subALUA" name="ListaSimplementeEnlazadaTest">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_ANumMc3kEeSxrJ3subALUA">
+                    <body>
+ * Esta es la clase que prueba la lista simplemente enlazada
+ </body>
+                  </ownedComment>
+                  <generalization xmi:type="uml:Generalization" xmi:id="_ANvNQM3kEeSxrJ3subALUA" general="_ANiY8c3kEeSxrJ3subALUA"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANvNQc3kEeSxrJ3subALUA" name="crearNuevaLista" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANvNQs3kEeSxrJ3subALUA">
+                      <body>
+	 * Este metodo crea una lista nueva
+	 </body>
+                    </ownedComment>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ANv0UM3kEeSxrJ3subALUA" type="__-0AcM3jEeSxrJ3subALUA" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_ANxCcM3kEeSxrJ3subALUA" name="ListaDoblementeEnlazadaTest">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_ANxpgM3kEeSxrJ3subALUA">
+                    <body>
+ * Esta es la clase que prueba la lista doblemente enlazada
+ </body>
+                  </ownedComment>
+                  <generalization xmi:type="uml:Generalization" xmi:id="_ANxpgc3kEeSxrJ3subALUA" general="_ANiY8c3kEeSxrJ3subALUA"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ANyQkM3kEeSxrJ3subALUA" name="crearNuevaLista" visibility="public">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_ANyQkc3kEeSxrJ3subALUA">
+                      <body>
+	 * Este método crea una nueva lista
+	 </body>
+                    </ownedComment>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ANy3oM3kEeSxrJ3subALUA" type="__-0AcM3jEeSxrJ3subALUA" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_AN3JEM3kEeSxrJ3subALUA" name="tree">
+                <packagedElement xmi:type="uml:Class" xmi:id="_AN3wIM3kEeSxrJ3subALUA" name="TreeTest">
+                  <generalization xmi:type="uml:Generalization" xmi:id="_AN4XMM3kEeSxrJ3subALUA" general="_ANadIc3kEeSxrJ3subALUA"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_AN5lUM3kEeSxrJ3subALUA" name="tree" visibility="private" type="_AZntIM3kEeSxrJ3subALUA" isUnique="false"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_AN5lUc3kEeSxrJ3subALUA" name="setupEscenario1" visibility="public"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_AN6MYM3kEeSxrJ3subALUA" name="setupEscenario2" visibility="public"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_AN6MYc3kEeSxrJ3subALUA" name="setupEscenario3" visibility="public"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_AN6zcM3kEeSxrJ3subALUA" name="setupEscenario4" visibility="public"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_AN6zcc3kEeSxrJ3subALUA" name="setupEscenario5" visibility="public"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_AN6zcs3kEeSxrJ3subALUA" name="testAdd" visibility="public"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_AN7agM3kEeSxrJ3subALUA" name="testRemove" visibility="public"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_AN7agc3kEeSxrJ3subALUA" name="testGet" visibility="public"/>
+                </packagedElement>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_AN4-QM3kEeSxrJ3subALUA" name="tree">
+              <packagedElement xmi:type="uml:Interface" xmi:id="_AZntIM3kEeSxrJ3subALUA" name="Tree">
+                <generalization xmi:type="uml:Generalization" xmi:id="_AZo7QM3kEeSxrJ3subALUA" general="_AZoUMM3kEeSxrJ3subALUA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AZo7Qc3kEeSxrJ3subALUA" name="add" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AZo7Qs3kEeSxrJ3subALUA">
+                    <body>
+	 * Agrega un elemento al árbol. Si el elemento se encuentra en el árbol, no será agregado.
+	 * @param item El elemento a ser agregado. item != null.
+	 * @return true si el elemento fue agregado, false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AZpiUM3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AZpiUc3kEeSxrJ3subALUA" name="item" type="_AOCIMM3kEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AZqJYM3kEeSxrJ3subALUA" name="get" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AZqJYc3kEeSxrJ3subALUA">
+                    <body>
+	 * Retorna un elemento que se encuentra en el árbol.
+	 * @param item El objeto a buscar. item != null.
+	 * @return El elemento a buscar. null, si el elemento no fue encontrado.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AZqJYs3kEeSxrJ3subALUA" type="_AOCIMM3kEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AZqwcM3kEeSxrJ3subALUA" name="item" type="_AOCIMM3kEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AZqwcc3kEeSxrJ3subALUA" name="remove" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AZqwcs3kEeSxrJ3subALUA">
+                    <body>
+	 * Elimina un elemento del árbol.
+	 * @param item El elemento a ser eliminado. item != null.
+	 * @return El elemento eliminado. null, si no se encuentra en el árbol.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AZrXgM3kEeSxrJ3subALUA" type="_AOCIMM3kEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AZrXgc3kEeSxrJ3subALUA" name="item" type="_AOCIMM3kEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AZr-kM3kEeSxrJ3subALUA" name="size" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AZr-kc3kEeSxrJ3subALUA">
+                    <body>
+	 * Retorna el número de elementos agregados al árbol.
+	 * @return El número de elementos actuales.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AZr-ks3kEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AZsloM3kEeSxrJ3subALUA" name="getHeight" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AZsloc3kEeSxrJ3subALUA">
+                    <body>
+	 * Retorna la altura actual del árbol.
+	 * @return la altura actual del árbol.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AZslos3kEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AZtMsM3kEeSxrJ3subALUA" name="contains" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AZtMsc3kEeSxrJ3subALUA">
+                    <body>
+	 * Establece si un elemento se encuentra en el árbol.
+	 * @param item El elemento a ser localizado. item != null.
+	 * @return true, si el elemento se encuentra en el árbol, false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AZtMss3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AZtzwM3kEeSxrJ3subALUA" name="item" type="_AOCIMM3kEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AZtzwc3kEeSxrJ3subALUA" name="copyList" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AZtzws3kEeSxrJ3subALUA">
+                    <body>
+	 * Agrega los elementos de una lista al árbol.
+	 * @param list La lista a copiar. list != null.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AZua0M3kEeSxrJ3subALUA" name="list" type="__-0AcM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AZua0c3kEeSxrJ3subALUA" name="copyArray" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AZua0s3kEeSxrJ3subALUA">
+                    <body>
+	 * Agrega los elementos de un arreglo al árbol.
+	 * @param list El arreglo a copiar. list != null.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AZvB4M3kEeSxrJ3subALUA" name="list" type="_AOCIMM3kEeSxrJ3subALUA">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AZvB4c3kEeSxrJ3subALUA"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AZvB4s3kEeSxrJ3subALUA" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AZvo8M3kEeSxrJ3subALUA" name="arrayCopy" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AZvo8c3kEeSxrJ3subALUA">
+                    <body>
+	 * Agrega los elementos de un arreglo al árbol.
+	 * @param list El arreglo a copiar. list != null.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AZvo8s3kEeSxrJ3subALUA" name="list" type="_AOCIMM3kEeSxrJ3subALUA">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AZwQAM3kEeSxrJ3subALUA"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AZwQAc3kEeSxrJ3subALUA" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AZwQAs3kEeSxrJ3subALUA" name="isEmpty" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AZwQA83kEeSxrJ3subALUA">
+                    <body>
+	 * Establece si el árbol se encuentra vacío.
+	 * @return true, si el árbol no tiene elementos. false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AZw3EM3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AZw3Ec3kEeSxrJ3subALUA" name="toArray" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AZw3Es3kEeSxrJ3subALUA">
+                    <body>
+	 * Retorna los elementos actuales del árbol en un arreglo ordenado. 
+	 * @return el arreglo con los elementos del árbol.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AZxeIM3kEeSxrJ3subALUA" type="_AOCIMM3kEeSxrJ3subALUA" direction="return">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AZxeIc3kEeSxrJ3subALUA"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AZxeIs3kEeSxrJ3subALUA" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AZyFMM3kEeSxrJ3subALUA" name="containsAll" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AZyFMc3kEeSxrJ3subALUA">
+                    <body>
+	 * Determina si los elementos presentes en una lista, se encuentran en el árbol.
+	 * @param c La lista a ser verificada.
+	 * @return true, si todos los elementos de la lista fueron hallados. false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AZyFMs3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AZysQM3kEeSxrJ3subALUA" name="c" type="__-0AcM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AZysQc3kEeSxrJ3subALUA" name="clear" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AZysQs3kEeSxrJ3subALUA">
+                    <body>
+	 * Elimina todos los elementos del árbol.
+	 </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AZysQ83kEeSxrJ3subALUA" name="removeAll" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AZzTUM3kEeSxrJ3subALUA">
+                    <body>
+	 * Elimina del árbol, los elementos presentes en un arreglo.
+	 * @param c El arreglo que contiene los elementos a ser eliminados del árbol.
+	 * @return true si todos los elementos del arreglo fueron eliminados del árbol. false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AZzTUc3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AZzTUs3kEeSxrJ3subALUA" name="c" type="_AOCIMM3kEeSxrJ3subALUA">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AZz6YM3kEeSxrJ3subALUA"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AZz6Yc3kEeSxrJ3subALUA" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AZz6Ys3kEeSxrJ3subALUA" name="removeAll" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AZ0hcM3kEeSxrJ3subALUA">
+                    <body>
+	 * Elimina del árbol, los elementos presentes en una lista.
+	 * @param c La lista que contiene los elementos a ser eliminados del árbol.
+	 * @return true si todos los elementos de la lista fueron eliminados del árbol. false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AZ0hcc3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AZ1IgM3kEeSxrJ3subALUA" name="c" type="__-0AcM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AZ1vkM3kEeSxrJ3subALUA" name="isBalanced" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AZ1vkc3kEeSxrJ3subALUA">
+                    <body>
+	 * Retorna si el árbol se encuentra balanceado.
+	 * @return true, si se encuentra balanceado. false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AZ1vks3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AN-d0M3kEeSxrJ3subALUA" name="LlamaAVLTree">
+                <generalization xmi:type="uml:Generalization" xmi:id="_AN_E4M3kEeSxrJ3subALUA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_AN_r8c3kEeSxrJ3subALUA" name="root" visibility="private" type="_AN_r8M3kEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_AOATAM3kEeSxrJ3subALUA" name="size" visibility="private" type="_6wuyAM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOA6EM3kEeSxrJ3subALUA" name="iterator" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOA6Ec3kEeSxrJ3subALUA" type="__ppowM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOA6Es3kEeSxrJ3subALUA" name="getHeight" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOBhIM3kEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOBhIc3kEeSxrJ3subALUA" name="toString" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOBhIs3kEeSxrJ3subALUA" type="_6w2Gwc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOCIMc3kEeSxrJ3subALUA" name="add" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOCIMs3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOCvQM3kEeSxrJ3subALUA" name="item" type="_AOCIMM3kEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOCvQc3kEeSxrJ3subALUA" name="remove" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AODWUM3kEeSxrJ3subALUA" type="_AOCIMM3kEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AODWUc3kEeSxrJ3subALUA" name="item" type="_AOCIMM3kEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AODWUs3kEeSxrJ3subALUA" name="contains" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOD9YM3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOD9Yc3kEeSxrJ3subALUA" name="item" type="_AOCIMM3kEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOD9Ys3kEeSxrJ3subALUA" name="copyList" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOEkcM3kEeSxrJ3subALUA" name="list" type="__-0AcM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOEkcc3kEeSxrJ3subALUA" name="copyArray" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOEkcs3kEeSxrJ3subALUA" name="list" type="_AOCIMM3kEeSxrJ3subALUA">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AOFLgM3kEeSxrJ3subALUA"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AOFLgc3kEeSxrJ3subALUA" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOFLgs3kEeSxrJ3subALUA" name="get" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOFLg83kEeSxrJ3subALUA" type="_AOCIMM3kEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOFykM3kEeSxrJ3subALUA" name="item" type="_AOCIMM3kEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOFykc3kEeSxrJ3subALUA" name="isEmpty" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOFyks3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOGZoM3kEeSxrJ3subALUA" name="arrayCopy" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOGZoc3kEeSxrJ3subALUA" name="list" type="_AOCIMM3kEeSxrJ3subALUA">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AOGZos3kEeSxrJ3subALUA"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AOHAsM3kEeSxrJ3subALUA" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOHAsc3kEeSxrJ3subALUA" name="size" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOHAss3kEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOHAs83kEeSxrJ3subALUA" name="toArray" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOHnwM3kEeSxrJ3subALUA" type="_AOCIMM3kEeSxrJ3subALUA" direction="return">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AOHnwc3kEeSxrJ3subALUA"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AOHnws3kEeSxrJ3subALUA" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOIO0M3kEeSxrJ3subALUA" name="containsAll" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOIO0c3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOI14M3kEeSxrJ3subALUA" name="c" type="__-0AcM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOI14c3kEeSxrJ3subALUA" name="removeAll" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOI14s3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOJc8M3kEeSxrJ3subALUA" name="c" type="_AOCIMM3kEeSxrJ3subALUA">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AOJc8c3kEeSxrJ3subALUA"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AOJc8s3kEeSxrJ3subALUA" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOJc883kEeSxrJ3subALUA" name="removeAll" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOKEAM3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOKEAc3kEeSxrJ3subALUA" name="c" type="__-0AcM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOKrEM3kEeSxrJ3subALUA" name="clear" visibility="public"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOKrEc3kEeSxrJ3subALUA" name="isBalanced" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOKrEs3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOLSIM3kEeSxrJ3subALUA" name="toConsole" visibility="public"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_AOLSIc3kEeSxrJ3subALUA" name="LlamaTreeIterator" visibility="private">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_AOL5Mc3kEeSxrJ3subALUA" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" type="__olRwM3jEeSxrJ3subALUA" isUnique="false">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_AOMgQM3kEeSxrJ3subALUA">
+                      <body>
+		 * 
+		 </body>
+                    </ownedComment>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_AOMgQc3kEeSxrJ3subALUA" name="item" visibility="private" type="_AOCIMM3kEeSxrJ3subALUA" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_AONHUM3kEeSxrJ3subALUA" name="next" visibility="private" type="_AOCIMM3kEeSxrJ3subALUA" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_AONHUc3kEeSxrJ3subALUA" name="root" visibility="private" type="_AN_r8M3kEeSxrJ3subALUA" isUnique="false"/>
+                  <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_AOL5MM3kEeSxrJ3subALUA" name="LlamaTreeIterator implements LlamaIterator" client="_AOLSIc3kEeSxrJ3subALUA" supplier="_ANEe4M3kEeSxrJ3subALUA" contract="_ANEe4M3kEeSxrJ3subALUA"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_AONuYM3kEeSxrJ3subALUA" name="hasNext" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_AONuYc3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_AOOVcM3kEeSxrJ3subALUA" name="hasPrevious" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOOVcc3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_AOOVcs3kEeSxrJ3subALUA" name="next" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOOVc83kEeSxrJ3subALUA" type="_AOCIMM3kEeSxrJ3subALUA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_AOO8gM3kEeSxrJ3subALUA" name="previous" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOPjkM3kEeSxrJ3subALUA" type="_AOCIMM3kEeSxrJ3subALUA" direction="return"/>
+                  </ownedOperation>
+                </nestedClassifier>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AN_r8M3kEeSxrJ3subALUA" name="AVLNode">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_AOW4UM3kEeSxrJ3subALUA" name="data" visibility="private" type="_AOCIMM3kEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_AOW4Uc3kEeSxrJ3subALUA" name="parent" visibility="private" type="_AN_r8M3kEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_AOXfYM3kEeSxrJ3subALUA" name="left" visibility="private" type="_AN_r8M3kEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_AOYGcM3kEeSxrJ3subALUA" name="right" visibility="private" type="_AN_r8M3kEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_AOYGcc3kEeSxrJ3subALUA" name="visited" type="__p45Uc3jEeSxrJ3subALUA" isUnique="false">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AOYtgM3kEeSxrJ3subALUA"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AOYtgc3kEeSxrJ3subALUA" value="*"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_AOYtgs3kEeSxrJ3subALUA" name="balanceFactor" visibility="private" type="_6wuyAM3jEeSxrJ3subALUA" isUnique="false"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_AOWRQc3kEeSxrJ3subALUA" name="AVLNode implements Comparable" client="_AN_r8M3kEeSxrJ3subALUA" supplier="_AOWRQM3kEeSxrJ3subALUA" contract="_AOWRQM3kEeSxrJ3subALUA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOZUkM3kEeSxrJ3subALUA" name="getValue" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AOZUkc3kEeSxrJ3subALUA">
+                    <body>
+	 * Retorna el valor del nodo.
+	 * @return el valor del nodo.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOZUks3kEeSxrJ3subALUA" type="_AOCIMM3kEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOZUk83kEeSxrJ3subALUA" name="getParent" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AOZ7oM3kEeSxrJ3subALUA">
+                    <body>
+	 * Retorna el padre del nodo actual.
+	 * @return el nodo padre. null, si el nodo es raíz.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOZ7oc3kEeSxrJ3subALUA" type="_AN_r8M3kEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOZ7os3kEeSxrJ3subALUA" name="getBalanceFactor" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AOZ7o83kEeSxrJ3subALUA">
+                    <body>
+	 * Retorna la altura del subárbol que tiene por raíz, el nodo actual. 
+	 * @return la altura del subárbol.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOaisM3kEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOaisc3kEeSxrJ3subALUA" name="contains" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AOaiss3kEeSxrJ3subALUA">
+                    <body>
+	 * Establece si un elemento corresponde al nodo presente, o se encuentra en el subárbol correspondiente.
+	 * @param item El elemento a buscar. item != null.
+	 * @return true, si el elemento existe. false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AObJwM3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AObJwc3kEeSxrJ3subALUA" name="item" type="_AOCIMM3kEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AObJws3kEeSxrJ3subALUA" name="get" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AObJw83kEeSxrJ3subALUA">
+                    <body>
+	 * Busca un elemento en el subárbol que lleva por raíz, el nodo actual.
+	 * @param item El elemento a buscar.
+	 * @return el elemento a buscar, null si no fue hallado.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AObw0M3kEeSxrJ3subALUA" type="_AOCIMM3kEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AObw0c3kEeSxrJ3subALUA" name="item" type="_AOCIMM3kEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AObw0s3kEeSxrJ3subALUA" name="balanced" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AOcX4M3kEeSxrJ3subALUA">
+                    <body>
+	 * Describe si el árbol/subárbol que tiene por raíz el nodo actual, se encuentra balanceado. 
+	 * @return true, si el subárbol se encuentra balanceado. false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOcX4c3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOcX4s3kEeSxrJ3subALUA" name="balanceTree" visibility="private">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AOcX483kEeSxrJ3subALUA">
+                    <body>
+	 * Método que balancea un subárbol, en caso de que este se encuentre desbalanceado.
+	 * @return true, si el árbol fue balanceado. false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOc-8M3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOc-8c3kEeSxrJ3subALUA" name="rightRotation" visibility="private">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AOc-8s3kEeSxrJ3subALUA">
+                    <body>
+	 * Ejecuta una rotación a la derecha.
+	 * @return la nueva raíz tras la rotación.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOdmAM3kEeSxrJ3subALUA" type="_AN_r8M3kEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOdmAc3kEeSxrJ3subALUA" name="leftRotation" visibility="private">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AOdmAs3kEeSxrJ3subALUA">
+                    <body>
+	 * Ejecuta una rotación a la izquierda.
+	 * @return la nueva raíz tras la rotación.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOdmA83kEeSxrJ3subALUA" type="_AN_r8M3kEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOeNEM3kEeSxrJ3subALUA" name="hybridLeftRotation" visibility="private">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AOeNEc3kEeSxrJ3subALUA">
+                    <body>
+	 * Realiza una rotación mixta, en caso que el árbol se encuentre desbalanceado debido 
+	 * a el subárbol izquierdo del hijo derecho del nodo actual.
+	 </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOeNEs3kEeSxrJ3subALUA" name="hybridRightRotation" visibility="private">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AOeNE83kEeSxrJ3subALUA">
+                    <body>
+	 * Realiza una rotación mixta, en caso que el árbol se encuentre desbalanceado debido 
+	 * a el subárbol derecho del hijo izquierdo del nodo actual.
+	 </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOe0IM3kEeSxrJ3subALUA" name="isRoot" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AOe0Ic3kEeSxrJ3subALUA">
+                    <body>
+	 * Describe si el nodo actual corresponde a la raíz de un árbol.
+	 * @return true, si el nodo es raíz. false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOe0Is3kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOfbMM3kEeSxrJ3subALUA" name="add" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AOfbMc3kEeSxrJ3subALUA">
+                    <body>
+	 * Agrega un elemento al subárbol.
+	 * @param item el elemento a agregar.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOfbMs3kEeSxrJ3subALUA" name="item" type="_AOCIMM3kEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOfbM83kEeSxrJ3subALUA" name="removeNode" visibility="private">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AOgCQM3kEeSxrJ3subALUA">
+                    <body>
+	 * Elimina un elemento de un subárbol.
+	 * @param item el elemento a ser eliminado.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOgCQc3kEeSxrJ3subALUA" name="item" type="_AOCIMM3kEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOgCQs3kEeSxrJ3subALUA" name="remove" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AOgCQ83kEeSxrJ3subALUA">
+                    <body>
+	 * Elimina el elemento de la raíz del árbol.
+	 * @param item el elemento a ser eliminado.
+	 * @return la nueva raíz del árbol.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOgpUM3kEeSxrJ3subALUA" type="_AN_r8M3kEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOgpUc3kEeSxrJ3subALUA" name="item" type="_AOCIMM3kEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOgpUs3kEeSxrJ3subALUA" name="resetVisits" visibility="private">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AOhQYM3kEeSxrJ3subALUA">
+                    <body>
+	 * Reinicia el orden de recorrido de un nodo (Preorden).
+	 </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOhQYc3kEeSxrJ3subALUA" name="partialPathCompletion" visibility="private">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AOhQYs3kEeSxrJ3subALUA">
+                    <body>
+	 * Establece si el nodo y el subárbol correspondiente fueron visitados.
+	 * @return true, si el subárbol y el nodo fueron visitados. false, de lo contrario.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOhQY83kEeSxrJ3subALUA" type="__p45Uc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOh3cM3kEeSxrJ3subALUA" name="markVisited" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AOh3cc3kEeSxrJ3subALUA">
+                    <body>
+	 * Realiza el recorrido en preorden del árbol, no requiere de una lista auxiliar.
+	 * @return el nodo visitado actualmente.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOiegM3kEeSxrJ3subALUA" type="_AN_r8M3kEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOiegc3kEeSxrJ3subALUA" name="calculateHeight" visibility="private">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_AOiegs3kEeSxrJ3subALUA">
+                    <body>
+	 * Calcula la altura del subárbol. Además establece si el subárbol debe ser balanceado.
+	 * @return la altura del subárbol.
+	 </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOjFkM3kEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOjFkc3kEeSxrJ3subALUA" name="toString" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOjsoM3kEeSxrJ3subALUA" type="_6w2Gwc3jEeSxrJ3subALUA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOjsoc3kEeSxrJ3subALUA" name="toConsole" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOjsos3kEeSxrJ3subALUA" type="_AN_r8M3kEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOkTsM3kEeSxrJ3subALUA" name="tree" type="_AN_r8M3kEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_AOkTsc3kEeSxrJ3subALUA" name="compareTo" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOkTss3kEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_AOk6wM3kEeSxrJ3subALUA" name="o" type="_AN_r8M3kEeSxrJ3subALUA"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AOCIMM3kEeSxrJ3subALUA" name="T"/>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_AOWRQM3kEeSxrJ3subALUA" name="Comparable"/>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_AZoUMM3kEeSxrJ3subALUA" name="Iterable"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ANZ2Ec3kEeSxrJ3subALUA" name="junit">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ANadIM3kEeSxrJ3subALUA" name="framework">
+        <packagedElement xmi:type="uml:Class" xmi:id="_ANadIc3kEeSxrJ3subALUA" name="TestCase"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_1IBnoM3kEeSxrJ3subALUA" name="LlamaCitas">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_20phgM3kEeSxrJ3subALUA" name="fechaActual" visibility="private" type="_6wqgkM3jEeSxrJ3subALUA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__3W4IM3kEeSxrJ3subALUA" name="tiempoCarga" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_DM2NQM3lEeSxrJ3subALUA" name="totalConsultorios" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Si9mMM3mEeSxrJ3subALUA" name="usuario" type="_a4F6kM3lEeSxrJ3subALUA" association="_SjBQkM3mEeSxrJ3subALUA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Si9mMc3mEeSxrJ3subALUA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Si9mMs3mEeSxrJ3subALUA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VVCFMM3mEeSxrJ3subALUA" name="dictionary" type="__o2-kM3jEeSxrJ3subALUA" association="_VVCsQM3mEeSxrJ3subALUA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VVCFMc3mEeSxrJ3subALUA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VVCFMs3mEeSxrJ3subALUA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ecNFEM3mEeSxrJ3subALUA" name="tree" type="_AZntIM3kEeSxrJ3subALUA" association="_ecNsIM3mEeSxrJ3subALUA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ecNFEc3mEeSxrJ3subALUA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ecNFEs3mEeSxrJ3subALUA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_93F3QM3pEeSxrJ3subALUA" name="tree" type="_AZntIM3kEeSxrJ3subALUA" association="_93GeUM3pEeSxrJ3subALUA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_93F3Qc3pEeSxrJ3subALUA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_93F3Qs3pEeSxrJ3subALUA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Cci_cM3qEeSxrJ3subALUA" name="tree" type="_AZntIM3kEeSxrJ3subALUA" association="_CcjmgM3qEeSxrJ3subALUA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cci_cc3qEeSxrJ3subALUA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Cci_cs3qEeSxrJ3subALUA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Model" xmi:id="_a3RbMM3lEeSxrJ3subALUA" name="plis">
+    <packagedElement xmi:type="uml:Package" xmi:id="_a4EFYM3lEeSxrJ3subALUA" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_a4EscM3lEeSxrJ3subALUA" name="llama">
+        <packagedElement xmi:type="uml:Package" xmi:id="_a4Escc3lEeSxrJ3subALUA" name="tech">
+          <packagedElement xmi:type="uml:Package" xmi:id="_a4FTgM3lEeSxrJ3subALUA" name="doctor">
+            <packagedElement xmi:type="uml:Package" xmi:id="_a4FTgc3lEeSxrJ3subALUA" name="mundo">
+              <packagedElement xmi:type="uml:Class" xmi:id="_a4F6kM3lEeSxrJ3subALUA" name="Usuario">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_a4HIsM3lEeSxrJ3subALUA" name="nombreUsuario" visibility="private" type="_6w2Gwc3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_a4HIsc3lEeSxrJ3subALUA" name="clave" visibility="private" type="_6w2Gwc3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_a4HvwM3lEeSxrJ3subALUA" name="email" visibility="private" type="_6w2Gwc3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_a4IW0M3lEeSxrJ3subALUA" name="id" visibility="private" type="_6w2Gwc3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_a4IW0c3lEeSxrJ3subALUA" name="ubicacionActual" visibility="private" type="_6w2Gwc3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_jACcoM3mEeSxrJ3subALUA" name="dictionary" type="__o2-kM3jEeSxrJ3subALUA" association="_jACco83mEeSxrJ3subALUA">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jACcoc3mEeSxrJ3subALUA"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jACcos3mEeSxrJ3subALUA" value="*"/>
+                </ownedAttribute>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_a4GhoM3lEeSxrJ3subALUA" name="Usuario implements Comparable" client="_a4F6kM3lEeSxrJ3subALUA" supplier="_a4F6kc3lEeSxrJ3subALUA" contract="_a4F6kc3lEeSxrJ3subALUA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_a4Jk8M3lEeSxrJ3subALUA" name="compareTo" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_a4Jk8c3lEeSxrJ3subALUA" type="_6wuyAM3jEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_a4KMAM3lEeSxrJ3subALUA" name="o" type="_a4F6kM3lEeSxrJ3subALUA"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_a4F6kc3lEeSxrJ3subALUA" name="Comparable"/>
+              <packagedElement xmi:type="uml:Association" xmi:id="_jACco83mEeSxrJ3subALUA" name="citas&#xD;" memberEnd="_jACcpM3mEeSxrJ3subALUA _jACcoM3mEeSxrJ3subALUA">
+                <ownedEnd xmi:type="uml:Property" xmi:id="_jACcpM3mEeSxrJ3subALUA" name="usuario" type="_a4F6kM3lEeSxrJ3subALUA" association="_jACco83mEeSxrJ3subALUA">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jACcpc3mEeSxrJ3subALUA" value="1"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jACcps3mEeSxrJ3subALUA" value="1"/>
+                </ownedEnd>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Usage" xmi:id="_nVyfcM3nEeSxrJ3subALUA" client="_a4F6kM3lEeSxrJ3subALUA" supplier="_6wEqsM3jEeSxrJ3subALUA"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Model" xmi:id="_zTst0M3lEeSxrJ3subALUA" name="maps">
+    <packagedElement xmi:type="uml:Package" xmi:id="_zT4UAM3lEeSxrJ3subALUA" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_zT4UAc3lEeSxrJ3subALUA" name="llama">
+        <packagedElement xmi:type="uml:Package" xmi:id="_zT4UAs3lEeSxrJ3subALUA" name="tech">
+          <packagedElement xmi:type="uml:Package" xmi:id="_zT4UA83lEeSxrJ3subALUA" name="doctor">
+            <packagedElement xmi:type="uml:Package" xmi:id="_zT47EM3lEeSxrJ3subALUA" name="maps">
+              <packagedElement xmi:type="uml:Class" xmi:id="_zT47Ec3lEeSxrJ3subALUA" name="ConsultaMapas">
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_zT5iIM3lEeSxrJ3subALUA" name="darMapaConsultorio" visibility="public" isStatic="true">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_zT6JMc3lEeSxrJ3subALUA" type="_zT6JMM3lEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_zT6JMs3lEeSxrJ3subALUA" name="info" type="_6w2Gwc3jEeSxrJ3subALUA"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_zT6wQM3lEeSxrJ3subALUA" name="zoom" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_zT6wQc3lEeSxrJ3subALUA" name="darMapaVisitados" visibility="public" isStatic="true">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_zT6wQs3lEeSxrJ3subALUA" type="_zT6JMM3lEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_zT7XUM3lEeSxrJ3subALUA" name="location" type="_6w2Gwc3jEeSxrJ3subALUA">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zT7XUc3lEeSxrJ3subALUA"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zT7XUs3lEeSxrJ3subALUA" value="*"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_zT7-YM3lEeSxrJ3subALUA" name="zoom" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_zT7-Yc3lEeSxrJ3subALUA" name="darMapaVisitadosRestringido" visibility="public" isStatic="true">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_zT7-Ys3lEeSxrJ3subALUA" type="_zT6JMM3lEeSxrJ3subALUA" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_zT8lcM3lEeSxrJ3subALUA" name="location" type="_6w2Gwc3jEeSxrJ3subALUA">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zT8lcc3lEeSxrJ3subALUA"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zT8lcs3lEeSxrJ3subALUA" value="*"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_zT8lc83lEeSxrJ3subALUA" name="zoom" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_zT9MgM3lEeSxrJ3subALUA" name="N" type="_6wuyAM3jEeSxrJ3subALUA"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_zT-aoM3lEeSxrJ3subALUA" name="DialogoMapaUnico">
+                <generalization xmi:type="uml:Generalization" xmi:id="_zT_BsM3lEeSxrJ3subALUA" general="_zT-aoc3lEeSxrJ3subALUA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUAP0c3lEeSxrJ3subALUA" name="btnZoomIn" visibility="private" type="_zUAP0M3lEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUA24M3lEeSxrJ3subALUA" name="btnZoomOut" visibility="private" type="_zUAP0M3lEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUA24s3lEeSxrJ3subALUA" name="lblMapa" visibility="private" type="_zUA24c3lEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUBd8M3lEeSxrJ3subALUA" name="zoomUnico" visibility="private" type="_6wuyAM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUBd8c3lEeSxrJ3subALUA" name="info" visibility="private" type="_6w2Gwc3jEeSxrJ3subALUA" isUnique="false"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_zT_owM3lEeSxrJ3subALUA" name="DialogoMapaUnico implements ActionListener" client="_zT-aoM3lEeSxrJ3subALUA" supplier="_zT_Bs83lEeSxrJ3subALUA" contract="_zT_Bs83lEeSxrJ3subALUA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_zUCFAM3lEeSxrJ3subALUA" name="mostrarMapaLocation" visibility="public"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_zUCFAc3lEeSxrJ3subALUA" name="disminuirZoomUnico" visibility="public"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_zUCFAs3lEeSxrJ3subALUA" name="aumentarZoomUnico" visibility="public"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_zUCsEc3lEeSxrJ3subALUA" name="actionPerformed" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_zUCsEs3lEeSxrJ3subALUA" name="e" type="_zUCsEM3lEeSxrJ3subALUA"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_zUGWcM3lEeSxrJ3subALUA" name="PruebaMapas">
+                <generalization xmi:type="uml:Generalization" xmi:id="_zUG9gc3lEeSxrJ3subALUA" general="_zUG9gM3lEeSxrJ3subALUA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUIysM3lEeSxrJ3subALUA" name="visitados" type="__qSh8M3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUIysc3lEeSxrJ3subALUA" name="anteriores" type="_6w2Gwc3jEeSxrJ3subALUA" isUnique="false">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zUJZwM3lEeSxrJ3subALUA"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zUJZwc3lEeSxrJ3subALUA" value="*"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUKA0M3lEeSxrJ3subALUA" name="VISITADOS" visibility="public" isLeaf="true" isStatic="true" type="_6wuyAM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUKn4M3lEeSxrJ3subALUA" name="CONSULTORIOS" visibility="public" isLeaf="true" isStatic="true" type="_6wuyAM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zULO8M3lEeSxrJ3subALUA" name="PAIS" visibility="public" isLeaf="true" isStatic="true" type="_6w2Gwc3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUL2AM3lEeSxrJ3subALUA" name="CIUDAD" visibility="public" isLeaf="true" isStatic="true" type="_6w2Gwc3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUL2Ac3lEeSxrJ3subALUA" name="COORDENADAS" visibility="public" isLeaf="true" isStatic="true" type="_6w2Gwc3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUMdEM3lEeSxrJ3subALUA" name="POSTCODE" visibility="public" isLeaf="true" isStatic="true" type="_6w2Gwc3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUNEIM3lEeSxrJ3subALUA" name="zoomAnteriores" visibility="private" type="_6wuyAM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUNrMM3lEeSxrJ3subALUA" name="btnZoomIn" visibility="private" type="_zUAP0M3lEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUNrMc3lEeSxrJ3subALUA" name="btnZoomOut" visibility="private" type="_zUAP0M3lEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUOSQM3lEeSxrJ3subALUA" name="btnAgregarUbicacion" visibility="private" type="_zUAP0M3lEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUO5UM3lEeSxrJ3subALUA" name="btnRefrescarLugaresRecientes" visibility="private" type="_zUAP0M3lEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUO5Uc3lEeSxrJ3subALUA" name="lblMapa" visibility="private" type="_zUA24c3lEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUPgYM3lEeSxrJ3subALUA" name="lblTitulo" visibility="private" type="_zUA24c3lEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUQHcM3lEeSxrJ3subALUA" name="btnMostrarConsultoriosCercanos" visibility="private" type="_zUAP0M3lEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUQHcc3lEeSxrJ3subALUA" name="estadoActual" visibility="private" type="_6wuyAM3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUQugM3lEeSxrJ3subALUA" name="tipoBusqueda" visibility="private" type="_6w2Gwc3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zURVkM3lEeSxrJ3subALUA" name="ubicacionActual" visibility="private" type="_6w2Gwc3jEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUR8oc3lEeSxrJ3subALUA" name="mundo" visibility="private" type="_zUR8oM3lEeSxrJ3subALUA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_zUSjsM3lEeSxrJ3subALUA">
+                    <body>
+	 * Modelo
+	 </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUTKwM3lEeSxrJ3subALUA" name="scrollPane" visibility="private" type="_zUSjsc3lEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUTx0M3lEeSxrJ3subALUA" name="textArea" visibility="private" type="_zUTKwc3lEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUTx0c3lEeSxrJ3subALUA" name="lbltotalconsultorios" visibility="private" type="_zUA24c3lEeSxrJ3subALUA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zUUY4M3lEeSxrJ3subALUA" name="lblTiempocarga" visibility="private" type="_zUA24c3lEeSxrJ3subALUA" isUnique="false"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_zUHkkM3lEeSxrJ3subALUA" name="PruebaMapas implements ActionListener" client="_zUGWcM3lEeSxrJ3subALUA" supplier="_zT_Bs83lEeSxrJ3subALUA" contract="_zT_Bs83lEeSxrJ3subALUA"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_zUILoM3lEeSxrJ3subALUA" name="PruebaMapas implements Observer" client="_zUGWcM3lEeSxrJ3subALUA" supplier="_zUHkkc3lEeSxrJ3subALUA" contract="_zUHkkc3lEeSxrJ3subALUA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_zUU_8M3lEeSxrJ3subALUA" name="mostrarCercanos" visibility="public"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_zUU_8c3lEeSxrJ3subALUA" name="mostrarMapaLocation" visibility="public"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_zUU_8s3lEeSxrJ3subALUA" name="mostrarAnteriores" visibility="public"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_zUVnAM3lEeSxrJ3subALUA" name="disminuirZoomTodos" visibility="public"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_zUVnAc3lEeSxrJ3subALUA" name="aumentarZoomTodos" visibility="public"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_zUVnAs3lEeSxrJ3subALUA" name="actionPerformed" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_zUWOEM3lEeSxrJ3subALUA" name="e" type="_zUCsEM3lEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_zUWOEc3lEeSxrJ3subALUA" name="main" visibility="public" isStatic="true">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_zUW1IM3lEeSxrJ3subALUA" name="args" type="_6w2Gwc3jEeSxrJ3subALUA">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zUW1Ic3lEeSxrJ3subALUA"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zUW1Is3lEeSxrJ3subALUA" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_zUYDQM3lEeSxrJ3subALUA" name="update" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_zUYDQc3lEeSxrJ3subALUA" name="o" type="_zUXcMM3lEeSxrJ3subALUA"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_zUYDQs3lEeSxrJ3subALUA" name="inf" type="_zUXcMc3lEeSxrJ3subALUA"/>
+                </ownedOperation>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_zUZRYM3lEeSxrJ3subALUA" name="DialogoEscoger">
+                  <generalization xmi:type="uml:Generalization" xmi:id="_zUZRYc3lEeSxrJ3subALUA" general="_zT-aoc3lEeSxrJ3subALUA"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_zUafgM3lEeSxrJ3subALUA" name="escogedor" visibility="private" type="_zUZ4cc3lEeSxrJ3subALUA" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_zUafgc3lEeSxrJ3subALUA" name="mensaje" visibility="private" type="_zUA24c3lEeSxrJ3subALUA" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_zUbGkM3lEeSxrJ3subALUA" name="btnAceptar" visibility="private" type="_zUAP0M3lEeSxrJ3subALUA" isUnique="false"/>
+                  <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_zUZ4cM3lEeSxrJ3subALUA" name="DialogoEscoger implements ActionListener" client="_zUZRYM3lEeSxrJ3subALUA" supplier="_zT_Bs83lEeSxrJ3subALUA" contract="_zT_Bs83lEeSxrJ3subALUA"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_zUbGkc3lEeSxrJ3subALUA" name="actionPerformed" visibility="public">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_zUbtoM3lEeSxrJ3subALUA" name="e" type="_zUCsEM3lEeSxrJ3subALUA"/>
+                  </ownedOperation>
+                </nestedClassifier>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_zURVkc3lEeSxrJ3subALUA" name="mundo">
+              <packagedElement xmi:type="uml:Class" xmi:id="_zUR8oM3lEeSxrJ3subALUA" name="LlamaCitas"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_zT5iIc3lEeSxrJ3subALUA" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_zT5iIs3lEeSxrJ3subALUA" name="swing">
+        <packagedElement xmi:type="uml:Class" xmi:id="_zT6JMM3lEeSxrJ3subALUA" name="ImageIcon"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_zT-aoc3lEeSxrJ3subALUA" name="JDialog"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_zUAP0M3lEeSxrJ3subALUA" name="JButton"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_zUA24c3lEeSxrJ3subALUA" name="JLabel"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_zUG9gM3lEeSxrJ3subALUA" name="JFrame"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_zUSjsc3lEeSxrJ3subALUA" name="JScrollPane"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_zUTKwc3lEeSxrJ3subALUA" name="JTextArea"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_zUZ4cc3lEeSxrJ3subALUA" name="JComboBox"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SjBQkM3mEeSxrJ3subALUA" name="usuarioActual" memberEnd="_SjBQkc3mEeSxrJ3subALUA _Si9mMM3mEeSxrJ3subALUA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SjBQkc3mEeSxrJ3subALUA" name="llamaCitas" type="_1IBnoM3kEeSxrJ3subALUA" association="_SjBQkM3mEeSxrJ3subALUA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SjBQks3mEeSxrJ3subALUA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SjBQk83mEeSxrJ3subALUA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_VVCsQM3mEeSxrJ3subALUA" name="usuarios" memberEnd="_VVCsQc3mEeSxrJ3subALUA _VVCFMM3mEeSxrJ3subALUA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VVCsQc3mEeSxrJ3subALUA" name="llamaCitas" type="_1IBnoM3kEeSxrJ3subALUA" association="_VVCsQM3mEeSxrJ3subALUA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VVCsQs3mEeSxrJ3subALUA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VVCsQ83mEeSxrJ3subALUA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ecNsIM3mEeSxrJ3subALUA" name="consultorios" memberEnd="_ecNsIc3mEeSxrJ3subALUA _ecNFEM3mEeSxrJ3subALUA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ecNsIc3mEeSxrJ3subALUA" name="llamaCitas" type="_1IBnoM3kEeSxrJ3subALUA" association="_ecNsIM3mEeSxrJ3subALUA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ecNsIs3mEeSxrJ3subALUA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ecNsI83mEeSxrJ3subALUA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_cZei4M3nEeSxrJ3subALUA" client="_1IBnoM3kEeSxrJ3subALUA" supplier="_a4F6kM3lEeSxrJ3subALUA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_rElFYM3nEeSxrJ3subALUA" client="_1IBnoM3kEeSxrJ3subALUA" supplier="_6w0RkM3jEeSxrJ3subALUA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_93GeUM3pEeSxrJ3subALUA" name="consultoriosExp" memberEnd="_93GeUc3pEeSxrJ3subALUA _93F3QM3pEeSxrJ3subALUA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_93GeUc3pEeSxrJ3subALUA" name="llamaCitas" type="_1IBnoM3kEeSxrJ3subALUA" association="_93GeUM3pEeSxrJ3subALUA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_93GeUs3pEeSxrJ3subALUA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_93GeU83pEeSxrJ3subALUA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_CcjmgM3qEeSxrJ3subALUA" name="consultoriosEstado" memberEnd="_Ccjmgc3qEeSxrJ3subALUA _Cci_cM3qEeSxrJ3subALUA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Ccjmgc3qEeSxrJ3subALUA" name="llamaCitas" type="_1IBnoM3kEeSxrJ3subALUA" association="_CcjmgM3qEeSxrJ3subALUA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ccjmgs3qEeSxrJ3subALUA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ccjmg83qEeSxrJ3subALUA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_qWCEsM3kEeSxrJ3subALUA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rFP7IM3kEeSxrJ3subALUA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_sYse0YZLEeKyw49uR6nx3g"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>

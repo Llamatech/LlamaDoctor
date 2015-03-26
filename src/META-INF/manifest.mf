@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Llamatech Inc)
+Class-Path: forms-1.3.0.jar jsoup-1.8.1.jar opencsv-3.2.jar llamautils-master.jar jxl.jar Cupi2Collections.jar cupiphoneSDK.jar
+Main-Class: com.llama.tech.doctor.maps.PruebaMapas
